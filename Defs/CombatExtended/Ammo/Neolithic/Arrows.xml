@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+  
   <CombatExtended.AmmoCategoryDef>
     <defName>SharpStoneArrow</defName>
     <label>sharp stone arrow</label>
     <description>A sharpened stone attached as an arrow head. Cuts exposed tissue fairly well but is not too effective against armor.</description>
   </CombatExtended.AmmoCategoryDef>
-  <ThingDef ParentName="AmmoArrowBase">
+  
+  <ThingDef ParentName="AmmoArrowBase" Class="CombatExtended.AmmoDef">
     <defName>Ammo_Arrow_SharpStone</defName>
     <label>arrow (sharp stone)</label>
     <graphicData>
@@ -20,11 +22,12 @@
   <ThingDef ParentName="BaseArrowProjectile">
     <defName>Projectile_Arrow_SharpStone</defName>
     <label>arrow (sharp stone)</label>
-    <projectile>
-      <damageAmountBase>12</damageAmountBase>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>15</damageAmountBase>
       <armorPenetration>0.3</armorPenetration>
     </projectile>
   </ThingDef>
+  
   <RecipeDef ParentName="AmmoRecipeNeolithicBase">
     <defName>MakeAmmo_Arrow_SharpStone</defName>
     <label>make sharp stone arrows x50</label>
@@ -66,4 +69,5 @@
       <li>CraftingSpot</li>
     </recipeUsers>
   </RecipeDef>
+  
 </Defs>

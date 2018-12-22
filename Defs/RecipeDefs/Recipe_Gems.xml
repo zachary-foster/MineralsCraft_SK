@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+  
   <RecipeDef>
     <defName>MakeCutGems_Hand</defName>
     <label>Cut gems by hand</label>
@@ -42,6 +43,7 @@
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
   </RecipeDef>
+  
   <RecipeDef>
     <defName>MakeCutGems_Electric</defName>
     <label>Cut gems with power tools</label>
@@ -83,4 +85,5 @@
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
   </RecipeDef>
+  
 </Defs>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+  
   <Verse.ThingDef ParentName="WeaponMedievalBase">
     <defName>MeleeWeapon_RoyalKnife</defName>
     <label>Royal Knife</label>
@@ -28,15 +29,14 @@
         <li>FueledSmithy</li>
       </recipeUsers>
       <skillRequirements>
-        <Crafting>8</Crafting>
+        <Crafting>10</Crafting>
       </skillRequirements>
       <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
     </recipeMaker>
     <statBases>
-      <WorkToMake>12000</WorkToMake>
+      <WorkToMake>10000</WorkToMake>
       <Bulk>1.0</Bulk>
       <Mass>0.8</Mass>
-      <Weapon_Bulk>0.4</Weapon_Bulk>
       <MeleeCounterParryBonus>2</MeleeCounterParryBonus>
       <MaxHitPoints>120</MaxHitPoints>
     </statBases>
@@ -49,7 +49,7 @@
       <MeleeCritChance>0.8</MeleeCritChance>
       <MeleeDodgeChance>0.8</MeleeDodgeChance>
       <SocialImpact>0.03</SocialImpact>
-      <DiplomacyPower>0.03</DiplomacyPower>
+      <MentalBreakThreshold>-0.01</MentalBreakThreshold>
     </equippedStatOffsets>
     <techLevel>Industrial</techLevel>
     <weaponTags>
@@ -120,6 +120,7 @@
       <z>0</z>
     </secondHandPosition>
   </WeaponExtensionDef>
+  
   <Verse.ThingDef ParentName="WeaponMedievalBase">
     <defName>MeleeWeapon_RoyalLongSword</defName>
     <label>Royal Longsword</label>
@@ -148,15 +149,14 @@
         <li>FueledSmithy</li>
       </recipeUsers>
       <skillRequirements>
-        <Crafting>10</Crafting>
+        <Crafting>12</Crafting>
       </skillRequirements>
       <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
     </recipeMaker>
     <statBases>
-      <WorkToMake>15000</WorkToMake>
+      <WorkToMake>13000</WorkToMake>
       <Bulk>9.0</Bulk>
       <Mass>4.0</Mass>
-      <Weapon_Bulk>1.0</Weapon_Bulk>
       <MeleeCounterParryBonus>0.85</MeleeCounterParryBonus>
       <MaxHitPoints>150</MaxHitPoints>
     </statBases>
@@ -166,9 +166,8 @@
       <WorkSpeedGlobal>-0.07</WorkSpeedGlobal>
       <MeleeCritChance>1</MeleeCritChance>
       <MeleeParryChance>0.75</MeleeParryChance>
-      <SocialImpact>0.05</SocialImpact>
-      <DiplomacyPower>0.05</DiplomacyPower>
-      <MentalBreakThreshold>-0.01</MentalBreakThreshold>
+      <SocialImpact>0.07</SocialImpact>
+      <MentalBreakThreshold>-0.03</MentalBreakThreshold>
     </equippedStatOffsets>
     <techLevel>Industrial</techLevel>
     <weaponTags>
@@ -213,6 +212,7 @@
       <li>HeavyMelee</li>
     </thingCategories>
   </Verse.ThingDef>
+  
   <WeaponExtensionDef>
     <defName>WeaponExtensionDef_MeleeWeapon_RoyalLongSword</defName>
     <label>WeaponExtensionDef_MeleeWeapon_RoyalLongSword</label>
@@ -239,6 +239,7 @@
       <z>0</z>
     </secondHandPosition>
   </WeaponExtensionDef>
+  
   <Verse.ThingDef ParentName="WeaponMedievalBase">
     <defName>MeleeWeapon_RoyalBattleAxe</defName>
     <label>Royal Battle Axe</label>
@@ -267,7 +268,7 @@
         <li>FueledSmithy</li>
       </recipeUsers>
       <skillRequirements>
-        <Crafting>12</Crafting>
+        <Crafting>15</Crafting>
       </skillRequirements>
       <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
     </recipeMaker>
@@ -275,7 +276,6 @@
       <WorkToMake>15000</WorkToMake>
       <Bulk>11.0</Bulk>
       <Mass>7.0</Mass>
-      <Weapon_Bulk>2.0</Weapon_Bulk>
       <MeleeCounterParryBonus>0.85</MeleeCounterParryBonus>
       <MaxHitPoints>160</MaxHitPoints>
     </statBases>
@@ -285,9 +285,8 @@
       <WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
       <MeleeCritChance>1</MeleeCritChance>
       <MeleeParryChance>0.6</MeleeParryChance>
-      <SocialImpact>0.03</SocialImpact>
-      <DiplomacyPower>0.03</DiplomacyPower>
-      <MentalBreakThreshold>-0.02</MentalBreakThreshold>
+      <SocialImpact>0.05</SocialImpact>
+      <MentalBreakThreshold>-0.05</MentalBreakThreshold>
     </equippedStatOffsets>
     <techLevel>Industrial</techLevel>
     <weaponTags>
@@ -331,6 +330,7 @@
       <li>HeavyMelee</li>
     </thingCategories>
   </Verse.ThingDef>
+  
   <WeaponExtensionDef>
     <defName>WeaponExtensionDef_MeleeWeapon_RoyalBattleAxe</defName>
     <label>WeaponExtensionDef_MeleeWeapon_RoyalBattleAxe</label>
@@ -357,6 +357,7 @@
       <z>-0.3</z>
     </secondHandPosition>
   </WeaponExtensionDef>
+  
   <Verse.ThingDef ParentName="BaseMeleeWeapon">
     <defName>MeleeWeapon_TribalKnife</defName>
     <label>Tribal Knife</label>
@@ -387,10 +388,9 @@
       <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
     </recipeMaker>
     <statBases>
-      <WorkToMake>3000</WorkToMake>
+      <WorkToMake>2000</WorkToMake>
       <Bulk>0.60</Bulk>
       <Mass>0.30</Mass>
-      <Weapon_Bulk>0.4</Weapon_Bulk>
       <MeleeCounterParryBonus>1.5</MeleeCounterParryBonus>
       <MaxHitPoints>100</MaxHitPoints>
     </statBases>
@@ -448,6 +448,7 @@
       <li>Tools</li>
     </thingCategories>
   </Verse.ThingDef>
+  
   <WeaponExtensionDef>
     <defName>WeaponExtensionDef_MeleeWeapon_TribalKnife</defName>
     <label>WeaponExtensionDef_MeleeWeapon_TribalKnife</label>
@@ -474,6 +475,7 @@
       <z>0</z>
     </secondHandPosition>
   </WeaponExtensionDef>
+  
   <ThingDef ParentName="BaseMeleeWeapon">
     <defName>MeleeWeapon_TribalAxe</defName>
     <label>Tribal Handaxe</label>
@@ -503,10 +505,9 @@
       <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
     </recipeMaker>
     <statBases>
-      <WorkToMake>4000</WorkToMake>
+      <WorkToMake>3000</WorkToMake>
       <Mass>3.5</Mass>
       <Bulk>3.5</Bulk>
-      <Weapon_Bulk>0.35</Weapon_Bulk>
       <MaxHitPoints>100</MaxHitPoints>
     </statBases>
     <techLevel>Industrial</techLevel>
@@ -548,6 +549,7 @@
       <li>Tools</li>
     </thingCategories>
   </ThingDef>
+  
   <WeaponExtensionDef>
     <defName>WeaponExtensionDef_MeleeWeapon_TribalAxe</defName>
     <label>WeaponExtensionDef_MeleeWeapon_TribalAxe</label>
@@ -574,6 +576,7 @@
       <z>0</z>
     </secondHandPosition>
   </WeaponExtensionDef>
+  
   <ThingDef ParentName="BaseMeleeWeapon">
     <defName>MeleeWeapon_Macuahuitl</defName>
     <label>Macuahuitl</label>
@@ -603,10 +606,9 @@
       <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
     </recipeMaker>
     <statBases>
-      <WorkToMake>10000</WorkToMake>
+      <WorkToMake>6000</WorkToMake>
       <Mass>7</Mass>
       <Bulk>7</Bulk>
-      <Weapon_Bulk>7</Weapon_Bulk>
       <MaxHitPoints>150</MaxHitPoints>
     </statBases>
     <techLevel>Industrial</techLevel>
@@ -646,6 +648,7 @@
       <li>SharpMelee</li>
     </thingCategories>
   </ThingDef>
+  
   <WeaponExtensionDef>
     <defName>WeaponExtensionDef_MeleeWeapon_Macuahuitl</defName>
     <label>WeaponExtensionDef_MeleeWeapon_Macuahuitl</label>
@@ -672,4 +675,5 @@
       <z>0</z>
     </secondHandPosition>
   </WeaponExtensionDef>
+  
 </Defs>

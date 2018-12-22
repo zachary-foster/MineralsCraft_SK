@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-## Minerals: A rimworld mod for the [Hardcore SK project](https://github.com/skyarkhangel/Hardcore-SK)
+## MineralsCraft_SK: A rimworld mod for the [Hardcore SK project](https://github.com/skyarkhangel/Hardcore-SK)
 
 ![](About/Preview.jpg)
 
@@ -17,15 +17,7 @@ This mod adds various mineral-related content.
 For example, it adds various minable crystals underground, obsidian and flint for weapons, and living coldstone and glowstone crystals.
 
 
-## Dynamic minerals
-
-These spawn, grow, and shrink depending on conditions.
-
-```{r}
-print_minerals("Defs/ThingsDefs_Minerals/DynamicMinerals.xml")
-```
-
-## Static minerals
+## New Resource minerals
 
 These are randomly spawned when a map is created and are never respawned in a given map.
 
@@ -53,7 +45,7 @@ Flint and obsidian arrows are better than standard stone arrows but not as good 
 
 ## Installation
 
-You can download the current development version by clicking the green "clone or download" button near the top of this page. You can also download specific "stable" releases [here](https://github.com/zachary-foster/Minerals/releases), although they will probably not be updated too often. Once you have downloaded the mod, uncompress the file and up the folder in the `Mods` folder of you rimworld installation.
+You can download the current development version by clicking the green "clone or download" button near the top of this page. You can also download specific "stable" releases [here](https://github.com/zachary-foster/MineralsCraft_SK/releases), although they will probably not be updated too often. Once you have downloaded the mod, uncompress the file and up the folder in the `Mods` folder of you rimworld installation.
 
 ## To xml modders and potential contributers:
 
