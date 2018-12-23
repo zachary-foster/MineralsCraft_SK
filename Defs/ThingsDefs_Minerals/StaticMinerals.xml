@@ -34,13 +34,13 @@
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>1</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.7</perMapProbability>
+    <perMapProbability>0.8</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.001</minClusterProbability>
-    <maxClusterProbability>0.005</maxClusterProbability>
+    <minClusterProbability>0</minClusterProbability>
+    <maxClusterProbability>0.003</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>5</minClusterSize>
-    <maxClusterSize>50</maxClusterSize>
+    <maxClusterSize>40</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.7</initialSizeMin>
     <initialSizeMax>.9</initialSizeMax>
@@ -113,7 +113,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>FlintShard</mineableThing>
-      <mineableYield>25</mineableYield>
+      <mineableYield>30</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -125,7 +125,7 @@
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0.001</minClusterProbability>
-    <maxClusterProbability>0.004</maxClusterProbability>
+    <maxClusterProbability>0.003</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>8</maxClusterSize>
@@ -167,12 +167,12 @@
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.2</visualSizeVariation>
     <!-- The amount of resource returned if the mineral is its maximum size -->
-    <maxMinedYeild>25</maxMinedYeild>
+    <maxMinedYeild>30</maxMinedYeild>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
+        <DropProbability>0.3</DropProbability>
       </li>
     </randomlyDropResources>
     <!-- If the primary color is based on the stone below it -->
