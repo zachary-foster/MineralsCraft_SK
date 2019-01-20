@@ -11,6 +11,7 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1,1)</drawSize>
     </graphicData>
+    <uiIconPath>Things/Mineral/Obsidian/ObsidianA</uiIconPath>
     <hideAtSnowDepth>0.9</hideAtSnowDepth>
     <fillPercent>0.4</fillPercent>
     <statBases>
@@ -24,8 +25,8 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>ObsidianShard</mineableThing>
-      <mineableYield>40</mineableYield>
+      <mineableThing>CrushedStone</mineableThing>
+      <mineableYield>10</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -34,10 +35,10 @@
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>1</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.8</perMapProbability>
+    <perMapProbability>1.0</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.003</maxClusterProbability>
+    <maxClusterProbability>0.002</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>5</minClusterSize>
     <maxClusterSize>40</maxClusterSize>
@@ -83,8 +84,9 @@
         <DropProbability>0.2</DropProbability>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <ResourceDefName>ObsidianShard</ResourceDefName>
+        <DropProbability>6</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>
@@ -99,6 +101,7 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1,1)</drawSize>
     </graphicData>
+    <uiIconPath>Things/Mineral/FlintNodule/FlintNoduleA</uiIconPath>
     <altitudeLayer>Floor</altitudeLayer>
     <fillPercent>0.01</fillPercent>
     <statBases>

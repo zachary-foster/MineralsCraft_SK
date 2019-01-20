@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>ChunkAdamant</defName>
+    <label>adamantine chunk</label>
+    <graphicData>
+      <color>(49, 66, 60)</color>
+    </graphicData>
+    <statBases>
+      <Mass>50</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <BlocksAdamant>20</BlocksAdamant>  
+    </butcherProducts>
+  </ThingDef>
+
+</Defs>

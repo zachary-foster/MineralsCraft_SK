@@ -370,7 +370,7 @@
     <stuffCategories>
       <li>SharpStony</li>
     </stuffCategories>
-    <costStuffCount>10</costStuffCount>
+    <costStuffCount>5</costStuffCount>
     <costList>
       <WoodPlank>10</WoodPlank>
     </costList>
@@ -487,7 +487,7 @@
     <stuffCategories>
       <li>SharpStony</li>
     </stuffCategories>
-    <costStuffCount>15</costStuffCount>
+    <costStuffCount>10</costStuffCount>
     <costList>
       <WoodPlank>15</WoodPlank>
     </costList>
@@ -588,9 +588,9 @@
     <stuffCategories>
       <li>SharpStony</li>
     </stuffCategories>
-    <costStuffCount>50</costStuffCount>
+    <costStuffCount>40</costStuffCount>
     <costList>
-      <WoodPlank>30</WoodPlank>
+      <WoodPlank>40</WoodPlank>
     </costList>
     <recipeMaker>
       <workSpeedStat>SmithingSpeed</workSpeedStat>
