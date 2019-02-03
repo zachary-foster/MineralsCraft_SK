@@ -4,7 +4,7 @@
   <ThingDef Name="WeatheredAdamant" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredAdamant</defName>
     <label>Weathered Adamant</label>
-    <description>Large masses of eroded Adamant.</description>
+    <description>Large masses of eroded Adamant, a mysterious and incredibly hard stone. Little is known about the origins of this rare rock and the best glitterworld minerologists have not found a way to explain its formation. Some speculate that the nodes of adamant scattered around this solar system are the remnants of planetary-scale alien structures that were destroyed around the time this solar system begin forming. Adamant is difficult to mine and craft with, but can be used to make very strong walls, beautiful floors, and deadly arrows. However, it is also rare and valuable, so possession of even a little adamant can attract significant interest.</description>
     <graphicData>
       <shaderType>CutoutComplex</shaderType>
       <texPath>Things/Rock/WeatheredGranite</texPath>
@@ -17,9 +17,9 @@
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
     <statBases>
-      <MaxHitPoints>5000</MaxHitPoints>
+      <MaxHitPoints>6000</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>1</Beauty>
+      <Beauty>3</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -41,10 +41,10 @@
     <perMapProbability>0.3</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.001</maxClusterProbability>
+    <maxClusterProbability>0.0005</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>5</minClusterSize>
-    <maxClusterSize>20</maxClusterSize>
+    <maxClusterSize>25</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>1</initialSizeMin>
     <initialSizeMax>1</initialSizeMax>
@@ -73,6 +73,7 @@
       <li>WeatheredMarble</li>
       <li>WeatheredSandstone</li>
       <li>WeatheredSlate</li>
+      <li>HewnAdamant</li>
     </ThingsToReplace>
     <!-- If it replaces everything -->
     <replaceAll>false</replaceAll>
@@ -91,7 +92,7 @@
   <ThingDef Name="HewnAdamant" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>HewnAdamant</defName>
     <label>Hewn Adamant</label>
-    <description>Hewn wall of solid Adamant. Adamant is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
+    <description>Large masses of hewn Adamant, a mysterious and incredibly hard stone. Little is known about the origins of this rare rock and the best glitterworld minerologists have not found a way to explain its formation. Some speculate that the nodes of adamant scattered around this solar system are the remnants of planetary-scale alien structures that were destroyed around the time this solar system begin forming. Adamant is difficult to mine and craft with, but can be used to make very strong walls, beautiful floors, and deadly arrows. However, it is also rare and valuable, so possession of even a little adamant can attract significant interest.</description>
     <graphicData>
 			<texPath>Things/Rock/HewnRockWall</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -114,9 +115,9 @@
       <color>(49, 66, 60)</color>
     </graphicData>
     <statBases>
-      <MaxHitPoints>7000</MaxHitPoints>
+      <MaxHitPoints>8000</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-1</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -150,8 +151,6 @@
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
 		</allowedTerrains>
-    <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>1.7</min>
@@ -200,7 +199,7 @@
   <ThingDef Name="SolidAdamant" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidAdamant</defName>
     <label>Solid Adamant</label>
-    <description>A solid wall of Adamant.</description>
+    <description>Large masses of solid Adamant, a mysterious and incredibly hard stone. Little is known about the origins of this rare rock and the best glitterworld minerologists have not found a way to explain its formation. Some speculate that the nodes of adamant scattered around this solar system are the remnants of planetary-scale alien structures that were destroyed around the time this solar system begin forming. Adamant is difficult to mine and craft with, but can be used to make very strong walls, beautiful floors, and deadly arrows. However, it is also rare and valuable, so possession of even a little adamant can attract significant interest.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -212,9 +211,9 @@
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
-      <MaxHitPoints>6000</MaxHitPoints>
+      <MaxHitPoints>7000</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-1</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -288,7 +287,7 @@
     </tags>
   </ThingDef>
   
-
+<!--
   <RecipeDef ParentName="MakeStoneBlocksBase">
     <defName>Make_StoneBlocksAdamant</defName>
     <label>Make Adamantine Blocks</label>
@@ -312,5 +311,6 @@
       <BlocksAdamant>20</BlocksAdamant>
     </products>
   </RecipeDef>
+-->
 
 </Defs>

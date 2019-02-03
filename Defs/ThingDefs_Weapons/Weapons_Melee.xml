@@ -35,14 +35,14 @@
     </recipeMaker>
     <statBases>
       <WorkToMake>10000</WorkToMake>
-      <Bulk>1.0</Bulk>
-      <Mass>0.8</Mass>
-      <MeleeCounterParryBonus>2</MeleeCounterParryBonus>
+      <Bulk>0.5</Bulk>
+      <Mass>0.5</Mass>
+      <MeleeCounterParryBonus>1.8</MeleeCounterParryBonus>
       <MaxHitPoints>120</MaxHitPoints>
     </statBases>
     <equippedAngleOffset>-45</equippedAngleOffset>
     <equippedStatOffsets>
-      <MoveSpeed>-0.04</MoveSpeed>
+      <MoveSpeed>-0.03</MoveSpeed>
       <WorkSpeedGlobal>-0.03</WorkSpeedGlobal>
       <CookSpeed>0.2</CookSpeed>
       <ButcheryFleshSpeed>0.2</ButcheryFleshSpeed>
@@ -55,6 +55,7 @@
     <weaponTags>
       <li>NorbalHeroMelee</li>
       <li>MedievalMelee</li>
+      <li>CE_Sidearm_Melee</li>
       <li>CE_OneHandedWeapon</li>
     </weaponTags>
     <tools>
@@ -64,7 +65,7 @@
           <li>Blunt</li>
         </capacities>
         <power>7</power>
-        <cooldownTime>1.2</cooldownTime>
+        <cooldownTime>1.0</cooldownTime>
         <armorPenetration>0.1</armorPenetration>
         <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
       </li>
@@ -92,8 +93,10 @@
     <thingCategories>
       <li>AgileMelee</li>
       <li>SharpMelee</li>
+      <li>Tools</li>
     </thingCategories>
   </Verse.ThingDef>
+  
   <WeaponExtensionDef>
     <defName>WeaponExtensionDef_MeleeWeapon_RoyalKnife</defName>
     <label>WeaponExtensionDef_MeleeWeapon_RoyalKnife</label>
@@ -157,7 +160,7 @@
       <WorkToMake>13000</WorkToMake>
       <Bulk>9.0</Bulk>
       <Mass>4.0</Mass>
-      <MeleeCounterParryBonus>0.85</MeleeCounterParryBonus>
+      <MeleeCounterParryBonus>0.8</MeleeCounterParryBonus>
       <MaxHitPoints>150</MaxHitPoints>
     </statBases>
     <equippedAngleOffset>-45</equippedAngleOffset>
@@ -165,7 +168,7 @@
       <MoveSpeed>-0.09</MoveSpeed>
       <WorkSpeedGlobal>-0.07</WorkSpeedGlobal>
       <MeleeCritChance>1</MeleeCritChance>
-      <MeleeParryChance>0.75</MeleeParryChance>
+      <MeleeParryChance>0.7</MeleeParryChance>
       <SocialImpact>0.07</SocialImpact>
       <MentalBreakThreshold>-0.03</MentalBreakThreshold>
     </equippedStatOffsets>
@@ -191,9 +194,9 @@
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>16</power>
+        <power>18</power>
         <cooldownTime>1.6</cooldownTime>
-        <armorPenetration>0.25</armorPenetration>
+        <armorPenetration>0.35</armorPenetration>
         <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
       </li>
       <li Class="CombatExtended.ToolCE">
@@ -201,7 +204,7 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>18</power>
+        <power>20</power>
         <cooldownTime>1.6</cooldownTime>
         <armorPenetration>0.30</armorPenetration>
         <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
@@ -276,7 +279,7 @@
       <WorkToMake>15000</WorkToMake>
       <Bulk>11.0</Bulk>
       <Mass>7.0</Mass>
-      <MeleeCounterParryBonus>0.85</MeleeCounterParryBonus>
+      <MeleeCounterParryBonus>0.8</MeleeCounterParryBonus>
       <MaxHitPoints>160</MaxHitPoints>
     </statBases>
     <equippedAngleOffset>-45</equippedAngleOffset>
@@ -299,9 +302,9 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>15</power>
-        <cooldownTime>2.1</cooldownTime>
-        <armorPenetration>0.15</armorPenetration>
+        <power>25</power>
+        <cooldownTime>2.0</cooldownTime>
+        <armorPenetration>0.2</armorPenetration>
         <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
       </li>
       <li Class="CombatExtended.ToolCE">
@@ -309,9 +312,9 @@
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>15</power>
+        <power>20</power>
         <cooldownTime>2.1</cooldownTime>
-        <armorPenetration>0.25</armorPenetration>
+        <armorPenetration>0.3</armorPenetration>
         <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
       </li>
       <li Class="CombatExtended.ToolCE">
@@ -319,7 +322,7 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>27</power>
+        <power>30</power>
         <cooldownTime>2.1</cooldownTime>
         <armorPenetration>0.35</armorPenetration>
         <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
@@ -337,9 +340,9 @@
     <weapon>MeleeWeapon_RoyalBattleAxe</weapon>
     <attackAngleOffset IsNull="True"/>
     <weaponPositionOffset>
-      <x>0.05</x>
+      <x>0.07</x>
       <y>0</y>
-      <z>0.1</z>
+      <z>0.12</z>
     </weaponPositionOffset>
     <aimedWeaponPositionOffset>
       <x>0</x>
@@ -358,7 +361,7 @@
     </secondHandPosition>
   </WeaponExtensionDef>
   
-  <Verse.ThingDef ParentName="BaseMeleeWeapon">
+  <Verse.ThingDef ParentName="SK_BaseMeleeWeapon">
     <defName>MeleeWeapon_TribalKnife</defName>
     <label>Tribal Knife</label>
     <description>A knife made from crafted wood and sharp rock, like flint or obsidian, and bound with strips of animal hide. A useful tool and very sharp, but too brittle to parry a blow.</description>
@@ -389,8 +392,8 @@
     </recipeMaker>
     <statBases>
       <WorkToMake>2000</WorkToMake>
-      <Bulk>0.60</Bulk>
-      <Mass>0.30</Mass>
+      <Bulk>0.50</Bulk>
+      <Mass>0.20</Mass>
       <MeleeCounterParryBonus>1.5</MeleeCounterParryBonus>
       <MaxHitPoints>100</MaxHitPoints>
     </statBases>
@@ -399,14 +402,15 @@
       <MoveSpeed>-0.02</MoveSpeed>
       <WorkSpeedGlobal>-0.02</WorkSpeedGlobal>
       <CookSpeed>0.2</CookSpeed>
-      <ButcheryFleshSpeed>0.2</ButcheryFleshSpeed>
-      <MeleeCritChance>0.6</MeleeCritChance>
+      <ButcheryFleshSpeed>0.25</ButcheryFleshSpeed>
+      <MeleeCritChance>0.5</MeleeCritChance>
       <MeleeDodgeChance>0.2</MeleeDodgeChance>
     </equippedStatOffsets>
     <techLevel>Industrial</techLevel>
     <weaponTags>
       <li>Neolithic</li>
       <li>NeolithicMeleeBasic</li>
+      <li>CE_Sidearm_Melee</li>
       <li>CE_OneHandedWeapon</li>
     </weaponTags>
     <tradeability>Sellable</tradeability>
@@ -427,8 +431,8 @@
           <li>Cut</li>
         </capacities>
         <power>9</power>
-        <cooldownTime>1.15</cooldownTime>
-        <armorPenetration>0.15</armorPenetration>
+        <cooldownTime>1.1</cooldownTime>
+        <armorPenetration>0.10</armorPenetration>
         <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
       </li>
       <li Class="CombatExtended.ToolCE">
@@ -437,8 +441,8 @@
           <li>Stab</li>
         </capacities>
         <power>12</power>
-        <cooldownTime>1.15</cooldownTime>
-        <armorPenetration>0.16</armorPenetration>
+        <cooldownTime>1.1</cooldownTime>
+        <armorPenetration>0.12</armorPenetration>
         <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
       </li>
     </tools>
@@ -476,7 +480,7 @@
     </secondHandPosition>
   </WeaponExtensionDef>
   
-  <ThingDef ParentName="BaseMeleeWeapon">
+  <ThingDef ParentName="SK_BaseMeleeWeapon">
     <defName>MeleeWeapon_TribalAxe</defName>
     <label>Tribal Handaxe</label>
     <description>A handaxe made of wood and sharp stone and bound with leather cords. Useful for cutting vegetation. A bit too fragil for effective defense.</description>
@@ -506,7 +510,7 @@
     </recipeMaker>
     <statBases>
       <WorkToMake>3000</WorkToMake>
-      <Mass>3.5</Mass>
+      <Mass>2.5</Mass>
       <Bulk>3.5</Bulk>
       <MaxHitPoints>100</MaxHitPoints>
     </statBases>
@@ -524,7 +528,7 @@
           <li>Blunt</li>
         </capacities>
         <power>7</power>
-        <cooldownTime>1.8</cooldownTime>
+        <cooldownTime>1.7</cooldownTime>
         <armorPenetration>0.06</armorPenetration>
         <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
       </li>
@@ -534,14 +538,13 @@
           <li>Cut</li>
         </capacities>
         <power>11</power>
-        <cooldownTime>1.8</cooldownTime>
-        <armorPenetration>0.15</armorPenetration>
+        <cooldownTime>1.7</cooldownTime>
+        <armorPenetration>0.8</armorPenetration>
         <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
       </li>
     </tools>
     <equippedStatOffsets>
-      <MoveSpeed>-0.05</MoveSpeed>
-      <WorkSpeedGlobal>-0.03</WorkSpeedGlobal>
+      <MoveSpeed>-0.03</MoveSpeed>
       <PlantWorkSpeed>0.2</PlantWorkSpeed>
     </equippedStatOffsets>
     <thingCategories>
@@ -577,7 +580,7 @@
     </secondHandPosition>
   </WeaponExtensionDef>
   
-  <ThingDef ParentName="BaseMeleeWeapon">
+  <ThingDef ParentName="SK_BaseMeleeWeapon">
     <defName>MeleeWeapon_Macuahuitl</defName>
     <label>Macuahuitl</label>
     <description>A weapon made from a flattened wood club with many blades of sharp stone skillfully attached along each edge. Deadly in skilled hands, but delicate and cumbersome compared with metal weapons.</description>
@@ -607,8 +610,8 @@
     </recipeMaker>
     <statBases>
       <WorkToMake>6000</WorkToMake>
-      <Mass>7</Mass>
-      <Bulk>7</Bulk>
+      <Mass>4</Mass>
+      <Bulk>9</Bulk>
       <MaxHitPoints>150</MaxHitPoints>
     </statBases>
     <techLevel>Industrial</techLevel>
@@ -624,9 +627,9 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>7</power>
-        <cooldownTime>2</cooldownTime>
-        <armorPenetration>0.06</armorPenetration>
+        <power>10</power>
+        <cooldownTime>1.8</cooldownTime>
+        <armorPenetration>0.1</armorPenetration>
         <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
       </li>
       <li Class="CombatExtended.ToolCE">
@@ -634,9 +637,9 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>15</power>
-        <cooldownTime>2</cooldownTime>
-        <armorPenetration>0.2</armorPenetration>
+        <power>19</power>
+        <cooldownTime>1.8</cooldownTime>
+        <armorPenetration>0.15</armorPenetration>
         <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
       </li>
     </tools>

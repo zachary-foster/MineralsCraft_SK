@@ -3,9 +3,10 @@ MineralsCraft\_SK: A rimworld mod for the [Hardcore SK project](https://github.c
 
 ![](About/Preview.jpg)
 
-This mod adds various mineral-related content. For example, it adds
-various minable crystals underground, obsidian and flint for weapons,
-and living coldstone and glowstone crystals.
+This mod is an extension of
+[Minerals\_SK](https://github.com/zachary-foster/Minerals_SK) and must
+come after it in the load order. It adds way to use minerals for
+crafting and adds a few new resource minerals.
 
 New Resource minerals
 ---------------------
@@ -29,6 +30,8 @@ over.
 ![](Textures/Things/Mineral/Obsidian/ObsidianC.png)
 ![](Textures/Things/Mineral/Obsidian/ObsidianD.png)
 
+![](readme_images/Obsidian.jpg)
+
 ### Flint Nodule
 
 Formations of microcrystalline silicon dioxide found in sedimentary
@@ -44,6 +47,18 @@ knifes, handaxes, and arrowheads.
 ![](Textures/Things/Mineral/FlintNodule/FlintNoduleC.png)
 ![](Textures/Things/Mineral/FlintNodule/FlintNoduleD.png)
 
+### Adamant
+
+Adamant is a mysterious and incredibly hard stone. Little is known about
+the origins of this rare rock and the best glitterworld minerologists
+have not found a way to explain its formation. Some speculate that the
+nodes of adamant scattered around this solar system are the remnants of
+planetary-scale alien structures that were destroyed around the time
+this solar system begin forming. Adamant is difficult to mine and craft
+with, but can be used to make very strong walls, beautiful floors, and
+deadly arrows. However, it is also rare and valuable, so possession of
+even a little adamant can attract significant interest.
+
 Cutting gems
 ------------
 
@@ -52,16 +67,32 @@ can be cut into gems to be used for some crafting recipes or sold to
 traders. Gems are particularly light and valuable, making them excellent
 for trading and attracting raiders.
 
-Obsidian/Flint crafting
------------------------
+Fire starting
+-------------
+
+Steel, kindling, fabirc, and a sharp stone like obsidian or flint can be
+used to make a fire starting kit that can be used to start fires
+anywhere.
+
+Neolithic crafting
+------------------
 
 Flint and obsidian can be used to make "tribal" tools like knives and
 handaxes. They have decent armor penetration, but are very brittle, so
 tools will get destroyed often when used for self defense. Flint and
-obsidian arrows are better than standard stone arrows but not as good as
-metal arrows.
+obsidian arrows are much better than standard stone arrows against
+unarmored foes. Adamant can also be used to make arrows that have much
+higher armor penetration.
 
 ![](readme_images/NeolithicCrafting.jpg)
+
+Medieval crafting
+-----------------
+
+Precious metals and cut gems can be used to powerful royal weapons like
+knives, swords, and battleaxes. These are stronger than their unjewled
+analogs and provide a small social and mental break boost, but they are
+heavy, expensive, and difficult to craft.
 
 Installation
 ------------
@@ -175,3 +206,4 @@ non-commercial reuse. Here are the list of images used:
 -   <https://www.flickr.com/photos/98425334@N00/130957324/>
 -   <https://commons.wikimedia.org/wiki/File:River_side_pebbles_and_rocks.jpg>
     Shashank ghosh
+-   <https://commons.wikimedia.org/wiki/File:Box,_gift_(AM_1963.90-2).jpg>

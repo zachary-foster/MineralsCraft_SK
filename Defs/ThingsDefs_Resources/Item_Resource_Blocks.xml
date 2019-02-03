@@ -4,12 +4,12 @@
         <ThingDef ParentName="SK_StoneBlocksBase">
                 <defName>BlocksAdamant</defName>
                 <label>adamantine blocks</label>
-                <description>Blocks of solid adamant.</description>
+                <description>Blocks of solid adamant, a very hard and beautiful stone. They are difficult to build with, but the resulting structures will be very strong and resist sharp damage well.</description>
                 <graphicData>
                         <color>(49, 66, 60)</color>
                 </graphicData>
                 <statBases>
-                        <MarketValue>100</MarketValue>
+                        <MarketValue>50</MarketValue>
                         <Mass>2</Mass>
                         <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
                 </statBases>

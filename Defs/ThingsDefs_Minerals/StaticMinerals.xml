@@ -20,6 +20,7 @@
       <Beauty>10</Beauty>
     </statBases>
     <pathCost>150</pathCost>
+    <passability>PassThroughOnly</passability>
     <building>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
@@ -38,7 +39,7 @@
     <perMapProbability>1.0</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.002</maxClusterProbability>
+    <maxClusterProbability>0.0025</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>5</minClusterSize>
     <maxClusterSize>40</maxClusterSize>
@@ -52,15 +53,6 @@
       <li>LavaRock_Rough</li>
       <li>LavaRock_RoughHewn</li>
     </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>LavaRock_Rough</li>
-      <li>LavaRock_RoughHewn</li>
-    </neededNearbyTerrains>
-    <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
-    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
-    <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -85,8 +77,8 @@
       </li>
       <li>
         <ResourceDefName>ObsidianShard</ResourceDefName>
-        <DropProbability>6</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <DropProbability>5</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>
@@ -115,8 +107,8 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>FlintShard</mineableThing>
-      <mineableYield>30</mineableYield>
+      <mineableThing>CrushedStone</mineableThing>
+      <mineableYield>10</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -143,16 +135,6 @@
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
     </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Limestone_Rough</li>
-      <li>Sandstone_Rough</li>
-      <li>Slate_Rough</li>
-    </neededNearbyTerrains>
-    <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
-    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
-    <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -169,10 +151,13 @@
     <visualSpread>0.8</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.2</visualSizeVariation>
-    <!-- The amount of resource returned if the mineral is its maximum size -->
-    <maxMinedYeild>30</maxMinedYeild>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
+      <li>
+        <ResourceDefName>FlintShard</ResourceDefName>
+        <DropProbability>3</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.3</DropProbability>

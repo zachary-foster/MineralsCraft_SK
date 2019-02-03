@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+    <Verse.ThingDef ParentName="SK_BaseGun">
+        <defName>FireStartingKit</defName>
+        <label>Fire starting kit</label>
+        <description>A primitave firestarting kit. It is works well, given enough time.</description>
+        <graphicData>
+            <texPath>Things/Weapons/FireStartingKit/FireStartingKit</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Grenade</soundInteract>
+        <stuffCategories>
+          <li>SharpStony</li>
+        </stuffCategories>
+        <costStuffCount>20</costStuffCount>
+        <costList>
+          <Plasteel>40</Plasteel>
+        </costList>
+        <tradeability>Sellable</tradeability>
+        <recipeMaker>
+          <workSpeedStat>SmithingSpeed</workSpeedStat>
+          <workSkill>Crafting</workSkill>
+          <effectWorking>Smith</effectWorking>
+          <soundWorking>Recipe_Smith</soundWorking>
+          <recipeUsers>
+            <li>CraftingSpot</li>
+            <li>FueledSmithy</li>
+          </recipeUsers>
+          <skillRequirements>
+            <Crafting>4</Crafting>
+          </skillRequirements>
+          <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+        </recipeMaker>
+        <statBases>
+            <MarketValue>50</MarketValue>
+            <SightsEfficiency>1.0</SightsEfficiency>
+            <ShotSpread>0.05</ShotSpread>
+            <SwayFactor>1.0</SwayFactor>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+            <Bulk>1</Bulk>
+            <Mass>1</Mass>
+            <WorkToMake>3000</WorkToMake>
+        </statBases>
+        <weaponTags>
+          <li>Utility</li>
+        </weaponTags>
+        <thingCategories>
+          <li>SpecialWeapons</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <circularError>0.1</circularError>
+                <defaultProjectile>Projectile_FirestartingSpark</defaultProjectile>
+                <ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+                <warmupTime>7.0</warmupTime>
+                <burstShotCount>1</burstShotCount>
+                <range>1.5</range>
+                <muzzleFlashScale>2</muzzleFlashScale>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <onlyManualCast>true</onlyManualCast>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>40</magazineSize>
+                <reloadTime>2</reloadTime>
+                <ammoSet>AmmoSet_Firestarter</ammoSet>
+            </li>
+            <li Class="WHands.WhandCompProps">
+                <MainHand>(-0.3,0.3,-0.05)</MainHand>
+                <SecHand>(0.2,0,-0.05)</SecHand>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Kindling>15</Kindling>
+            <Plasteel>4</Plasteel>
+        </smeltProducts>
+    </Verse.ThingDef>
+
+  <WeaponExtensionDef>
+    <defName>WeaponExtensionDef_FireStartingKit</defName>
+    <label>WeaponExtensionDef_FireStartingKit</label>
+    <weapon>FireStartingKit</weapon>
+    <attackAngleOffset IsNull="True"/>
+    <weaponPositionOffset>
+      <x>0.04402516</x>
+      <y>0</y>
+      <z>0</z>
+    </weaponPositionOffset>
+    <aimedWeaponPositionOffset>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </aimedWeaponPositionOffset>
+    <firstHandPosition>
+      <x>-0.1</x>
+      <y>0</y>
+      <z>0.02</z>
+    </firstHandPosition>
+    <secondHandPosition>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </secondHandPosition>
+  </WeaponExtensionDef>
+
+</Defs>
