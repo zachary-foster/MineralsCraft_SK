@@ -35,6 +35,9 @@
       <WorkToBuild>2000</WorkToBuild>
       <Beauty>6</Beauty>
     </statBases>
+		<researchPrerequisites>
+			<li>FloorArtIV</li>
+		</researchPrerequisites>
 		<costList>
 			<BlocksAdamant>4</BlocksAdamant>
 		</costList>
@@ -87,6 +90,9 @@
       <WorkToBuild>2000</WorkToBuild>
       <Beauty>6</Beauty>
     </statBases>
+		<researchPrerequisites>
+			<li>FloorArtIV</li>
+		</researchPrerequisites>
 		<costList>
 			<BlocksAdamant>4</BlocksAdamant>
 		</costList>
@@ -124,14 +130,14 @@
 		<color>(49, 66, 60)</color>
 		<renderPrecedence>269</renderPrecedence>
 		<description>Adamantine paving with hexagonal tiles.
-Beauty: 6.</description>
+Beauty: 8.</description>
 		<texturePath>Terrain/Surfaces/StoneHex</texturePath>
 		<researchPrerequisites>
 			<li>FloorArtIV</li>
 		</researchPrerequisites>
 		<statBases>
       <WorkToBuild>2000</WorkToBuild>
-			<Beauty>6</Beauty>
+			<Beauty>8</Beauty>
 		</statBases>
 		<costList>
 			<BlocksAdamant>4</BlocksAdamant>
@@ -145,14 +151,14 @@ Beauty: 6.</description>
 		<color>(49, 66, 60)</color>
 		<renderPrecedence>268</renderPrecedence>
 		<description>Adamantine paving with a light/dark mosaic. 
-Beauty: 6.</description>
+Beauty: 8.</description>
 		<texturePath>Terrain/Surfaces/StoneMosaic</texturePath>
 		<researchPrerequisites>
 			<li>FloorArtIV</li>
 		</researchPrerequisites>
 		<statBases>
       <WorkToBuild>2000</WorkToBuild>
-			<Beauty>6</Beauty>
+			<Beauty>8</Beauty>
 		</statBases>
 		<costList>
 			<BlocksAdamant>4</BlocksAdamant>
@@ -169,7 +175,7 @@ Beauty: 6.</description>
 Beauty: 6.</description>
 		<texturePath>Terrain/Surfaces/StoneRough</texturePath>
 		<researchPrerequisites>
-			<li>FloorArt</li>
+			<li>FloorArtII</li>
 		</researchPrerequisites>
 		<statBases>
       <WorkToBuild>2000</WorkToBuild>
@@ -187,14 +193,14 @@ Beauty: 6.</description>
 		<color>(49, 66, 60)</color>
 		<renderPrecedence>266</renderPrecedence>
 		<description>Stone paving with random square and rectangular slabs.
-Beauty: 6.</description>
+Beauty: 8.</description>
 		<texturePath>Terrain/Surfaces/StoneRandom</texturePath>
 		<researchPrerequisites>
-			<li>FloorArtII</li>
+			<li>FloorArtIV</li>
 		</researchPrerequisites>
 		<statBases>
       <WorkToBuild>2000</WorkToBuild>
-			<Beauty>6</Beauty>
+			<Beauty>8</Beauty>
 		</statBases>		
 		<costList>
 			<BlocksAdamant>4</BlocksAdamant>
@@ -207,7 +213,7 @@ Beauty: 6.</description>
 		<label>Rough Adamant</label>
 		<renderPrecedence>190</renderPrecedence>
 		<description>Adamant eroded by the elements.
-Beauty: 1.</description>
+Beauty: 4.</description>
 		<texturePath>Terrain/Surfaces/RoughStone</texturePath>
 		<edgeType>Fade</edgeType>
 		<pathCost>0</pathCost>
@@ -217,8 +223,11 @@ Beauty: 1.</description>
 		<fertility>0</fertility>
 		<statBases>
       <WorkToBuild>1000</WorkToBuild>
-			<Beauty>1</Beauty>
+			<Beauty>4</Beauty>
 		</statBases>
+		<researchPrerequisites>
+			<li>FloorArtII</li>
+		</researchPrerequisites>
 		<costList>
 			<BlocksAdamant>3</BlocksAdamant>
 		</costList>
@@ -238,19 +247,122 @@ Beauty: 1.</description>
 		<color>(49, 66, 60)</color>
 		<renderPrecedence>270</renderPrecedence>
 		<description>Adamantine flooring made with square slabs. 
-Beauty: 6.</description>
+Beauty: 8.</description>
 		<texturePath>Terrain/Surfaces/StoneSlabs</texturePath>
 		<researchPrerequisites>
-			<li>FloorArtIII</li>
+			<li>FloorArtIV</li>
 		</researchPrerequisites>
 		<statBases>
       <WorkToBuild>2000</WorkToBuild>
-			<Beauty>6</Beauty>
+			<Beauty>8</Beauty>
 		</statBases>
 		<costList>
 			<BlocksAdamant>4</BlocksAdamant>
 		</costList>
 		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+	
+	
+	<!-- Fossil floors -->
+	
+	<TerrainDef Name="FossilFloorBase" ParentName="SK_TileStoneBase" Abstract="True" >
+		<renderPrecedence>270</renderPrecedence>
+		<description>Flooring made with square slabs of rough rock containing fossils of long dead sea creatures. It is very beautiful and can be smoothed. 
+Beauty: 8.</description>
+		<researchPrerequisites>
+			<li>FloorArtIII</li>
+		</researchPrerequisites>
+		<statBases>
+      <WorkToBuild>2000</WorkToBuild>
+			<Beauty>8</Beauty>
+		</statBases>
+		<costList>
+			<SmallFossil>1</SmallFossil>
+		</costList>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+
+	<TerrainDef Name="FossilFloorSmoothedBase" ParentName="FossilFloorBase" Abstract="True" >
+		<description>Flooring made with square slabs of smoothed rock constaining fossils of long dead sea creatures. It is very beautiful. 
+Beauty: 10.</description>
+		<researchPrerequisites>
+			<li>FloorArtIV</li>
+		</researchPrerequisites>
+		<statBases>
+      <WorkToBuild>4000</WorkToBuild>
+			<Beauty>10</Beauty>
+		</statBases>
+	</TerrainDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+    <defName>SubCategory_FossilSlabs</defName>
+    <label>fossil stone slabs</label>
+    <description>Stone flooring made with square slabs of rough rock with embedded fossils. Can be smoothed.</description>
+    <defNames>
+      <li>FossilFloorSandstone</li>
+      <li>FossilFloorLimestone</li>
+      <li>FossilFloorSlate</li>
+    </defNames>
+    <designationCategory>NaturalFloors</designationCategory>
+    <debug>false</debug>
+  </ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+    <defName>SubCategory_FossilSlabsSmoothed</defName>
+    <label>smoothed fossil stone slabs</label>
+    <description>Stone flooring made with smooth square slabs of rock with embedded fossils.</description>
+    <defNames>
+      <li>FossilFloorSandstoneSmoothed</li>
+      <li>FossilFloorLimestoneSmoothed</li>
+      <li>FossilFloorSlateSmoothed</li>
+    </defNames>
+    <designationCategory>NaturalFloors</designationCategory>
+    <debug>false</debug>
+  </ArchitectSense.DesignationSubCategoryDef>
+  
+	<TerrainDef ParentName="FossilFloorBase">
+		<defName>FossilFloorSandstone</defName>
+		<label>sandstone slabs with fossils</label>
+		<texturePath>Terrain/Surfaces/RoughFossilFlooring</texturePath>
+		<smoothedTerrain>FossilFloorSandstoneSmoothed</smoothedTerrain>
+		<color>(126,104,94)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FossilFloorBase">
+		<defName>FossilFloorLimestone</defName>
+		<label>limestone slabs with fossils</label>
+		<texturePath>Terrain/Surfaces/RoughFossilFlooring</texturePath>
+		<smoothedTerrain>FossilFloorLimestoneSmoothed</smoothedTerrain>
+		<color>(158,153,135)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FossilFloorBase">
+		<defName>FossilFloorSlate</defName>
+		<label>slate slabs with fossils</label>
+		<texturePath>Terrain/Surfaces/RoughFossilFlooring</texturePath>
+		<smoothedTerrain>FossilFloorSlateSmoothed</smoothedTerrain>
+		<color>(70,70,70)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FossilFloorSmoothedBase">
+		<defName>FossilFloorSandstoneSmoothed</defName>
+		<label>smoothed sandstone slabs with fossils</label>
+		<texturePath>Terrain/Surfaces/SmoothFossilFlooring</texturePath>
+		<color>(126,104,94)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FossilFloorSmoothedBase">
+		<defName>FossilFloorLimestoneSmoothed</defName>
+		<label>smoothed limestone slabs with fossils</label>
+		<texturePath>Terrain/Surfaces/SmoothFossilFlooring</texturePath>
+		<color>(158,153,135)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FossilFloorSmoothedBase">
+		<defName>FossilFloorSlateSmoothed</defName>
+		<label>smoothed slate slabs with fossils</label>
+		<texturePath>Terrain/Surfaces/SmoothFossilFlooring</texturePath>
+		<color>(70,70,70)</color>
 	</TerrainDef>
 
 </Defs>

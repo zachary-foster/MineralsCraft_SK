@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName = "MechWeaponCraftingWorkTable"]/costList</xpath>
+	  <value>
+      <CutUltrahardGem>3</CutUltrahardGem>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName = "Matterfab"]/costList</xpath>
+	  <value>
+      <CutUltrahardGem>5</CutUltrahardGem>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName = "ThermoelectricGenerator"]/costList</xpath>
+	  <value>
+      <CutUltrahardGem>3</CutUltrahardGem>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName = "RareExtractor"]/costList</xpath>
+	  <value>
+      <RoughUltrahardGem>3</RoughUltrahardGem>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName = "FissureGenerator"]/costList</xpath>
+	  <value>
+      <RoughUltrahardGem>1</RoughUltrahardGem>
+	  </value>
+	</Operation>
+
+</Patch>

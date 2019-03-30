@@ -33,6 +33,9 @@
     <tradeTags>
       <li>CE_AutoEnableTrade</li>
     </tradeTags>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
   </ThingDef>
   
   <ThingDef ParentName="SK_BaseBullet">
@@ -70,7 +73,7 @@
             <li>Kindling</li>
           </thingDefs>
         </filter>
-        <count>20</count>
+        <count>40</count>
       </li>
       <li>
         <filter>
@@ -78,7 +81,7 @@
             <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>5</count>
+        <count>10</count>
       </li>
       <li>
         <filter>
@@ -86,7 +89,7 @@
             <li>SharpStony</li>
           </categories>
         </filter>
-        <count>5</count>
+        <count>10</count>
       </li>
       <li>
         <filter>
@@ -94,7 +97,7 @@
             <li>BTextiles</li>
           </categories>
         </filter>
-        <count>5</count>
+        <count>10</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>

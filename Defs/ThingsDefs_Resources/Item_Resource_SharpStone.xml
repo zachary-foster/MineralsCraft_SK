@@ -16,7 +16,7 @@
       <MarketValue>5</MarketValue>
       <DeteriorationRate>0</DeteriorationRate>
       <Flammability>0</Flammability>
-      <Mass>1</Mass>
+      <Mass>0.2</Mass>
       <Beauty>1</Beauty>
       <SharpDamageMultiplier>1.1</SharpDamageMultiplier>
     </statBases>
@@ -67,7 +67,7 @@
       <MarketValue>5</MarketValue>
       <DeteriorationRate>0</DeteriorationRate>
       <Flammability>0</Flammability>
-      <Mass>1</Mass>
+      <Mass>0.2</Mass>
       <Beauty>1</Beauty>
       <SharpDamageMultiplier>1.1</SharpDamageMultiplier>
     </statBases>

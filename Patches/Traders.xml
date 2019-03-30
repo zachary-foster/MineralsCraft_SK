@@ -4,7 +4,7 @@
 
 
 	<Operation Class="PatchOperationAdd">
-	  <xpath>*/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators</xpath>
+	  <xpath>Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators</xpath>
 	  <value>
       <li Class="StockGenerator_Category">
         <categoryDef>SharpStony</categoryDef>
@@ -22,7 +22,7 @@
 
 
 	<Operation Class="PatchOperationAdd">
-	  <xpath>*/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators</xpath>
+	  <xpath>Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators</xpath>
 	  <value>
       <li Class="StockGenerator_Category">
         <categoryDef>SharpStony</categoryDef>
@@ -41,7 +41,7 @@
 	
 	
 	<Operation Class="PatchOperationAdd">
-	  <xpath>*/TraderKindDef[defName = "Visitor_Neolithic_Standard"]/stockGenerators</xpath>
+	  <xpath>Defs/TraderKindDef[defName = "Visitor_Neolithic_Standard"]/stockGenerators</xpath>
 	  <value>
       <li Class="StockGenerator_Category">
         <categoryDef>SharpStony</categoryDef>

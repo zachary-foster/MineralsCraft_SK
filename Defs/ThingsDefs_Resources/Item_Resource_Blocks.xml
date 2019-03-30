@@ -9,23 +9,26 @@
                         <color>(49, 66, 60)</color>
                 </graphicData>
                 <statBases>
-                        <MarketValue>50</MarketValue>
-                        <Mass>2</Mass>
+                        <MarketValue>40</MarketValue>
+                        <Mass>2.5</Mass>
                         <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
+                        <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
                 </statBases>
                 <stuffProps>
                         <color>(49, 66, 60)</color>
-                        <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+                        <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
                         <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
                         <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
                         <stuffAdjective>adamantine</stuffAdjective>
                         <statFactors>
                                 <Beauty>5.0</Beauty>  
-                                <MarketValue>10.0</MarketValue>
-                                <MaxHitPoints>4.0</MaxHitPoints>
+                                <MarketValue>5.0</MarketValue>
+                                <MaxHitPoints>5.0</MaxHitPoints>
                                 <WorkToBuild>50.0</WorkToBuild>
                                 <WorkToMake>5.0</WorkToMake>
-                                <Mass>2</Mass>
+                                <Mass>2.5</Mass>
+                                <DoorOpenSpeed>0.3</DoorOpenSpeed>
+                                <Cleanliness>0.5</Cleanliness>
                         </statFactors>
                 </stuffProps>
         </ThingDef>

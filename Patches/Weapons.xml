@@ -3,37 +3,16 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-	  <xpath>*/RecipeDef[defName = "MakeLaser_Component"]/ingredients</xpath>
+	  <xpath>Defs/RecipeDef[defName = "MakeLaser_Component"]/ingredients</xpath>
 	  <value>
       <li>
         <filter>
           <thingDefs>
-            <li>CutGem</li>
+            <li>CutUltrahardGem</li>
           </thingDefs>
         </filter>
         <count>1</count>
       </li>
-	  </value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-	  <xpath>*/ThingDef[defName = "MechWeaponCraftingWorkTable"]/costList</xpath>
-	  <value>
-      <CutGem>3</CutGem>
-	  </value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-	  <xpath>*/ThingDef[defName = "Matterfab"]/costList</xpath>
-	  <value>
-      <CutGem>5</CutGem>
-	  </value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-	  <xpath>*/ThingDef[defName = "ThermoelectricGenerator"]/costList</xpath>
-	  <value>
-      <CutGem>5</CutGem>
 	  </value>
 	</Operation>
 

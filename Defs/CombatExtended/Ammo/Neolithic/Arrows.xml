@@ -85,7 +85,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>5.0</MarketValue>
+      <MarketValue>2.0</MarketValue>
       <Mass>0.2</Mass>
     </statBases>
     <ammoClass>AdamantArrow</ammoClass>

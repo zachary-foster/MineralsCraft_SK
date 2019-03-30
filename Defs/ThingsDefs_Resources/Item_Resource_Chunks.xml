@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <ThingDef ParentName="ChunkRockBase">
+  <ThingDef ParentName="SK_ChunkRockBase">
     <defName>ChunkAdamant</defName>
     <label>adamantine chunk</label>
     <graphicData>
       <color>(49, 66, 60)</color>
+      <texPath>Things/Item/Chunk/Stone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <statBases>
-      <Mass>50</Mass>
+      <Mass>40</Mass>
+      <MarketValue>300</MarketValue>
     </statBases>
     <soundDrop>ChunkRock_Drop</soundDrop>
     <butcherProducts>
