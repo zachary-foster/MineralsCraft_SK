@@ -3,7 +3,10 @@
 <ModMetaData>
 	<name>MineralsCraft_SK</name>
 	<author>Zachary Foster</author>
-	<supportedVersions><li>1.0</li></supportedVersions>
+	<supportedVersions>
+		<li>1.1</li>
+	</supportedVersions>
+	<packageId>ZacharyFoster.MineralsCraft</packageId>
   <description>
 
 For RimWorld Hardcore SK v1
@@ -20,4 +23,9 @@ It also adds resource minerals like obsidian and flint needed to build these wea
 See: https://github.com/zachary-foster/MineralsCraft_SK for detailed documentation.
 
   </description>
+  	<loadAfter>
+		<li>skyarkhangel.HSK</li>
+		<li>skyarkhangel.NPS</li>
+		<li>ZacharyFoster.Minerals</li>
+	</loadAfter>
 </ModMetaData>

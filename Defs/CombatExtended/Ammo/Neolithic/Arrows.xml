@@ -25,7 +25,8 @@
     <label>arrow (sharp stone)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>20</damageAmountBase>
-			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<armorPenetrationSharp>1.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>2.3</armorPenetrationBlunt>
 		</projectile>
   </ThingDef>
   
@@ -96,7 +97,8 @@
     <label>arrow (adamantine)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>20</damageAmountBase>
-			<armorPenetrationBase>0.7</armorPenetrationBase>
+			<armorPenetrationSharp>1.2</armorPenetrationSharp>
+			<armorPenetrationBlunt>3.560</armorPenetrationBlunt>
 		</projectile>
   </ThingDef>
   

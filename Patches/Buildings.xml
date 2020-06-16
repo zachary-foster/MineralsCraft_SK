@@ -30,11 +30,11 @@
 	  </value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
+	<!--<Operation Class="PatchOperationAdd">
 	  <xpath>Defs/ThingDef[defName = "FissureGenerator"]/costList</xpath>
 	  <value>
       <RoughUltrahardGem>1</RoughUltrahardGem>
 	  </value>
-	</Operation>
+	</Operation>-->
 
 </Patch>

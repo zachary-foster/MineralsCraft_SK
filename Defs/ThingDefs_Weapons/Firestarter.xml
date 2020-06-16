@@ -75,10 +75,6 @@
                 <reloadTime>2</reloadTime>
                 <ammoSet>AmmoSet_Firestarter</ammoSet>
             </li>
-            <li Class="WHands.WhandCompProps">
-                <MainHand>(-0.3,0.3,-0.05)</MainHand>
-                <SecHand>(0.2,0,-0.05)</SecHand>
-            </li>
         </comps>
         <smeltProducts>
             <Kindling>15</Kindling>

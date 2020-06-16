@@ -93,7 +93,7 @@
     <thingCategories>
       <li>AgileMelee</li>
       <li>SharpMelee</li>
-      <li>Tools</li>
+      <li>SurvivalToolsIndustrial</li>
     </thingCategories>
   </Verse.ThingDef>
   
@@ -333,6 +333,11 @@
       <li>SharpMelee</li>
       <li>HeavyMelee</li>
     </thingCategories>
+			<modExtensions>
+			<li Class="RightToolForJob.EquipRightToolExtension">
+				<purpose>CutPlant</purpose>
+			</li>
+		</modExtensions>
   </Verse.ThingDef>
   
   <WeaponExtensionDef>
@@ -406,6 +411,7 @@
       <ButcheryFleshSpeed>0.25</ButcheryFleshSpeed>
       <MeleeCritChance>0.5</MeleeCritChance>
       <MeleeDodgeChance>0.2</MeleeDodgeChance>
+	  <PlantWorkSpeed>0.3</PlantWorkSpeed>
     </equippedStatOffsets>
     <techLevel>Industrial</techLevel>
     <weaponTags>
@@ -450,8 +456,13 @@
     <thingCategories>
       <li>SharpMelee</li>
       <li>AgileMelee</li>
-      <li>Tools</li>
+      <li>SurvivalToolsNeolithic</li>
     </thingCategories>
+	<modExtensions>
+		<li Class="RightToolForJob.EquipRightToolExtension">
+			<purpose>Harvesing</purpose>
+		</li>
+	</modExtensions>
   </Verse.ThingDef>
   
   <WeaponExtensionDef>
@@ -550,8 +561,13 @@
     </equippedStatOffsets>
     <thingCategories>
       <li>SharpMelee</li>
-      <li>Tools</li>
+      <li>SurvivalToolsNeolithic</li>
     </thingCategories>
+		<modExtensions>
+			<li Class="RightToolForJob.EquipRightToolExtension">
+				<purpose>CutPlant</purpose>
+			</li>
+		</modExtensions>
   </ThingDef>
   
   <WeaponExtensionDef>
