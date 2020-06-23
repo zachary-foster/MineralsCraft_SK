@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Survival Tools Lite</li>
+            <li>Survival Tools</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+                <success>Normal</success>
+                <operations>
+                  
+                        <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalAxe"]</xpath>
+                                <value>
+                                  <thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
+                                </value>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalAxe"]/statBases</xpath>
+                                <value>
+                                  <ToolEffectivenessFactor>1</ToolEffectivenessFactor>
+                                </value>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                                <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalAxe"]/equippedStatOffsets</xpath>
+                        </li>                   
+                        <li Class="PatchOperationAddModExtension">
+                                <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalAxe"]</xpath>
+                                <value>
+                                        <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                                                <baseWorkStatFactors>
+                                                        <TreeFellingSpeed>1</TreeFellingSpeed>
+                                                        <PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+                                                        <PlantSowingSpeed>0.8</PlantSowingSpeed>
+                                                        <DiggingSpeed>0.7</DiggingSpeed>
+                                                        <ConstructionSpeed>0.7</ConstructionSpeed>
+                                                </baseWorkStatFactors>
+                                                <defaultSurvivalToolAssignmentTags>
+                                                        <li>PlantWorker</li>
+                                                        <li>Constructor</li>
+                                                        <li>Crafter</li>
+                                                </defaultSurvivalToolAssignmentTags>
+                                        </li>
+                                </value>
+                        </li>
+                        
+                        	<li Class="PatchOperationAddModExtension">
+                          		<xpath>Defs/ThingDef[defName="ObsidianShard"]</xpath>
+                          		<value>
+                          			<li Class="SurvivalToolsLite.StuffPropsTool">
+                          				<toolStatFactors>
+                          					<TreeFellingSpeed>0.8</TreeFellingSpeed>
+                          					<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+                          					<PlantSowingSpeed>0.8</PlantSowingSpeed>
+                          					<DiggingSpeed>0.8</DiggingSpeed>
+                          					<MiningYieldDigging>0.9</MiningYieldDigging>
+                          					<ConstructionSpeed>0.8</ConstructionSpeed>
+                          				</toolStatFactors>
+                          			</li>
+                          		</value>
+                          	</li>
+                          
+                          	<li Class="PatchOperationAddModExtension">
+                          		<xpath>Defs/ThingDef[defName="FlintShard"]</xpath>
+                          		<value>
+                          			<li Class="SurvivalToolsLite.StuffPropsTool">
+                          				<toolStatFactors>
+                          					<TreeFellingSpeed>0.7</TreeFellingSpeed>
+                          					<PlantHarvestingSpeed>0.7</PlantHarvestingSpeed>
+                          					<PlantSowingSpeed>0.7</PlantSowingSpeed>
+                          					<DiggingSpeed>0.7</DiggingSpeed>
+                          					<MiningYieldDigging>0.8</MiningYieldDigging>
+                          					<ConstructionSpeed>0.7</ConstructionSpeed>
+                          				</toolStatFactors>
+                          			</li>
+                          		</value>
+                          </li>
+
+
+                </operations>
+        </match>
+    </Operation>
+	
+</Patch>
