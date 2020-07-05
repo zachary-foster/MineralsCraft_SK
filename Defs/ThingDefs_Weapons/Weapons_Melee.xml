@@ -491,13 +491,13 @@
     </products>
     <workSkill>Crafting</workSkill>
     <skillRequirements>
-      <Crafting>4</Crafting>
+      <Crafting>5</Crafting>
     </skillRequirements>
     <recipeUsers>
       <li>CraftingSpot</li>
     </recipeUsers>
     <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-    <researchPrerequisite>ZF_NeolithicToolsI</researchPrerequisite>
+    <researchPrerequisite>ZF_NeolithicToolsII</researchPrerequisite>
   </RecipeDef>
   
   
@@ -513,7 +513,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <WorkToMake>2000</WorkToMake>
+      <WorkToMake>2500</WorkToMake>
       <Mass>0.8</Mass>
       <Bulk>1.0</Bulk>
       <MaxHitPoints>100</MaxHitPoints>
@@ -604,7 +604,7 @@
       </thingDefs>
     </defaultIngredientFilter>
     <workSkillLearnFactor>1</workSkillLearnFactor>
-    <workAmount>2000</workAmount>
+    <workAmount>2500</workAmount>
     <ingredients>
       <li>
         <filter>
@@ -625,6 +625,150 @@
     </ingredients>
     <products>
       <MeleeWeapon_TribalAxe>1</MeleeWeapon_TribalAxe>
+    </products>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>3</Crafting>
+    </skillRequirements>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    <researchPrerequisite>ZF_NeolithicToolsI</researchPrerequisite>
+  </RecipeDef>
+ 
+ <!-- Neolithic Spear --> 
+
+  <ThingDef ParentName="SK_BaseMeleeWeapon">
+    <defName>ZF_MeleeWeapon_NeolithicSpear</defName>
+    <label>Neolithic Spear</label>
+    <description>A one-handed spear made of a wooden shaft with a sharp stone tip. Good for stabbing things.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/NeolithicSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <Mass>2</Mass>
+      <Bulk>6</Bulk>
+      <MaxHitPoints>100</MaxHitPoints>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>Neolithic</li>
+      <li>NeolithicMeleeBasic</li>
+      <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <tradeability>Sellable</tradeability>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.3</cooldownTime>
+        <chanceFactor>0.1</chanceFactor>
+        <armorPenetrationBlunt>4</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>head</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.3</cooldownTime>
+        <chanceFactor>1</chanceFactor>
+        <armorPenetrationBlunt>6</armorPenetrationBlunt>
+        <armorPenetrationSharp>5</armorPenetrationSharp>
+        <linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <equippedStatOffsets>
+      <MeleeCritChance>0.2</MeleeCritChance>
+      <MeleeParryChance>0.1</MeleeParryChance>
+      <MeleeDodgeChance>0.4</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>SharpMelee</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <WeaponExtensionDef>
+    <defName>WeaponExtensionDef_ZF_MeleeWeapon_NeolithicSpear</defName>
+    <label>WeaponExtensionDef_ZF_MeleeWeapon_NeolithicSpear</label>
+    <weapon>ZF_MeleeWeapon_NeolithicSpear</weapon>
+    <attackAngleOffset IsNull="True" />
+    <weaponPositionOffset>
+      <x>0.3633333</x>
+      <y>0</y>
+      <z>0.1474214</z>
+    </weaponPositionOffset>
+    <aimedWeaponPositionOffset>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </aimedWeaponPositionOffset>
+    <firstHandPosition>
+      <x>-0.1110063</x>
+      <y>0.005</y>
+      <z>-0.07245277</z>
+    </firstHandPosition>
+    <secondHandPosition>
+      <x>-0.3659744</x>
+      <y>0.005</y>
+      <z>-0.3279874</z>
+    </secondHandPosition>
+  </WeaponExtensionDef>
+
+  <RecipeDef>
+    <defName>ZF_MakeNeolithicSpear</defName>
+    <label>make neolithic spear</label>
+    <description>Make neolithic spear from sharp stone and wood.</description>
+    <jobString>Making neolithic spear</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Wooden</li>
+      </categories>
+      <thingDefs>
+        <li>ZF_SharpStoneShard</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Wooden</li>
+      </categories>
+      <thingDefs>
+        <li>ZF_SharpStoneShard</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <workSkillLearnFactor>1</workSkillLearnFactor>
+    <workAmount>3000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Wooden</li>
+          </categories>
+        </filter>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZF_SharpStoneShard</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ZF_MeleeWeapon_NeolithicSpear>1</ZF_MeleeWeapon_NeolithicSpear>
     </products>
     <workSkill>Crafting</workSkill>
     <skillRequirements>
