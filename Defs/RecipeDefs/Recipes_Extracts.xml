@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <RecipeDef Name="ZF_MakeHardStoneBlocksBase_Neolithic" Abstract="True">
+    <jobString>Cutting stone blocks from chunk.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <targetCountAdjustment>20</targetCountAdjustment>
+    <recipeUsers>
+      <li>TableStonecutterNeolithic</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef Name="ZF_MakeHardStoneBlocksBase_Modern" Abstract="True">
+    <jobString>Cutting stone blocks from chunk.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <targetCountAdjustment>20</targetCountAdjustment>
+    <recipeUsers>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="ZF_MakeHardStoneBlocksBase_Neolithic">
+    <defName>Make_StoneBlocksFlint_Neolithic</defName>
+    <label>Make flint blocks</label>
+    <description>Cuts flint chunks into usable blocks.</description>
+    <workAmount>3000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZF_ChunkFlint</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZF_ChunkFlint</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ZF_BlocksFlint>12</ZF_BlocksFlint>  
+      <ZF_SharpStoneShard>2</ZF_SharpStoneShard>
+      <SandResource>30</SandResource>   
+    </products>
+    <researchPrerequisite>ZF_HardStoneCuttingI</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="ZF_MakeHardStoneBlocksBase_Neolithic">
+    <defName>Make_StoneBlocksObsidian_Neolithic</defName>
+    <label>Make obsidian blocks</label>
+    <description>Cuts obsidian chunks into usable blocks.</description>
+    <workAmount>3500</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZF_ChunkObsidian</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZF_ChunkObsidian</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ZF_BlocksObsidian>12</ZF_BlocksObsidian>  
+      <ZF_SharpStoneShard>2</ZF_SharpStoneShard>
+      <SandResource>30</SandResource>   
+    </products>
+    <researchPrerequisite>ZF_HardStoneCuttingII</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="ZF_MakeHardStoneBlocksBase_Neolithic">
+    <defName>Make_StoneBlocksAdamant_Neolithic</defName>
+    <label>Make adamant blocks</label>
+    <description>Cuts adamant chunks into usable blocks.</description>
+    <workAmount>5000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ChunkAdamant</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ChunkAdamant</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <BlocksAdamant>12</BlocksAdamant>
+      <CrushedStone>5</CrushedStone>
+      <SandResource>30</SandResource>   
+    </products>
+    <researchPrerequisite>ZF_HardStoneCuttingIII</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="ZF_MakeHardStoneBlocksBase_Modern">
+    <defName>Make_StoneBlocksFlint_Modern</defName>
+    <label>Make flint blocks</label>
+    <description>Cuts flint chunks into usable blocks.</description>
+    <workAmount>2500</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZF_ChunkFlint</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZF_ChunkFlint</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ZF_BlocksFlint>15</ZF_BlocksFlint>  
+      <SandResource>20</SandResource>   
+    </products>
+    <researchPrerequisite>ZF_HardStoneCuttingI</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="ZF_MakeHardStoneBlocksBase_Modern">
+    <defName>Make_StoneBlocksObsidian_Modern</defName>
+    <label>Make obsidian blocks</label>
+    <description>Cuts obsidian chunks into usable blocks.</description>
+    <workAmount>3000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZF_ChunkObsidian</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZF_ChunkObsidian</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ZF_BlocksObsidian>15</ZF_BlocksObsidian>  
+      <SandResource>20</SandResource>   
+    </products>
+    <researchPrerequisite>ZF_HardStoneCuttingII</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="ZF_MakeHardStoneBlocksBase_Modern">
+    <defName>Make_StoneBlocksAdamant_Modern</defName>
+    <label>Make adamant blocks</label>
+    <description>Cuts adamant chunks into usable blocks.</description>
+    <workAmount>4000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ChunkAdamant</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ChunkAdamant</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <BlocksAdamant>15</BlocksAdamant>
+      <SandResource>20</SandResource>   
+    </products>
+    <researchPrerequisite>ZF_HardStoneCuttingIII</researchPrerequisite>
+  </RecipeDef>
+
+
+</Defs>

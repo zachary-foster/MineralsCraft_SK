@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  
+  <ResearchProjectDef ParentName="PrimitiveBase">
+    <defName>ZF_NeolithicToolsI</defName>
+    <label>Neolithic tools</label>
+    <description>Make tools and simple weapons out of sharp stone like flint and obsidian.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Main</tab>
+    <researchViewX>0.06</researchViewX>
+    <researchViewY>0.85</researchViewY>
+    <tags>
+      <li>TribalStart</li>
+    </tags>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="PrimitiveBase">
+    <defName>ZF_NeolithicToolsII</defName>
+    <label>Neolithic weapons</label>
+    <description>Make weapons out of sharp stone like flint and obsidian.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Main</tab>
+    <researchViewX>0.06</researchViewX>
+    <researchViewY>0.85</researchViewY>
+    <prerequisites>
+      <li>ZF_NeolithicToolsI</li>
+    </prerequisites>
+    <tags></tags>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="PrimitiveBase">
+    <defName>ZF_HardStoneCuttingI</defName>
+    <label>Hard Stone Cutting I</label>
+    <description>Cut blocks from hard stones like flint.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Main</tab>
+    <researchViewX>0.06</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <tags></tags>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="PrimitiveBase">
+    <defName>ZF_HardStoneCuttingII</defName>
+    <label>Hard Stone Cutting II</label>
+    <description>Cut blocks from hard stones like obsidian.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Main</tab>
+    <researchViewX>0.06</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <prerequisites>
+      <li>ZF_HardStoneCuttingI</li>
+    </prerequisites>
+    <tags></tags>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalBase">
+    <defName>ZF_HardStoneCuttingIII</defName>
+    <label>Hard Stone Cutting III</label>
+    <description>Cut blocks from hard stones like adamant.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Main</tab>
+    <researchViewX>0.06</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <prerequisites>
+      <li>ZF_HardStoneCuttingII</li>
+    </prerequisites>
+    <tags></tags>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalBase">
+    <defName>ZF_RoyalWeapons</defName>
+    <label>Royal weapon crafting</label>
+    <description>Craft high quality royal weapon adorned with gems.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Main</tab>
+    <researchViewX>0.06</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <prerequisites>
+      <li>LongBlades</li>
+    </prerequisites>
+    <tags></tags>
+  </ResearchProjectDef>
+
+</Defs>

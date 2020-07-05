@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <ThingDef Name="ZF_HardChunkRockBase" ParentName="SK_ChunkRockBase">
+  <ThingDef Name="ZF_HardChunkRockBase" ParentName="SK_ChunkRockBase"  Abstract="True">
     <thingCategories Inherit="False">
       <li>HardStoneChunks</li>
     </thingCategories>
@@ -42,7 +42,7 @@
     <soundDrop>ChunkRock_Drop</soundDrop>
     <butcherProducts>
       <ZF_BlocksFlint>12</ZF_BlocksFlint>  
-      <ZF_SharpStoneShard>3</ZF_SharpStoneShard>
+      <ZF_SharpStoneShard>2</ZF_SharpStoneShard>
       <SandResource>20</SandResource>   
     </butcherProducts>
   </ThingDef>
@@ -62,7 +62,7 @@
     <soundDrop>ChunkRock_Drop</soundDrop>
     <butcherProducts>
       <ZF_BlocksObsidian>12</ZF_BlocksObsidian>  
-      <ZF_SharpStoneShard>3</ZF_SharpStoneShard>
+      <ZF_SharpStoneShard>2</ZF_SharpStoneShard>
       <SandResource>20</SandResource>   
     </butcherProducts>
   </ThingDef>

@@ -43,7 +43,7 @@
             <li>ZF_SharpStoneShard</li>
           </thingDefs>
         </filter>
-        <count>3</count>
+        <count>5</count>
       </li>
       <li>
         <filter>
@@ -70,6 +70,7 @@
       <li>FueledSmithy</li>
       <li>CraftingSpot</li>
     </recipeUsers>
+    <researchPrerequisite>ZF_NeolithicToolsI</researchPrerequisite>
   </RecipeDef>
   
   <CombatExtended.AmmoCategoryDef>
@@ -142,6 +143,7 @@
       <li>FueledSmithy</li>
       <li>CraftingSpot</li>
     </recipeUsers>
+    <researchPrerequisite>ZF_NeolithicToolsII</researchPrerequisite>
   </RecipeDef>
   
 </Defs>
