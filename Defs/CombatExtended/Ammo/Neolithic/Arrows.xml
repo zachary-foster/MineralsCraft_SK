@@ -40,15 +40,15 @@
       <li>
         <filter>
           <thingDefs>
-            <li>WoodLog</li>
+            <li>ZF_SharpStoneShard</li>
           </thingDefs>
         </filter>
-        <count>5</count>
+        <count>3</count>
       </li>
       <li>
         <filter>
           <categories>
-            <li>SharpStony</li>
+            <li>Wooden</li>
           </categories>
         </filter>
         <count>5</count>
@@ -56,10 +56,10 @@
     </ingredients>
     <fixedIngredientFilter>
       <categories>
-        <li>SharpStony</li>
+        <li>Wooden</li>
       </categories>
       <thingDefs>
-        <li>WoodLog</li>
+        <li>ZF_SharpStoneShard</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -111,9 +111,9 @@
     <ingredients>
       <li>
         <filter>
-          <thingDefs>
-            <li>WoodLog</li>
-          </thingDefs>
+          <categories>
+            <li>Wooden</li>
+          </categories>
         </filter>
         <count>5</count>
       </li>
@@ -127,8 +127,10 @@
       </li>
     </ingredients>
     <fixedIngredientFilter>
+      <categories>
+        <li>Wooden</li>
+      </categories>
       <thingDefs>
-        <li>WoodLog</li>
         <li>ChunkAdamant</li>
       </thingDefs>
     </fixedIngredientFilter>

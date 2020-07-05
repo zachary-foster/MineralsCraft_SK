@@ -47,7 +47,7 @@
                         </li>
                         
                         	<li Class="PatchOperationAddModExtension">
-                          		<xpath>Defs/ThingDef[defName="ObsidianShard"]</xpath>
+                          		<xpath>Defs/ThingDef[defName="ZF_SharpStoneShard"]</xpath>
                           		<value>
                           			<li Class="SurvivalToolsLite.StuffPropsTool">
                           				<toolStatFactors>
@@ -61,23 +61,6 @@
                           			</li>
                           		</value>
                           	</li>
-                          
-                          	<li Class="PatchOperationAddModExtension">
-                          		<xpath>Defs/ThingDef[defName="FlintShard"]</xpath>
-                          		<value>
-                          			<li Class="SurvivalToolsLite.StuffPropsTool">
-                          				<toolStatFactors>
-                          					<TreeFellingSpeed>0.7</TreeFellingSpeed>
-                          					<PlantHarvestingSpeed>0.7</PlantHarvestingSpeed>
-                          					<PlantSowingSpeed>0.7</PlantSowingSpeed>
-                          					<DiggingSpeed>0.7</DiggingSpeed>
-                          					<MiningYieldDigging>0.8</MiningYieldDigging>
-                          					<ConstructionSpeed>0.7</ConstructionSpeed>
-                          				</toolStatFactors>
-                          			</li>
-                          		</value>
-                          </li>
-
 
                 </operations>
         </match>

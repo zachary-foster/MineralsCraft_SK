@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+  <!-- Sharp stone arrows -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="MakeAmmo_Arrow_SharpStone"]/fixedIngredientFilter/thingDefs</xpath>
+      <value>
+        <li>GU_RedWood</li>
+        <li>AB_MushroomWoodLog</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="MakeAmmo_Arrow_SharpStone"]/ingredients</xpath>
+      <value>
+        <ingredients>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>ZF_SharpStoneShard</li>
+              </thingDefs>
+            </filter>
+            <count>3</count>
+          </li>
+          <li>
+            <filter>
+              <categories>
+                <li>Wooden</li>
+              </categories>
+              <thingDefs>
+                <li>GU_RedWood</li>
+                <li>AB_MushroomWoodLog</li>
+              </thingDefs>
+            </filter>
+            <count>5</count>
+          </li>
+        </ingredients>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

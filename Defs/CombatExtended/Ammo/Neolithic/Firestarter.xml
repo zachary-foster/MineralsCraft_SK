@@ -69,27 +69,19 @@
     <ingredients>
       <li>
         <filter>
-          <thingDefs>
-            <li>Kindling</li>
-          </thingDefs>
-        </filter>
-        <count>40</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Plasteel</li>
-          </thingDefs>
-        </filter>
-        <count>10</count>
-      </li>
-      <li>
-        <filter>
           <categories>
-            <li>SharpStony</li>
+            <li>Wooden</li>
           </categories>
         </filter>
-        <count>10</count>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZF_SharpStoneShard</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -103,7 +95,7 @@
     <fixedIngredientFilter>
       <categories>
         <li>BTextiles</li>
-        <li>SharpStony</li>
+        <li>Wooden</li>
       </categories>
     </fixedIngredientFilter>
     <products>

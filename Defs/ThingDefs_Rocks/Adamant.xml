@@ -77,6 +77,8 @@
       <li>WeatheredMarble</li>
       <li>WeatheredSandstone</li>
       <li>WeatheredSlate</li>
+      <li>WeatheredClaystone</li>
+      <li>WeatheredMudstone</li>
       <li>HewnAdamant</li>
     </ThingsToReplace>
     <!-- If it replaces everything -->
@@ -188,6 +190,8 @@
       <li>HewnLimestone</li>
       <li>HewnMarble</li>
       <li>HewnSandstone</li>
+      <li>HewnClaystone</li>
+      <li>HewnMudstone</li>
       <li>HewnSlate</li>
     </ThingsToReplace>
     <!-- If it replaces everything -->
@@ -285,6 +289,8 @@
       <li>SolidMarble</li>
       <li>SolidSandstone</li>
       <li>SolidSlate</li>
+      <li>SolidClaystone</li>
+      <li>SolidMudstone</li>
     </ThingsToReplace>
     <!-- If it replaces everything -->
     <replaceAll>false</replaceAll>

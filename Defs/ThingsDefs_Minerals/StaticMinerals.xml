@@ -26,9 +26,10 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableYield>10</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <mineableThing>ZF_ChunkObsidian</mineableThing>
+      <mineableDropChance>0.3</mineableDropChance>
+      <mineableYield>1</mineableYield>
+      <mineableNonMinedEfficiency>0.5</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
     </building>
@@ -42,17 +43,24 @@
     <maxClusterProbability>0.0025</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>5</minClusterSize>
-    <maxClusterSize>40</maxClusterSize>
+    <maxClusterSize>60</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.7</initialSizeMin>
     <initialSizeMax>.9</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.25</initialSizeVariation>
-    <!-- The terrains this can appear on. The default is rocky terrains-->
-    <allowedTerrains>
-      <li>LavaRock_Rough</li>
-      <li>LavaRock_RoughHewn</li>
-    </allowedTerrains>
+    <!-- The terrains this must be near to, but not necessarily on -->
+    <neededNearbyTerrains>
+      <li>WeatheredBasalt</li>
+      <li>SolidBasalt</li>
+      <li>ZF_BasaltBase</li>
+      <li>ZF_BasaltBase_Rough</li>
+      <li>WeatheredBasalt</li>
+    </neededNearbyTerrains>
+    <!-- how far away it can be from needed nearby terrains-->
+    <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
+    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
+    <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -76,9 +84,14 @@
         <DropProbability>0.2</DropProbability>
       </li>
       <li>
-        <ResourceDefName>ObsidianShard</ResourceDefName>
-        <DropProbability>5</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+        <DropProbability>3</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>
@@ -107,8 +120,9 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableYield>10</mineableYield>
+      <mineableThing>ZF_ChunkFlint</mineableThing>
+      <mineableDropChance>0.2</mineableDropChance>
+      <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -155,13 +169,18 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
         <DropProbability>3</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.3</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- If the primary color is based on the stone below it -->

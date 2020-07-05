@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+  <ThingDef Name="ZF_HardChunkRockBase" ParentName="SK_ChunkRockBase">
+    <thingCategories Inherit="False">
+      <li>HardStoneChunks</li>
+    </thingCategories>
+  </ThingDef>
+
+
   <ThingDef ParentName="SK_ChunkRockBase">
     <defName>ChunkAdamant</defName>
     <label>adamantine chunk</label>
@@ -10,12 +17,53 @@
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <statBases>
-      <Mass>40</Mass>
+      <Mass>20</Mass>
       <MarketValue>300</MarketValue>
     </statBases>
     <soundDrop>ChunkRock_Drop</soundDrop>
     <butcherProducts>
-      <BlocksAdamant>20</BlocksAdamant>  
+      <BlocksAdamant>12</BlocksAdamant>
+      <SandResource>20</SandResource>   
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="SK_ChunkRockBase">
+    <defName>ZF_ChunkFlint</defName>
+    <label>flint chunk</label>
+    <graphicData>
+      <color>(100, 100, 100)</color>
+      <texPath>Things/Item/Chunk/Stone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>8</Mass>
+      <MarketValue>30</MarketValue>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <ZF_BlocksFlint>12</ZF_BlocksFlint>  
+      <ZF_SharpStoneShard>3</ZF_SharpStoneShard>
+      <SandResource>20</SandResource>   
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="SK_ChunkRockBase">
+    <defName>ZF_ChunkObsidian</defName>
+    <label>obsidian chunk</label>
+    <graphicData>
+      <color>(30, 30, 30)</color>
+      <texPath>Things/Item/Chunk/Stone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>10</Mass>
+      <MarketValue>50</MarketValue>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <ZF_BlocksObsidian>12</ZF_BlocksObsidian>  
+      <ZF_SharpStoneShard>3</ZF_SharpStoneShard>
+      <SandResource>20</SandResource>   
     </butcherProducts>
   </ThingDef>
 
