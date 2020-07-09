@@ -55,7 +55,7 @@
                 <li>ZF_SharpStoneShard</li>
               </thingDefs>
             </filter>
-            <count>3</count>
+            <count>4</count>
           </li>
         </ingredients>
       </value>
@@ -117,7 +117,7 @@
                 <li>ZF_SharpStoneShard</li>
               </thingDefs>
             </filter>
-            <count>1</count>
+            <count>2</count>
           </li>
         </ingredients>
       </value>
@@ -178,7 +178,7 @@
                 <li>ZF_SharpStoneShard</li>
               </thingDefs>
             </filter>
-            <count>1</count>
+            <count>2</count>
           </li>
         </ingredients>
       </value>

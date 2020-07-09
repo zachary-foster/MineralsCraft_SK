@@ -483,7 +483,7 @@
             <li>ZF_SharpStoneShard</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>2</count>
       </li>
     </ingredients>
     <products>
@@ -620,7 +620,7 @@
             <li>ZF_SharpStoneShard</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>2</count>
       </li>
     </ingredients>
     <products>
@@ -764,7 +764,7 @@
             <li>ZF_SharpStoneShard</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>2</count>
       </li>
     </ingredients>
     <products>
@@ -824,8 +824,8 @@
         <power>20</power>
         <cooldownTime>1.7</cooldownTime>
         <chanceFactor>1.4</chanceFactor>
-        <armorPenetrationBlunt>4</armorPenetrationBlunt>
-        <armorPenetrationSharp>6</armorPenetrationSharp>
+        <armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+        <armorPenetrationSharp>5</armorPenetrationSharp>
         <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
       </li>
     </tools>
@@ -908,7 +908,7 @@
             <li>ZF_SharpStoneShard</li>
           </thingDefs>
         </filter>
-        <count>3</count>
+        <count>4</count>
       </li>
     </ingredients>
     <products>

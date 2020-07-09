@@ -32,11 +32,14 @@
         <DoorOpenSpeed>0.5</DoorOpenSpeed>
         <BedRestEffectiveness>0.7</BedRestEffectiveness>
         <MeleeWeapon_CooldownMultiplier>1.0</MeleeWeapon_CooldownMultiplier>
-        <MeleePenetrationFactor>1.5</MeleePenetrationFactor>
+        <MeleePenetrationFactor>1.2</MeleePenetrationFactor>
         <Mass>1.0</Mass>
       </statFactors>
       <commonality>0.07</commonality>
     </stuffProps>
+    <thingCategories>
+      <li>Extracted</li>
+    </thingCategories>
   </ThingDef>
 
 </Defs>
