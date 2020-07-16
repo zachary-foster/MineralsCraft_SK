@@ -100,6 +100,42 @@
       <li>Core SK</li>
     </mods>
     <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="ZF_MakeNeolithicSickle"]/recipeUsers</xpath>
+      <value>
+        <li>ZF_NeolithicCraftingSpot</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="ZF_MakeNeolithicDiggingStick"]/recipeUsers</xpath>
+      <value>
+        <li>ZF_NeolithicCraftingSpot</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="ZF_MeleeWeapon_NeolithicHammerStone"]/recipeUsers</xpath>
+      <value>
+        <li>ZF_NeolithicCraftingSpot</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+    </mods>
+    <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="ZF_MakeFireStartingKit"]/recipeUsers</xpath>
       <value>
         <li>ZF_NeolithicCraftingSpot</li>
