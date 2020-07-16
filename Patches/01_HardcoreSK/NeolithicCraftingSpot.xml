@@ -124,7 +124,7 @@
       <li>Core SK</li>
     </mods>
     <match Class="PatchOperationAdd">
-      <xpath>Defs/RecipeDef[defName="ZF_MeleeWeapon_NeolithicHammerStone"]/recipeUsers</xpath>
+      <xpath>Defs/RecipeDef[defName="ZF_MakeNeolithicHammerStone"]/recipeUsers</xpath>
       <value>
         <li>ZF_NeolithicCraftingSpot</li>
       </value>

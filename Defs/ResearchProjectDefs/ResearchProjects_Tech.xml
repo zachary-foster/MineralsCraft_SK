@@ -3,7 +3,7 @@
 
   <ResearchProjectDef ParentName="ZF_TribalResearchBase">
     <defName>ZF_NeolithicToolsI</defName>
-    <label>Neolithic tools</label>
+    <label>Neolithic crafting I</label>
     <description>Make tools and simple weapons out of sharp stone like flint and obsidian.</description>
     <baseCost>300</baseCost>
     <techLevel>Neolithic</techLevel>
@@ -14,7 +14,7 @@
 
   <ResearchProjectDef ParentName="ZF_NoResearchBase">
     <defName>ZF_NeolithicToolsII</defName>
-    <label>Neolithic weapons</label>
+    <label>Neolithic crafting II</label>
     <description>Make weapons out of sharp stone like flint and obsidian.</description>
     <baseCost>400</baseCost>
     <techLevel>Neolithic</techLevel>

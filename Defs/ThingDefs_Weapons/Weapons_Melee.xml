@@ -372,6 +372,7 @@
       <texPath>Things/Weapons/Melee/NeolithicSpear</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <equippedAngleOffset>-50</equippedAngleOffset>
     <statBases>
       <WorkToMake>3000</WorkToMake>
       <Mass>2</Mass>
@@ -580,13 +581,13 @@
       <z>0</z>
     </aimedWeaponPositionOffset>
     <firstHandPosition>
-      <x>-0.3691824</x>
+      <x>0</x>
       <y>0.005</y>
-      <z>0.06918238</z>
+      <z>0</z>
     </firstHandPosition>
     <secondHandPosition>
-      <x>-0.3522013</x>
-      <y>-0.005</y>
+      <x>0</x>
+      <y>0</y>
       <z>0</z>
     </secondHandPosition>
   </WeaponExtensionDef>

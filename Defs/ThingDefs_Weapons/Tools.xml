@@ -74,7 +74,7 @@
     <weapon>MeleeWeapon_TribalKnife</weapon>
     <attackAngleOffset IsNull="True"/>
     <weaponPositionOffset>
-      <x>0.04402516</x>
+      <x>0</x>
       <y>0</y>
       <z>0</z>
     </weaponPositionOffset>
@@ -84,9 +84,9 @@
       <z>0</z>
     </aimedWeaponPositionOffset>
     <firstHandPosition>
-      <x>-0.2704403</x>
+      <x>-0.1</x>
       <y>0.005</y>
-      <z>0.02515723</z>
+      <z>0.05</z>
     </firstHandPosition>
     <secondHandPosition>
       <x>0</x>
@@ -207,9 +207,9 @@
       <z>0</z>
     </aimedWeaponPositionOffset>
     <firstHandPosition>
-      <x>-0.01257862</x>
+      <x>-0.2</x>
       <y>0.005</y>
-      <z>-0.05</z>
+      <z>-.1</z>
     </firstHandPosition>
     <secondHandPosition>
       <x>0</x>
@@ -288,6 +288,7 @@
     <graphicData>
       <texPath>Things/Weapons/Melee/NeolithicSickle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.5)</drawSize>
     </graphicData>
     <statBases>
       <WorkToMake>3000</WorkToMake>
@@ -341,9 +342,9 @@
     <weapon>ZF_MeleeWeapon_NeolithicSickle</weapon>
     <attackAngleOffset IsNull="True"/>
     <weaponPositionOffset>
-      <x>-0.02515723</x>
+      <x>0</x>
       <y>0</y>
-      <z>0.08805031</z>
+      <z>0</z>
     </weaponPositionOffset>
     <aimedWeaponPositionOffset>
       <x>0</x>
@@ -351,9 +352,9 @@
       <z>0</z>
     </aimedWeaponPositionOffset>
     <firstHandPosition>
-      <x>-0.01257862</x>
+      <x>-.2</x>
       <y>0.005</y>
-      <z>-0.05</z>
+      <z>-0.1</z>
     </firstHandPosition>
     <secondHandPosition>
       <x>0</x>
@@ -418,7 +419,7 @@
       <li>CraftingSpot</li>
     </recipeUsers>
     <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-    <researchPrerequisite>ZF_NeolithicToolsI</researchPrerequisite>
+    <researchPrerequisite>ZF_NeolithicToolsII</researchPrerequisite>
   </RecipeDef>
 
   
@@ -432,6 +433,7 @@
       <texPath>Things/Weapons/Melee/NeolithicDiggingStick</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <equippedAngleOffset>40</equippedAngleOffset>
     <statBases>
       <WorkToMake>1500</WorkToMake>
       <Mass>0.4</Mass>
@@ -497,9 +499,9 @@
     <weapon>ZF_MeleeWeapon_NeolithicDiggingStick</weapon>
     <attackAngleOffset IsNull="True"/>
     <weaponPositionOffset>
-      <x>-0.02515723</x>
+      <x>0</x>
       <y>0</y>
-      <z>0.08805031</z>
+      <z>0</z>
     </weaponPositionOffset>
     <aimedWeaponPositionOffset>
       <x>0</x>
@@ -507,9 +509,9 @@
       <z>0</z>
     </aimedWeaponPositionOffset>
     <firstHandPosition>
-      <x>-0.01257862</x>
+      <x>-0.3</x>
       <y>0.005</y>
-      <z>-0.05</z>
+      <z>-0.3</z>
     </firstHandPosition>
     <secondHandPosition>
       <x>0</x>
@@ -574,6 +576,7 @@
     <graphicData>
       <texPath>Things/Weapons/Melee/NeolithicHammerStone</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.5</drawSize>
     </graphicData>
     <statBases>
       <WorkToMake>2000</WorkToMake>
@@ -616,9 +619,9 @@
     <weapon>ZF_MeleeWeapon_NeolithicHammerStone</weapon>
     <attackAngleOffset IsNull="True"/>
     <weaponPositionOffset>
-      <x>-0.02515723</x>
+      <x>0</x>
       <y>0</y>
-      <z>0.08805031</z>
+      <z>0</z>
     </weaponPositionOffset>
     <aimedWeaponPositionOffset>
       <x>0</x>
@@ -626,9 +629,9 @@
       <z>0</z>
     </aimedWeaponPositionOffset>
     <firstHandPosition>
-      <x>-0.01257862</x>
+      <x>0</x>
       <y>0.005</y>
-      <z>-0.05</z>
+      <z>0.1</z>
     </firstHandPosition>
     <secondHandPosition>
       <x>0</x>
@@ -639,7 +642,7 @@
 
   <RecipeDef>
     <defName>ZF_MakeNeolithicHammerStone</defName>
-    <label>make stone</label>
+    <label>make hammer stone</label>
     <description>Smooth a rock into a hammer stone</description>
     <jobString>Making hammer stone</jobString>
     <workSpeedStat>SmithingSpeed</workSpeedStat>
