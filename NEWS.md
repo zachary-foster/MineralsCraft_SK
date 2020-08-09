@@ -1,3 +1,9 @@
+## v1.1.1
+
+* Adds new neolithic weapons
+* Rework of flint and obsidian
+* Other new content and bug fixes
+
 ## v1.1.0-beta
 
 * Allows crafting of gems using the eletric arc furnace and ultrahard gems using the Matter fabricator

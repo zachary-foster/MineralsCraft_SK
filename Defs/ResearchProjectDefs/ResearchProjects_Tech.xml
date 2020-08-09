@@ -5,7 +5,7 @@
     <defName>ZF_NeolithicToolsI</defName>
     <label>Neolithic crafting I</label>
     <description>Make tools and simple weapons out of sharp stone like flint and obsidian.</description>
-    <baseCost>300</baseCost>
+    <baseCost>200</baseCost>
     <techLevel>Neolithic</techLevel>
     <tab>Main</tab>
     <researchViewX>0.06</researchViewX>
@@ -16,7 +16,7 @@
     <defName>ZF_NeolithicToolsII</defName>
     <label>Neolithic crafting II</label>
     <description>Make weapons out of sharp stone like flint and obsidian.</description>
-    <baseCost>400</baseCost>
+    <baseCost>300</baseCost>
     <techLevel>Neolithic</techLevel>
     <tab>Main</tab>
     <researchViewX>0.06</researchViewX>
@@ -29,8 +29,8 @@
   <ResearchProjectDef ParentName="ZF_NoResearchBase">
     <defName>ZF_HardStoneCuttingI</defName>
     <label>Hard Stone Cutting I</label>
-    <description>Cut blocks from hard stones like flint.</description>
-    <baseCost>500</baseCost>
+    <description>Cut blocks from hard stone like flint.</description>
+    <baseCost>400</baseCost>
     <techLevel>Neolithic</techLevel>
     <tab>Main</tab>
     <researchViewX>0.06</researchViewX>
@@ -40,9 +40,9 @@
   <ResearchProjectDef ParentName="ZF_NoResearchBase">
     <defName>ZF_HardStoneCuttingII</defName>
     <label>Hard Stone Cutting II</label>
-    <description>Cut blocks from hard stones like obsidian.</description>
-    <baseCost>750</baseCost>
-    <techLevel>Neolithic</techLevel>
+    <description>Cut blocks from hard stone like obsidian.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
     <tab>Main</tab>
     <researchViewX>0.06</researchViewX>
     <researchViewY>0.00</researchViewY>
@@ -54,9 +54,9 @@
   <ResearchProjectDef ParentName="MedievalBase">
     <defName>ZF_HardStoneCuttingIII</defName>
     <label>Hard Stone Cutting III</label>
-    <description>Cut blocks from hard stones like adamant.</description>
-    <baseCost>1500</baseCost>
-    <techLevel>Medieval</techLevel>
+    <description>Cut blocks from hard stone like adamant.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
     <tab>Main</tab>
     <researchViewX>0.06</researchViewX>
     <researchViewY>0.00</researchViewY>

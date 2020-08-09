@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <ThingDef Name="ZF_HardChunkRockBase" ParentName="SK_ChunkRockBase"  Abstract="True">
-    <thingCategories Inherit="False">
-      <li>HardStoneChunks</li>
-    </thingCategories>
-  </ThingDef>
-
-
-  <ThingDef ParentName="SK_ChunkRockBase">
+  <ThingDef ParentName="ZF_HardStoneChunksBase">
     <defName>ChunkAdamant</defName>
     <label>adamantine chunk</label>
     <graphicData>
@@ -27,7 +20,7 @@
     </butcherProducts>
   </ThingDef>
 
-  <ThingDef ParentName="SK_ChunkRockBase">
+  <ThingDef ParentName="ZF_HardStoneChunksBase">
     <defName>ZF_ChunkFlint</defName>
     <label>flint chunk</label>
     <graphicData>
@@ -47,7 +40,7 @@
     </butcherProducts>
   </ThingDef>
 
-  <ThingDef ParentName="SK_ChunkRockBase">
+  <ThingDef ParentName="ZF_HardStoneChunksBase">
     <defName>ZF_ChunkObsidian</defName>
     <label>obsidian chunk</label>
     <graphicData>

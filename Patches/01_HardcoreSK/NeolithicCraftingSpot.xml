@@ -64,6 +64,18 @@
       <li>Core SK</li>
     </mods>
     <match Class="PatchOperationAdd">
+      <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_CraftWeapons"]/defNames</xpath>
+      <value>
+        <li>ZF_NeolithicCraftingSpot</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+    </mods>
+    <match Class="PatchOperationAdd">
       <xpath>Defs/RecipeDef[defName="ZF_MakeNeolithicKnife"]/recipeUsers</xpath>
       <value>
         <li>ZF_NeolithicCraftingSpot</li>
