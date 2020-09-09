@@ -94,6 +94,8 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>5</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -137,10 +139,10 @@
     <maxClusterProbability>0.003</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>8</maxClusterSize>
+    <maxClusterSize>15</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>.5</initialSizeMin>
-    <initialSizeMax>.8</initialSizeMax>
+    <initialSizeMin>.6</initialSizeMin>
+    <initialSizeMax>1</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
@@ -170,7 +172,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
-        <DropProbability>3</DropProbability>
+        <DropProbability>4</DropProbability>
         <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
@@ -190,6 +192,8 @@
       <li>crystal</li>
       <li>NoticeMineral_Event</li>
     </tags>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>3</otherSettlementMiningRadius>
   </ThingDef>
 
 

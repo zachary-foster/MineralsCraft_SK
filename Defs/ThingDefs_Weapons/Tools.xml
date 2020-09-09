@@ -171,7 +171,7 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>11</power>
+        <power>12</power>
         <cooldownTime>1.8</cooldownTime>
         <armorPenetrationBlunt>4</armorPenetrationBlunt>
         <armorPenetrationSharp>4</armorPenetrationSharp>
@@ -579,7 +579,7 @@
       <drawSize>0.5</drawSize>
     </graphicData>
     <statBases>
-      <WorkToMake>2000</WorkToMake>
+      <WorkToMake>1500</WorkToMake>
       <Mass>0.6</Mass>
       <Bulk>0.4</Bulk>
       <MaxHitPoints>100</MaxHitPoints>
@@ -650,29 +650,29 @@
     <soundWorking>Recipe_Smith</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
     <fixedIngredientFilter>
-      <categories>
-        <li>StoneChunks</li>
-      </categories>
+      <thingDefs>
+        <li>ZF_SharpStoneShard</li>
+      </thingDefs>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
-      <categories>
-        <li>StoneChunks</li>
-      </categories>
+      <thingDefs>
+        <li>ZF_SharpStoneShard</li>
+      </thingDefs>
     </defaultIngredientFilter>
     <workSkillLearnFactor>1</workSkillLearnFactor>
     <workAmount>1500</workAmount>
     <ingredients>
       <li>
         <filter>
-          <categories>
-            <li>StoneChunks</li>
-          </categories>
+          <thingDefs>
+            <li>ZF_SharpStoneShard</li>
+          </thingDefs>
         </filter>
-        <count>1</count>
+        <count>2</count>
       </li>
     </ingredients>
     <products>
-      <ZF_MeleeWeapon_NeolithicHammerStone>1</ZF_MeleeWeapon_NeolithicHammerStone>
+      <MeleeWeapon_TribalKnife>1</MeleeWeapon_TribalKnife>
     </products>
     <workSkill>Crafting</workSkill>
     <skillRequirements>
