@@ -15,7 +15,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>0.02</MarketValue>
+      <MarketValue>0.14</MarketValue>
     </statBases>
     <ammoClass>SharpStoneArrow</ammoClass>
   </ThingDef>
@@ -25,7 +25,7 @@
     <label>arrow (sharp stone)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>12</damageAmountBase>
-			<armorPenetrationSharp>2.8</armorPenetrationSharp>
+			<armorPenetrationSharp>3</armorPenetrationSharp>
 			<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
 		</projectile>
   </ThingDef>
@@ -88,7 +88,6 @@
     </graphicData>
     <statBases>
       <MarketValue>2.0</MarketValue>
-      <Mass>0.2</Mass>
     </statBases>
     <ammoClass>AdamantArrow</ammoClass>
   </ThingDef>
@@ -98,7 +97,7 @@
     <label>arrow (adamantine)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>16</damageAmountBase>
-			<armorPenetrationSharp>4</armorPenetrationSharp>
+			<armorPenetrationSharp>4.5</armorPenetrationSharp>
 			<armorPenetrationBlunt>4</armorPenetrationBlunt>
 		</projectile>
   </ThingDef>
@@ -108,7 +107,7 @@
     <label>make adamantine arrows x50</label>
     <description>Craft 50 adamantine arrows.</description>
     <jobString>Making adamantine arrows.</jobString>
-    <workAmount>1500</workAmount>
+    <workAmount>2000</workAmount>
     <ingredients>
       <li>
         <filter>

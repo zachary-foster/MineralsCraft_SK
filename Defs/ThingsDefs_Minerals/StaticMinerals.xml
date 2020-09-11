@@ -43,9 +43,9 @@
     <maxClusterProbability>0.0025</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>5</minClusterSize>
-    <maxClusterSize>60</maxClusterSize>
+    <maxClusterSize>100</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>.7</initialSizeMin>
+    <initialSizeMin>.6</initialSizeMin>
     <initialSizeMax>.9</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.25</initialSizeVariation>
@@ -55,7 +55,6 @@
       <li>SolidBasalt</li>
       <li>ZF_BasaltBase</li>
       <li>ZF_BasaltBase_Rough</li>
-      <li>WeatheredBasalt</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
@@ -139,7 +138,7 @@
     <maxClusterProbability>0.003</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>15</maxClusterSize>
+    <maxClusterSize>30</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.6</initialSizeMin>
     <initialSizeMax>1</initialSizeMax>

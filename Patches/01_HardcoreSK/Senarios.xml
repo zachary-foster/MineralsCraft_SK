@@ -25,6 +25,7 @@
                     <def>StartingThing_Defined</def>
                     <thingDef>MeleeWeapon_Club</thingDef>
                     <stuff>WoodLog</stuff>
+                    <count>2</count>
             </li>
             <li Class="ScenPart_StartingAnimal">
                     <def>StartingAnimal</def>

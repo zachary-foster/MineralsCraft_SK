@@ -27,9 +27,8 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkAdamant</mineableThing>
-      <mineableDropChance>0.3</mineableDropChance>
+      <mineableDropChance>0.6</mineableDropChance>
       <mineableYield>1</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
@@ -56,12 +55,8 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>1.0</DropProbability>
-      </li>
-      <li>
         <ResourceDefName>RoughUltrahardGem</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
+        <DropProbability>2</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -131,9 +126,8 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkAdamant</mineableThing>
-      <mineableDropChance>0.3</mineableDropChance>
+      <mineableDropChance>0.7</mineableDropChance>
       <mineableYield>1</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
@@ -170,12 +164,8 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>2.0</DropProbability>
-      </li>
-      <li>
         <ResourceDefName>RoughUltrahardGem</ResourceDefName>
-        <DropProbability>1.0</DropProbability>
+        <DropProbability>3.0</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -233,9 +223,8 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkAdamant</mineableThing>
-      <mineableDropChance>0.3</mineableDropChance>
+      <mineableDropChance>0.7</mineableDropChance>
       <mineableYield>1</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
@@ -268,12 +257,8 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>1.0</DropProbability>
-      </li>
-      <li>
         <ResourceDefName>RoughUltrahardGem</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
+        <DropProbability>2.5</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
