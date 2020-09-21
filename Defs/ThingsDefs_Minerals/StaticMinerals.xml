@@ -55,6 +55,7 @@
       <li>SolidBasalt</li>
       <li>ZF_BasaltBase</li>
       <li>ZF_BasaltBase_Rough</li>
+      <li>Obsidian</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
@@ -130,7 +131,7 @@
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>6</spawnRadius>
+    <spawnRadius>12</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->

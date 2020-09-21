@@ -161,5 +161,44 @@
     <researchPrerequisite>ZF_HardStoneCuttingIII</researchPrerequisite>
   </RecipeDef>
 
+  <RecipeDef>
+    <defName>Make_SharpStoneShards</defName>
+    <label>Break sharp stone chunks into shards</label>
+    <description>Breaks sharp stone chunks into shards.</description>
+    <jobString>Breaking sharp stone into shards</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <targetCountAdjustment>10</targetCountAdjustment>
+    <recipeUsers>
+      <li>TableStonecutterNeolithic</li>
+      <li>TableStonecutter</li>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <workAmount>1500</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZF_ChunkFlint</li>
+            <li>ZF_ChunkObsidian</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZF_ChunkFlint</li>
+        <li>ZF_ChunkObsidian</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ZF_SharpStoneShard>10</ZF_SharpStoneShard>
+      <SandResource>20</SandResource>   
+    </products>
+    <researchPrerequisite>ZF_HardStoneCuttingI</researchPrerequisite>
+  </RecipeDef>
+
 
 </Defs>
