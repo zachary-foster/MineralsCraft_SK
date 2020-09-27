@@ -43,7 +43,7 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>ZF_HardStoneCuttingII</researchPrerequisite>
+    <researchPrerequisite>ZF_HardStoneCuttingI</researchPrerequisite>
   </RecipeDef>
   
   
@@ -87,7 +87,7 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>ZF_HardStoneCuttingII</researchPrerequisite>
+    <researchPrerequisite>ZF_HardStoneCuttingI</researchPrerequisite>
   </RecipeDef>
   
   
@@ -131,7 +131,7 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.8</workSkillLearnFactor>
-    <researchPrerequisite>ZF_HardStoneCuttingIII</researchPrerequisite>
+    <researchPrerequisite>ZF_HardStoneCuttingII</researchPrerequisite>
   </RecipeDef>
   
   

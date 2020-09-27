@@ -27,41 +27,16 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="ZF_NoResearchBase">
-    <defName>ZF_HardStoneCuttingI</defName>
-    <label>Hard Stone Cutting I</label>
-    <description>Cut blocks from hard stone like flint.</description>
-    <baseCost>300</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <tab>Main</tab>
-    <researchViewX>0.06</researchViewX>
-    <researchViewY>0.00</researchViewY>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef ParentName="ZF_NoResearchBase">
-    <defName>ZF_HardStoneCuttingII</defName>
-    <label>Hard Stone Cutting II</label>
-    <description>Cut blocks from hard stone like obsidian.</description>
+    <defName>ZF_NeolithicToolsIII</defName>
+    <label>Neolithic crafting III</label>
+    <description>Make advanced weapons out of sharp stone like flint and obsidian and even harder stones like adamant.</description>
     <baseCost>500</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Main</tab>
     <researchViewX>0.06</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewY>0.85</researchViewY>
     <prerequisites>
-      <li>ZF_HardStoneCuttingI</li>
-    </prerequisites>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef ParentName="MedievalBase">
-    <defName>ZF_HardStoneCuttingIII</defName>
-    <label>Hard Stone Cutting III</label>
-    <description>Cut blocks from hard stone like adamant.</description>
-    <baseCost>1000</baseCost>
-    <techLevel>Industrial</techLevel>
-    <tab>Main</tab>
-    <researchViewX>0.06</researchViewX>
-    <researchViewY>0.00</researchViewY>
-    <prerequisites>
-      <li>ZF_HardStoneCuttingII</li>
+      <li>ZF_NeolithicToolsII</li>
     </prerequisites>
   </ResearchProjectDef>
 

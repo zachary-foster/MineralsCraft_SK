@@ -648,7 +648,7 @@
       <li>CraftingSpot</li>
     </recipeUsers>
     <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-    <researchPrerequisite>ZF_NeolithicToolsII</researchPrerequisite>
+    <researchPrerequisite>ZF_NeolithicToolsIII</researchPrerequisite>
   </RecipeDef>
 
   

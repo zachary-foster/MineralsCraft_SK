@@ -70,7 +70,7 @@
       <li>FueledSmithy</li>
       <li>CraftingSpot</li>
     </recipeUsers>
-    <researchPrerequisite>ZF_NeolithicToolsI</researchPrerequisite>
+    <researchPrerequisite>ZF_NeolithicToolsII</researchPrerequisite>
   </RecipeDef>
   
   <CombatExtended.AmmoCategoryDef>
@@ -97,7 +97,7 @@
     <label>arrow (adamantine)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>16</damageAmountBase>
-			<armorPenetrationSharp>4.5</armorPenetrationSharp>
+			<armorPenetrationSharp>6</armorPenetrationSharp>
 			<armorPenetrationBlunt>4</armorPenetrationBlunt>
 		</projectile>
   </ThingDef>
@@ -142,7 +142,7 @@
       <li>FueledSmithy</li>
       <li>CraftingSpot</li>
     </recipeUsers>
-    <researchPrerequisite>ZF_NeolithicToolsII</researchPrerequisite>
+    <researchPrerequisite>ZF_NeolithicToolsIII</researchPrerequisite>
   </RecipeDef>
   
 </Defs>

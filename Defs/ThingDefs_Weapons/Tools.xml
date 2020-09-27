@@ -671,7 +671,7 @@
       </li>
     </ingredients>
     <products>
-      <MeleeWeapon_TribalKnife>1</MeleeWeapon_TribalKnife>
+      <ZF_MeleeWeapon_NeolithicHammerStone>1</ZF_MeleeWeapon_NeolithicHammerStone>
     </products>
     <workSkill>Crafting</workSkill>
     <skillRequirements>

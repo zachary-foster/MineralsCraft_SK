@@ -21,7 +21,7 @@
                         <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
                         <stuffAdjective>flint</stuffAdjective>
                         <statFactors>
-                                <Beauty>5.0</Beauty>  
+                                <Beauty>4.0</Beauty>  
                                 <MarketValue>2.5</MarketValue>
                                 <MaxHitPoints>1.2</MaxHitPoints>
                                 <WorkToBuild>10</WorkToBuild>
@@ -29,7 +29,7 @@
                                 <Mass>1.5</Mass>
                         </statFactors>
                         <statOffsets>
-                                <Beauty>6</Beauty>
+                                <Beauty>5</Beauty>
                         </statOffsets>
                 </stuffProps>
         </ThingDef>
@@ -40,22 +40,22 @@
                 <label>obsidian blocks</label>
                 <description>Blocks of solid obsidian, a hard and beautiful volcanic glass. Blocks of obsidian are hard to make since the rock is very brittle. Strong aginst blunt damage, but susceptible to sharp damage.</description>
                 <graphicData>
-                        <color>(30, 30, 30)</color>
+                        <color>(25, 25, 25)</color>
                 </graphicData>
                 <statBases>
                         <MarketValue>10</MarketValue>
                         <Mass>1.5</Mass>
-                        <SharpDamageMultiplier>1.5</SharpDamageMultiplier>
+                        <SharpDamageMultiplier>1.1</SharpDamageMultiplier>
                         <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
                 </statBases>
                 <stuffProps>
-                        <color>(30, 30, 30)</color>
+                        <color>(25, 25, 25)</color>
                         <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
                         <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
                         <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
                         <stuffAdjective>obsidian</stuffAdjective>
                         <statFactors>
-                                <Beauty>4.0</Beauty>  
+                                <Beauty>3.0</Beauty>  
                                 <MarketValue>3</MarketValue>
                                 <MaxHitPoints>1.8</MaxHitPoints>
                                 <WorkToBuild>12</WorkToBuild>
@@ -72,12 +72,12 @@
         <ThingDef ParentName="SK_StoneBlocksBase">
                 <defName>BlocksAdamant</defName>
                 <label>adamantine blocks</label>
-                <description>Blocks of solid adamant, a very hard and beautiful stone. They are difficult to build with, but the resulting structures will be very strong and resist damage well.</description>
+                <description>Blocks of solid adamant, a very hard and attractive stone. The material is difficult to build with, but the resulting structures will be very strong.</description>
                 <graphicData>
                         <color>(49, 66, 60)</color>
                 </graphicData>
                 <statBases>
-                        <MarketValue>50</MarketValue>
+                        <MarketValue>40</MarketValue>
                         <Mass>2.5</Mass>
                         <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
                         <BluntDamageMultiplier>0.7</BluntDamageMultiplier>
@@ -89,7 +89,7 @@
                         <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
                         <stuffAdjective>adamantine</stuffAdjective>
                         <statFactors>
-                                <Beauty>4.0</Beauty>  
+                                <Beauty>3.0</Beauty>  
                                 <MarketValue>5.0</MarketValue>
                                 <MaxHitPoints>5.0</MaxHitPoints>
                                 <WorkToBuild>30.0</WorkToBuild>
@@ -97,7 +97,7 @@
                                 <Mass>2.5</Mass>
                         </statFactors>
                         <statOffsets>
-                                <Beauty>4</Beauty>
+                                <Beauty>3</Beauty>
                         </statOffsets>
                 </stuffProps>
         </ThingDef>

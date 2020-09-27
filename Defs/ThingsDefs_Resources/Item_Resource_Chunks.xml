@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <ThingDef ParentName="ZF_HardStoneChunksBase">
+  <ThingDef ParentName="ZF_UltraHardStoneChunksBase">
     <defName>ChunkAdamant</defName>
     <label>adamantine chunk</label>
     <graphicData>
@@ -15,12 +15,13 @@
     </statBases>
     <soundDrop>ChunkRock_Drop</soundDrop>
     <butcherProducts>
-      <BlocksAdamant>12</BlocksAdamant>
+      <BlocksAdamant>15</BlocksAdamant>
       <SandResource>20</SandResource>   
+      <RoughUltrahardGem>1</RoughUltrahardGem>  
     </butcherProducts>
   </ThingDef>
 
-  <ThingDef ParentName="ZF_HardStoneChunksBase">
+  <ThingDef ParentName="ZF_ChunkRockBase">
     <defName>ZF_ChunkFlint</defName>
     <label>flint chunk</label>
     <graphicData>
@@ -34,7 +35,7 @@
     </statBases>
     <soundDrop>ChunkRock_Drop</soundDrop>
     <butcherProducts>
-      <ZF_BlocksFlint>12</ZF_BlocksFlint>  
+      <ZF_BlocksFlint>15</ZF_BlocksFlint>  
       <ZF_SharpStoneShard>2</ZF_SharpStoneShard>
       <SandResource>20</SandResource>   
     </butcherProducts>
@@ -44,7 +45,7 @@
     <defName>ZF_ChunkObsidian</defName>
     <label>obsidian chunk</label>
     <graphicData>
-      <color>(30, 30, 30)</color>
+      <color>(25, 25, 25)</color>
       <texPath>Things/Item/Chunk/Stone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
@@ -54,7 +55,7 @@
     </statBases>
     <soundDrop>ChunkRock_Drop</soundDrop>
     <butcherProducts>
-      <ZF_BlocksObsidian>12</ZF_BlocksObsidian>  
+      <ZF_BlocksObsidian>15</ZF_BlocksObsidian>  
       <ZF_SharpStoneShard>2</ZF_SharpStoneShard>
       <SandResource>20</SandResource>   
     </butcherProducts>
