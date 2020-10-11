@@ -15,7 +15,7 @@
     <hideAtSnowDepth>0.9</hideAtSnowDepth>
     <fillPercent>0.4</fillPercent>
     <statBases>
-      <MaxHitPoints>1500</MaxHitPoints>
+      <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>10</Beauty>
     </statBases>
@@ -82,6 +82,7 @@
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.2</DropProbability>
+        <MinMiningSkill>5</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
@@ -92,10 +93,13 @@
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
     </randomlyDropResources>
     <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
     <otherSettlementMiningRadius>5</otherSettlementMiningRadius>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.3</mineSpeedFactor>
   </ThingDef>
 
 
@@ -112,7 +116,7 @@
     <altitudeLayer>Floor</altitudeLayer>
     <fillPercent>0.01</fillPercent>
     <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>800</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>1</Beauty>
     </statBases>
@@ -139,7 +143,7 @@
     <maxClusterProbability>0.003</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>30</maxClusterSize>
+    <maxClusterSize>25</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.6</initialSizeMin>
     <initialSizeMax>1</initialSizeMax>
@@ -178,11 +182,13 @@
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.3</DropProbability>
+        <MinMiningSkill>5</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
     </randomlyDropResources>
     <!-- If the primary color is based on the stone below it -->
@@ -194,6 +200,8 @@
     </tags>
     <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
     <otherSettlementMiningRadius>3</otherSettlementMiningRadius>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.5</mineSpeedFactor>
   </ThingDef>
 
 

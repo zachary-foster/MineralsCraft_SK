@@ -17,7 +17,7 @@
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
     <statBases>
-      <MaxHitPoints>6000</MaxHitPoints>
+      <MaxHitPoints>3000</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>3</Beauty>
     </statBases>
@@ -57,11 +57,13 @@
       <li>
         <ResourceDefName>RoughUltrahardGem</ResourceDefName>
         <DropProbability>2</DropProbability>
+        <MinMiningSkill>6</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>3</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -87,6 +89,8 @@
       <li>weathered</li>
       <li>fictional</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.5</mineSpeedFactor>
   </ThingDef>
   
   
@@ -116,7 +120,7 @@
       <color>(49, 66, 60)</color>
     </graphicData>
     <statBases>
-      <MaxHitPoints>8000</MaxHitPoints>
+      <MaxHitPoints>4000</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
@@ -166,11 +170,13 @@
       <li>
         <ResourceDefName>RoughUltrahardGem</ResourceDefName>
         <DropProbability>3.0</DropProbability>
+        <MinMiningSkill>6</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>3</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -195,6 +201,8 @@
       <li>hewn</li>
       <li>fictional</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.5</mineSpeedFactor>
   </ThingDef>
   
   
@@ -213,7 +221,7 @@
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
-      <MaxHitPoints>7000</MaxHitPoints>
+      <MaxHitPoints>3500</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
@@ -258,12 +266,14 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughUltrahardGem</ResourceDefName>
-        <DropProbability>2.5</DropProbability>
+        <DropProbability>3</DropProbability>
+        <MinMiningSkill>6</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>3</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -288,6 +298,8 @@
       <li>solid</li>
       <li>fictional</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.5</mineSpeedFactor>
   </ThingDef>
   
 <!--
