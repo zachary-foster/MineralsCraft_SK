@@ -30,7 +30,7 @@
     <defName>ZF_NeolithicToolsIII</defName>
     <label>Neolithic crafting III</label>
     <description>Make advanced weapons out of sharp stone like flint and obsidian and even harder stones like adamant.</description>
-    <baseCost>500</baseCost>
+    <baseCost>400</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Main</tab>
     <researchViewX>0.06</researchViewX>
@@ -44,7 +44,7 @@
     <defName>ZF_RoyalWeapons</defName>
     <label>Royal weapon crafting</label>
     <description>Craft high quality royal weapon adorned with gems.</description>
-    <baseCost>1000</baseCost>
+    <baseCost>800</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Main</tab>
     <researchViewX>0.06</researchViewX>
