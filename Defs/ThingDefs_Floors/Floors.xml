@@ -36,7 +36,7 @@
       <Beauty>6</Beauty>
     </statBases>
 		<researchPrerequisites>
-			<li>FloorArtIV</li>
+			<li>Stone_floor_B4</li>
 		</researchPrerequisites>
 		<costList>
 			<BlocksAdamant>4</BlocksAdamant>
@@ -91,7 +91,7 @@
       <Beauty>6</Beauty>
     </statBases>
 		<researchPrerequisites>
-			<li>FloorArtIV</li>
+			<li>Stone_floor_B4</li>
 		</researchPrerequisites>
 		<costList>
 			<BlocksAdamant>4</BlocksAdamant>
@@ -133,7 +133,7 @@
 Beauty: 8.</description>
 		<texturePath>Terrain/Surfaces/StoneHex</texturePath>
 		<researchPrerequisites>
-			<li>FloorArtIV</li>
+			<li>Stone_floor_B4</li>
 		</researchPrerequisites>
 		<statBases>
       <WorkToBuild>2000</WorkToBuild>
@@ -154,7 +154,7 @@ Beauty: 8.</description>
 Beauty: 8.</description>
 		<texturePath>Terrain/Surfaces/StoneMosaic</texturePath>
 		<researchPrerequisites>
-			<li>FloorArtIV</li>
+			<li>Stone_floor_B4</li>
 		</researchPrerequisites>
 		<statBases>
       <WorkToBuild>2000</WorkToBuild>
@@ -175,7 +175,7 @@ Beauty: 8.</description>
 Beauty: 6.</description>
 		<texturePath>Terrain/Surfaces/StoneRough</texturePath>
 		<researchPrerequisites>
-			<li>FloorArtII</li>
+			<li>Stone_floor_B2</li>
 		</researchPrerequisites>
 		<statBases>
       <WorkToBuild>2000</WorkToBuild>
@@ -196,7 +196,7 @@ Beauty: 6.</description>
 Beauty: 8.</description>
 		<texturePath>Terrain/Surfaces/StoneRandom</texturePath>
 		<researchPrerequisites>
-			<li>FloorArtIV</li>
+			<li>Stone_floor_B4</li>
 		</researchPrerequisites>
 		<statBases>
       <WorkToBuild>2000</WorkToBuild>
@@ -226,7 +226,7 @@ Beauty: 4.</description>
 			<Beauty>4</Beauty>
 		</statBases>
 		<researchPrerequisites>
-			<li>FloorArtII</li>
+			<li>Stone_floor_B2</li>
 		</researchPrerequisites>
 		<costList>
 			<BlocksAdamant>3</BlocksAdamant>
@@ -250,7 +250,7 @@ Beauty: 4.</description>
 Beauty: 8.</description>
 		<texturePath>Terrain/Surfaces/StoneSlabs</texturePath>
 		<researchPrerequisites>
-			<li>FloorArtIV</li>
+			<li>Stone_floor_B4</li>
 		</researchPrerequisites>
 		<statBases>
       <WorkToBuild>2000</WorkToBuild>
@@ -270,7 +270,7 @@ Beauty: 8.</description>
 		<description>Flooring made with square slabs of rough rock containing fossils of long dead sea creatures. It is very beautiful and can be smoothed. 
 Beauty: 8.</description>
 		<researchPrerequisites>
-			<li>FloorArtIII</li>
+			<li>Stone_floor_B3</li>
 		</researchPrerequisites>
 		<statBases>
       <WorkToBuild>2000</WorkToBuild>
@@ -286,7 +286,7 @@ Beauty: 8.</description>
 		<description>Flooring made with square slabs of smoothed rock constaining fossils of long dead sea creatures. It is very beautiful. 
 Beauty: 10.</description>
 		<researchPrerequisites>
-			<li>FloorArtIV</li>
+			<li>Stone_floor_B4</li>
 		</researchPrerequisites>
 		<statBases>
       <WorkToBuild>4000</WorkToBuild>

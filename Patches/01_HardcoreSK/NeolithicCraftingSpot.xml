@@ -50,6 +50,7 @@
                         </buildingTags>
                 </building>
                 <designationHotKey>Misc1</designationHotKey>
+                <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
                 <placeWorkers>
                         <li>PlaceWorker_ReportWorkSpeedPenalties</li>
                 </placeWorkers>
