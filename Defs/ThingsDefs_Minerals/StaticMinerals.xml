@@ -39,8 +39,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1.0</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.0025</maxClusterProbability>
+    <minClusterProbability>0.001</minClusterProbability>
+    <maxClusterProbability>0.003</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>5</minClusterSize>
     <maxClusterSize>100</maxClusterSize>
@@ -56,6 +56,11 @@
       <li>ZF_BasaltBase</li>
       <li>ZF_BasaltBase_Rough</li>
       <li>Obsidian</li>
+      <li>ZF_DioriteBase_Rough</li>
+      <li>ZF_AndesiteBase_Rough</li>
+      <li>ZF_PeridotiteBase_Rough</li>
+      <li>ZF_RhyoliteBase_Rough</li>
+      <li>ZF_ScoriaBase_Rough</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
@@ -86,7 +91,7 @@
       </li>
       <li>
         <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
-        <DropProbability>3</DropProbability>
+        <DropProbability>5</DropProbability>
         <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
@@ -154,7 +159,9 @@
       <li>Limestone_Rough</li>
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
-      <li>Claystone_Rough</li>
+      <li>ZF_ClaystoneBase_Rough</li>
+      <li>ZF_ChalkBase_Rough</li>
+      <li>ZF_LigniteBase_Rough</li>
     </allowedTerrains>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
@@ -176,7 +183,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
-        <DropProbability>4</DropProbability>
+        <DropProbability>5</DropProbability>
         <CountPerDrop>1</CountPerDrop>
       </li>
       <li>

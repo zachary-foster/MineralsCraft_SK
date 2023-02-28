@@ -57,7 +57,7 @@
       <li>
         <ResourceDefName>RoughUltrahardGem</ResourceDefName>
         <DropProbability>2</DropProbability>
-        <MinMiningSkill>6</MinMiningSkill>
+        <MinMiningSkill>8</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>

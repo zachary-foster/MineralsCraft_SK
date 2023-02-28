@@ -14,7 +14,7 @@
       <li>TableStonecutterNeolithic</li>
       <li>TableStonecutter</li>
     </recipeUsers>
-    <workAmount>1500</workAmount>
+    <workAmount>1000</workAmount>
     <ingredients>
       <li>
         <filter>
@@ -33,7 +33,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <ZF_SharpStoneShard>10</ZF_SharpStoneShard>
+      <ZF_SharpStoneShard>12</ZF_SharpStoneShard>
     </products>
   </RecipeDef>
 

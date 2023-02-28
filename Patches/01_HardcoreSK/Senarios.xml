@@ -49,7 +49,7 @@
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
                 <thingDef>MeleeWeapon_TribalKnife</thingDef>
-                <count>1</count>
+                <count>2</count>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
@@ -59,7 +59,7 @@
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
                 <thingDef>ZF_MeleeWeapon_NeolithicDiggingStick</thingDef>
-                <count>1</count>
+                <count>2</count>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
@@ -69,12 +69,17 @@
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
                 <thingDef>ZF_MeleeWeapon_NeolithicSickle</thingDef>
-                <count>1</count>
+                <count>2</count>
             </li>
             <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
                 <thingDef>ZF_MeleeWeapon_NeolithicSpear</thingDef>
                 <count>2</count>
+            </li>
+            <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                <thingDef>ZF_SharpStoneShard</thingDef>
+                <count>10</count>
             </li>
         </value>
     </Operation>
