@@ -91,7 +91,7 @@
                                         <li Class="SurvivalToolsLite.SurvivalToolProperties">
                                                 <baseWorkStatFactors>
                                                         <PlantSowingSpeed>0.8</PlantSowingSpeed>
-                                                        <DiggingSpeed>0.7</DiggingSpeed>
+                                                        <MiningSpeed>0.7</MiningSpeed>
                                                         <MiningYieldDigging>0.7</MiningYieldDigging>
                                                 </baseWorkStatFactors>
                                                 <defaultSurvivalToolAssignmentTags>
@@ -141,7 +141,7 @@
                           					<TreeFellingSpeed>0.8</TreeFellingSpeed>
                           					<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
                           					<PlantSowingSpeed>0.8</PlantSowingSpeed>
-                          					<DiggingSpeed>0.8</DiggingSpeed>
+                          					<MiningSpeed>0.8</MiningSpeed>
                           					<MiningYieldDigging>0.9</MiningYieldDigging>
                           					<ConstructionSpeed>0.8</ConstructionSpeed>
                           				</toolStatFactors>
