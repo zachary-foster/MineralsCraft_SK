@@ -50,13 +50,13 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Flame</damageDef>
       <speed>10</speed>
-      <damageAmountBase>5</damageAmountBase>
+      <damageAmountBase>1</damageAmountBase>
       <explosionRadius>0.5</explosionRadius>
       <explosionChanceToStartFire>0.7</explosionChanceToStartFire>
       <preExplosionSpawnThingDef>Filth_Ember</preExplosionSpawnThingDef>
       <armorPenetrationBase>0.5</armorPenetrationBase>
       <soundExplode>FirestartingSpark_Explode</soundExplode>
-      <explosionEffect>ExtinguisherExplosion</explosionEffect>
+      <explosionEffect>LaserImpact</explosionEffect>
 		</projectile>
   </ThingDef>
   

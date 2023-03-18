@@ -144,6 +144,7 @@
     </skillRequirements>
     <recipeUsers>
       <li>CraftingSpot</li>
+      <li>ZF_NeolithicCraftingSpot</li>
     </recipeUsers>
   </RecipeDef>
 

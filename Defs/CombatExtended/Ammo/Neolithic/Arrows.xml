@@ -69,6 +69,7 @@
       <li>ElectricSmithy</li>
       <li>FueledSmithy</li>
       <li>CraftingSpot</li>
+      <li>ZF_NeolithicCraftingSpot</li>
     </recipeUsers>
     <researchPrerequisite>ZF_NeolithicToolsII</researchPrerequisite>
   </RecipeDef>
@@ -141,6 +142,7 @@
       <li>ElectricSmithy</li>
       <li>FueledSmithy</li>
       <li>CraftingSpot</li>
+      <li>ZF_NeolithicCraftingSpot</li>
     </recipeUsers>
     <researchPrerequisite>ZF_NeolithicToolsIII</researchPrerequisite>
   </RecipeDef>

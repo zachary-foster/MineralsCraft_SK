@@ -10,12 +10,18 @@
       <texPath>Things/Rock/WeatheredGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(49, 66, 60)</color>
+      <color>(49,66,60)</color>
       <damageData>
         <enabled>false</enabled>
       </damageData>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+    <randomColorsOne>
+      <li>(49,70,63)</li>
+    </randomColorsOne>
+    <randomColorsTwo>
+      <li>(83,115,115)</li>
+    </randomColorsTwo>
     <statBases>
       <MaxHitPoints>3000</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -117,8 +123,14 @@
 				<edgeLeft>Damage/Edge</edgeLeft>
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
-      <color>(49, 66, 60)</color>
+      <color>(49,66,60)</color>
     </graphicData>
+    <randomColorsOne>
+      <li>(49,70,63)</li>
+    </randomColorsOne>
+    <randomColorsTwo>
+      <li>(83,115,115)</li>
+    </randomColorsTwo>
     <statBases>
       <MaxHitPoints>4000</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -214,12 +226,18 @@
       <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(49, 66, 60)</color>
+      <color>(49,66,60)</color>
       <damageData>
         <enabled>false</enabled>
       </damageData>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+    <randomColorsOne>
+      <li>(49,70,63)</li>
+    </randomColorsOne>
+    <randomColorsTwo>
+      <li>(83,115,115)</li>
+    </randomColorsTwo>
     <statBases>
       <MaxHitPoints>3500</MaxHitPoints>
       <Flammability>0</Flammability>

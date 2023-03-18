@@ -1,10 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   
+  <ThingDef Name="ZF_BaseNeolithicTool" ParentName="SK_BaseMeleeWeapon" Abstract="True">
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <techLevel>Neolithic</techLevel>
+    <soundInteract>InteractMelee</soundInteract>
+    <weaponTags>
+      <li>Neolithic</li>
+      <li>NeolithicMeleeBasic</li>
+      <li>MeleeTools</li>
+      <li>CE_Sidearm_Melee</li>
+      <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <relicChance>0</relicChance>
+    <smeltable>true</smeltable>
+    <tradeability>Sellable</tradeability>
+    <thingCategories>
+      <li>SurvivalToolsNeolithic</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <RecipeDef Name="ZF_NeolithicWeaponRecipeBase" Abstract="True">
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workSkillLearnFactor>1</workSkillLearnFactor>
+    <workSkill>Crafting</workSkill>
+    <unfinishedThingDef>ZF_UnfinishedNeolithicWeapon</unfinishedThingDef>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>ZF_NeolithicCraftingSpot</li>
+    </recipeUsers>
+  </RecipeDef>
+  
 
   <!-- Neolithic Knife --> 
   
-  <ThingDef ParentName="SK_BaseMeleeWeapon">
+  <ThingDef ParentName="ZF_BaseNeolithicTool">
     <defName>MeleeWeapon_TribalKnife</defName>
     <label>Neolithic Knife</label>
     <description>A knife made from a sharp rock, like flint or obsidian, and bound with strips of animal hide. A useful tool and very sharp, but too brittle to parry a blow.</description>
@@ -12,7 +45,6 @@
       <texPath>Things/Weapons/Melee/TribalKnife</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractMelee</soundInteract>
     <statBases>
       <WorkToMake>2000</WorkToMake>
       <Bulk>0.25</Bulk>
@@ -28,14 +60,9 @@
       <MeleeParryChance>-0.1</MeleeParryChance>
       <MeleeDodgeChance>0.2</MeleeDodgeChance>
     </equippedStatOffsets>
-    <techLevel>Neolithic</techLevel>
     <weaponTags>
-      <li>Neolithic</li>
-      <li>NeolithicMeleeBasic</li>
       <li>CE_Sidearm_Melee</li>
-      <li>CE_OneHandedWeapon</li>
     </weaponTags>
-    <tradeability>Sellable</tradeability>
     <tools>
       <li Class="CombatExtended.ToolCE">
         <label>handle</label>
@@ -64,7 +91,6 @@
     <thingCategories>
       <li>SharpMelee</li>
       <li>AgileMelee</li>
-      <li>SurvivalToolsNeolithic</li>
     </thingCategories>
   </ThingDef>
   
@@ -95,14 +121,11 @@
     </secondHandPosition>
   </WeaponExtensionDef>
   
-  <RecipeDef>
+  <RecipeDef ParentName="ZF_NeolithicWeaponRecipeBase">
     <defName>ZF_MakeNeolithicKnife</defName>
     <label>make neolithic knife</label>
     <description>Make a neolithic knife from sharp stone and wood.</description>
     <jobString>Making neolithic knife</jobString>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
-    <effectWorking>Smith</effectWorking>
-    <soundWorking>Recipe_Smith</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
     <fixedIngredientFilter>
       <thingDefs>
@@ -114,7 +137,6 @@
         <li>ZF_SharpStoneShard</li>
       </thingDefs>
     </defaultIngredientFilter>
-    <workSkillLearnFactor>1</workSkillLearnFactor>
     <workAmount>2000</workAmount>
     <ingredients>
       <li>
@@ -129,14 +151,9 @@
     <products>
       <MeleeWeapon_TribalKnife>1</MeleeWeapon_TribalKnife>
     </products>
-    <workSkill>Crafting</workSkill>
     <skillRequirements>
       <Crafting>5</Crafting>
     </skillRequirements>
-    <recipeUsers>
-      <li>CraftingSpot</li>
-    </recipeUsers>
-    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
     <researchPrerequisite>ZF_NeolithicToolsII</researchPrerequisite>
   </RecipeDef>
   
@@ -144,7 +161,7 @@
   
  <!-- Neolithic Axe --> 
 
-  <ThingDef ParentName="SK_BaseMeleeWeapon">
+  <ThingDef ParentName="ZF_BaseNeolithicTool">
     <defName>MeleeWeapon_TribalAxe</defName>
     <label>Neolithic Handaxe</label>
     <description>A handaxe made of sharp stone. The swiss army knife of the Stoneage. It is not an effective defensive weapon, but better than nothing.</description>
@@ -158,13 +175,10 @@
       <Bulk>1.0</Bulk>
       <MaxHitPoints>100</MaxHitPoints>
     </statBases>
-    <techLevel>Neolithic</techLevel>
     <weaponTags>
-      <li>Neolithic</li>
-      <li>NeolithicMeleeBasic</li>
-      <li>CE_OneHandedWeapon</li>
+      <li>Handaxe</li>
+      <li>CE_Sidearm_Melee</li>
     </weaponTags>
-    <tradeability>Sellable</tradeability>
     <tools>
       <li Class="CombatExtended.ToolCE">
         <label>edge</label>
@@ -186,9 +200,6 @@
       <ConstructionSpeed>0.2</ConstructionSpeed>
       <SmithingSpeed>0.2</SmithingSpeed>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>SurvivalToolsNeolithic</li>
-    </thingCategories>
   </ThingDef>
   
   <WeaponExtensionDef>
@@ -218,14 +229,11 @@
     </secondHandPosition>
   </WeaponExtensionDef>
 
-  <RecipeDef>
+  <RecipeDef ParentName="ZF_NeolithicWeaponRecipeBase">
     <defName>ZF_MakeNeolithicAxe</defName>
     <label>make neolithic axe</label>
     <description>Make neolithic axe from sharp stone and wood.</description>
     <jobString>Making neolithic axe</jobString>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
-    <effectWorking>Smith</effectWorking>
-    <soundWorking>Recipe_Smith</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
     <fixedIngredientFilter>
       <categories>
@@ -243,7 +251,6 @@
         <li>ZF_SharpStoneShard</li>
       </thingDefs>
     </defaultIngredientFilter>
-    <workSkillLearnFactor>1</workSkillLearnFactor>
     <workAmount>2500</workAmount>
     <ingredients>
       <li>
@@ -266,14 +273,9 @@
     <products>
       <MeleeWeapon_TribalAxe>1</MeleeWeapon_TribalAxe>
     </products>
-    <workSkill>Crafting</workSkill>
     <skillRequirements>
       <Crafting>3</Crafting>
     </skillRequirements>
-    <recipeUsers>
-      <li>CraftingSpot</li>
-    </recipeUsers>
-    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
     <researchPrerequisite>ZF_NeolithicToolsI</researchPrerequisite>
   </RecipeDef>
 
@@ -281,7 +283,7 @@
 
  <!-- Neolithic Sickle --> 
 
-  <ThingDef ParentName="SK_BaseMeleeWeapon">
+  <ThingDef ParentName="ZF_BaseNeolithicTool">
     <defName>ZF_MeleeWeapon_NeolithicSickle</defName>
     <label>Neolithic Sickle</label>
     <description>A sickle made of a curved peice of caraved wood with bits of sharp stone attached. It makes harvesting plants easier. It is not an effective weapon.</description>
@@ -295,12 +297,9 @@
       <Bulk>0.5</Bulk>
       <MaxHitPoints>100</MaxHitPoints>
     </statBases>
-    <techLevel>Neolithic</techLevel>
     <weaponTags>
-      <li>Neolithic</li>
-      <li>NeolithicMeleeBasic</li>
+      <li>Sickle</li>
     </weaponTags>
-    <tradeability>Sellable</tradeability>
     <tools>
       <li Class="CombatExtended.ToolCE">
         <label>handle</label>
@@ -330,9 +329,6 @@
       <MeleeDodgeChance>0.2</MeleeDodgeChance>
       <PlantWorkSpeed>0.2</PlantWorkSpeed>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>SurvivalToolsNeolithic</li>
-    </thingCategories>
   </ThingDef>
   
   <WeaponExtensionDef>
@@ -362,14 +358,11 @@
     </secondHandPosition>
   </WeaponExtensionDef>
 
-  <RecipeDef>
+  <RecipeDef ParentName="ZF_NeolithicWeaponRecipeBase">
     <defName>ZF_MakeNeolithicSickle</defName>
     <label>make neolithic sickle</label>
     <description>Make neolithic sickle from sharp stone and wood.</description>
     <jobString>Making neolithic sickle</jobString>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
-    <effectWorking>Smith</effectWorking>
-    <soundWorking>Recipe_Smith</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
     <fixedIngredientFilter>
       <categories>
@@ -387,7 +380,6 @@
         <li>ZF_SharpStoneShard</li>
       </thingDefs>
     </defaultIngredientFilter>
-    <workSkillLearnFactor>1</workSkillLearnFactor>
     <workAmount>3000</workAmount>
     <ingredients>
       <li>
@@ -410,21 +402,16 @@
     <products>
       <ZF_MeleeWeapon_NeolithicSickle>1</ZF_MeleeWeapon_NeolithicSickle>
     </products>
-    <workSkill>Crafting</workSkill>
     <skillRequirements>
       <Crafting>4</Crafting>
     </skillRequirements>
-    <recipeUsers>
-      <li>CraftingSpot</li>
-    </recipeUsers>
-    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
     <researchPrerequisite>ZF_NeolithicToolsII</researchPrerequisite>
   </RecipeDef>
 
   
  <!-- Neolithic Digging Stick --> 
 
-  <ThingDef ParentName="SK_BaseMeleeWeapon">
+  <ThingDef ParentName="ZF_BaseNeolithicTool">
     <defName>ZF_MeleeWeapon_NeolithicDiggingStick</defName>
     <label>Digging Stick</label>
     <description>A stick. Used for digging and sowing crops. It is not a very effective weapon.</description>
@@ -439,12 +426,9 @@
       <Bulk>0.5</Bulk>
       <MaxHitPoints>100</MaxHitPoints>
     </statBases>
-    <techLevel>Neolithic</techLevel>
     <weaponTags>
-      <li>Neolithic</li>
-      <li>NeolithicMeleeBasic</li>
+      <li>Hoe</li>
     </weaponTags>
-    <tradeability>Sellable</tradeability>
     <tools>
       <li Class="CombatExtended.ToolCE">
         <label>handle</label>
@@ -487,9 +471,6 @@
       <PlantWorkSpeed>0.2</PlantWorkSpeed>
       <MiningSpeed>0.1</MiningSpeed>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>SurvivalToolsNeolithic</li>
-    </thingCategories>
   </ThingDef>
   
   <WeaponExtensionDef>
@@ -519,14 +500,11 @@
     </secondHandPosition>
   </WeaponExtensionDef>
 
-  <RecipeDef>
+  <RecipeDef ParentName="ZF_NeolithicWeaponRecipeBase">
     <defName>ZF_MakeNeolithicDiggingStick</defName>
     <label>make digging stick</label>
     <description>Carve a digging stick from a peice of wood</description>
     <jobString>Making digging stick</jobString>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
-    <effectWorking>Smith</effectWorking>
-    <soundWorking>Recipe_Smith</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
     <fixedIngredientFilter>
       <categories>
@@ -538,7 +516,6 @@
         <li>Wooden</li>
       </categories>
     </defaultIngredientFilter>
-    <workSkillLearnFactor>1</workSkillLearnFactor>
     <workAmount>1500</workAmount>
     <ingredients>
       <li>
@@ -553,14 +530,9 @@
     <products>
       <ZF_MeleeWeapon_NeolithicDiggingStick>1</ZF_MeleeWeapon_NeolithicDiggingStick>
     </products>
-    <workSkill>Crafting</workSkill>
     <skillRequirements>
       <Crafting>1</Crafting>
     </skillRequirements>
-    <recipeUsers>
-      <li>CraftingSpot</li>
-    </recipeUsers>
-    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
     <researchPrerequisite>ZF_NeolithicToolsI</researchPrerequisite>
   </RecipeDef>
 
@@ -568,7 +540,7 @@
 
  <!-- Neolithic Hammer Stone --> 
 
-  <ThingDef ParentName="SK_BaseMeleeWeapon">
+  <ThingDef ParentName="ZF_BaseNeolithicTool">
     <defName>ZF_MeleeWeapon_NeolithicHammerStone</defName>
     <label>Hammer stone</label>
     <description>A smoothed round rock that fits well in the hand. Used as a hammer. It is not a very effective weapon, but it is better than nothing.</description>
@@ -583,12 +555,9 @@
       <Bulk>0.4</Bulk>
       <MaxHitPoints>100</MaxHitPoints>
     </statBases>
-    <techLevel>Neolithic</techLevel>
     <weaponTags>
-      <li>Neolithic</li>
-      <li>NeolithicMeleeBasic</li>
+      <li>Hammer</li>
     </weaponTags>
-    <tradeability>Sellable</tradeability>
     <tools>
       <li Class="CombatExtended.ToolCE">
         <label>side</label>
@@ -607,9 +576,6 @@
       <ConstructionSpeed>0.25</ConstructionSpeed>
       <SmithingSpeed>0.2</SmithingSpeed>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>SurvivalToolsNeolithic</li>
-    </thingCategories>
   </ThingDef>
   
   <WeaponExtensionDef>
@@ -639,14 +605,11 @@
     </secondHandPosition>
   </WeaponExtensionDef>
 
-  <RecipeDef>
+  <RecipeDef ParentName="ZF_NeolithicWeaponRecipeBase">
     <defName>ZF_MakeNeolithicHammerStone</defName>
     <label>make hammer stone</label>
     <description>Smooth a rock into a hammer stone</description>
     <jobString>Making hammer stone</jobString>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
-    <effectWorking>Smith</effectWorking>
-    <soundWorking>Recipe_Smith</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
     <fixedIngredientFilter>
       <thingDefs>
@@ -658,7 +621,6 @@
         <li>ZF_SharpStoneShard</li>
       </thingDefs>
     </defaultIngredientFilter>
-    <workSkillLearnFactor>1</workSkillLearnFactor>
     <workAmount>1500</workAmount>
     <ingredients>
       <li>
@@ -673,14 +635,9 @@
     <products>
       <ZF_MeleeWeapon_NeolithicHammerStone>1</ZF_MeleeWeapon_NeolithicHammerStone>
     </products>
-    <workSkill>Crafting</workSkill>
     <skillRequirements>
       <Crafting>2</Crafting>
     </skillRequirements>
-    <recipeUsers>
-      <li>CraftingSpot</li>
-    </recipeUsers>
-    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
     <researchPrerequisite>ZF_NeolithicToolsI</researchPrerequisite>
   </RecipeDef>
 
