@@ -35,7 +35,7 @@
       <WorkToBuild>2000</WorkToBuild>
       <Beauty>6</Beauty>
     </statBases>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>Stone_floor_B4</li>
 		</researchPrerequisites>
 		<costList>
@@ -90,7 +90,7 @@
       <WorkToBuild>2000</WorkToBuild>
       <Beauty>6</Beauty>
     </statBases>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>Stone_floor_B4</li>
 		</researchPrerequisites>
 		<costList>
@@ -285,12 +285,12 @@ Beauty: 8.</description>
 	<TerrainDef Name="FossilFloorSmoothedBase" ParentName="FossilFloorBase" Abstract="True" >
 		<description>Flooring made with square slabs of smoothed rock constaining fossils of long dead sea creatures. It is very beautiful. 
 Beauty: 10.</description>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>Stone_floor_B4</li>
 		</researchPrerequisites>
 		<statBases>
       <WorkToBuild>4000</WorkToBuild>
-			<Beauty>10</Beauty>
+			<Beauty>12</Beauty>
 		</statBases>
 	</TerrainDef>
 

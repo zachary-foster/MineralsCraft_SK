@@ -24,10 +24,10 @@
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
-    <costStuffCount>50</costStuffCount>
+    <costStuffCount>40</costStuffCount>
     <costList>
-      <CutGem>3</CutGem>
-      <GoldBar>10</GoldBar>
+      <CutGem>2</CutGem>
+      <GoldBar>5</GoldBar>
     </costList>
     <recipeMaker>
       <researchPrerequisite>ZF_RoyalWeapons</researchPrerequisite>
@@ -58,7 +58,7 @@
       <MeleeCritChance>0.8</MeleeCritChance>
       <MeleeDodgeChance>0.8</MeleeDodgeChance>
       <MeleeParryChance>0.2</MeleeParryChance>
-      <SocialImpact>0.03</SocialImpact>
+      <SocialImpact>0.05</SocialImpact>
       <MentalBreakThreshold>-0.01</MentalBreakThreshold>
     </equippedStatOffsets>
     <techLevel>Industrial</techLevel>
@@ -151,10 +151,10 @@
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
-    <costStuffCount>80</costStuffCount>
+    <costStuffCount>70</costStuffCount>
     <costList>
-      <CutGem>5</CutGem>
-      <GoldBar>15</GoldBar>
+      <CutGem>3</CutGem>
+      <GoldBar>10</GoldBar>
     </costList>
     <recipeMaker>
       <researchPrerequisite>ZF_RoyalWeapons</researchPrerequisite>
@@ -183,7 +183,7 @@
       <MeleeCritChance>0.6</MeleeCritChance>
       <MeleeParryChance>0.6</MeleeParryChance>
       <MeleeDodgeChance>0.4</MeleeDodgeChance>
-      <SocialImpact>0.05</SocialImpact>
+      <SocialImpact>0.06</SocialImpact>
       <MentalBreakThreshold>-0.03</MentalBreakThreshold>
     </equippedStatOffsets>
     <techLevel>Industrial</techLevel>
@@ -273,10 +273,10 @@
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
-    <costStuffCount>110</costStuffCount>
+    <costStuffCount>90</costStuffCount>
     <costList>
-      <CutGem>8</CutGem>
-      <GoldBar>30</GoldBar>
+      <CutGem>5</CutGem>
+      <GoldBar>20</GoldBar>
     </costList>
     <recipeMaker>
       <researchPrerequisite>ZF_RoyalWeapons</researchPrerequisite>
@@ -304,7 +304,7 @@
     <equippedStatOffsets>
       <MeleeCritChance>0.8</MeleeCritChance>
       <MeleeParryChance>0.6</MeleeParryChance>
-      <SocialImpact>0.05</SocialImpact>
+      <SocialImpact>0.07</SocialImpact>
       <MentalBreakThreshold>-0.05</MentalBreakThreshold>
       <PlantWorkSpeed>0.2</PlantWorkSpeed>
     </equippedStatOffsets>

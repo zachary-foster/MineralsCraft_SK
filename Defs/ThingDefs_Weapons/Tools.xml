@@ -13,7 +13,7 @@
       <li>CE_OneHandedWeapon</li>
     </weaponTags>
     <relicChance>0</relicChance>
-    <smeltable>true</smeltable>
+    <smeltable>false</smeltable>
     <tradeability>Sellable</tradeability>
     <thingCategories>
       <li>SurvivalToolsNeolithic</li>
@@ -46,11 +46,11 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <WorkToMake>2000</WorkToMake>
+      <WorkToMake>1500</WorkToMake>
       <Bulk>0.25</Bulk>
       <Mass>0.20</Mass>
       <MeleeCounterParryBonus>.1</MeleeCounterParryBonus>
-      <MaxHitPoints>100</MaxHitPoints>
+      <MaxHitPoints>50</MaxHitPoints>
     </statBases>
     <equippedAngleOffset>-25</equippedAngleOffset>
     <equippedStatOffsets>
@@ -137,7 +137,7 @@
         <li>ZF_SharpStoneShard</li>
       </thingDefs>
     </defaultIngredientFilter>
-    <workAmount>2000</workAmount>
+    <workAmount>1500</workAmount>
     <ingredients>
       <li>
         <filter>
@@ -170,10 +170,10 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <WorkToMake>2500</WorkToMake>
+      <WorkToMake>1500</WorkToMake>
       <Mass>0.8</Mass>
       <Bulk>1.0</Bulk>
-      <MaxHitPoints>100</MaxHitPoints>
+      <MaxHitPoints>50</MaxHitPoints>
     </statBases>
     <weaponTags>
       <li>Handaxe</li>
@@ -251,7 +251,7 @@
         <li>ZF_SharpStoneShard</li>
       </thingDefs>
     </defaultIngredientFilter>
-    <workAmount>2500</workAmount>
+    <workAmount>1500</workAmount>
     <ingredients>
       <li>
         <filter>
@@ -259,7 +259,7 @@
             <li>Wooden</li>
           </categories>
         </filter>
-        <count>20</count>
+        <count>15</count>
       </li>
       <li>
         <filter>
@@ -292,10 +292,10 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <WorkToMake>3000</WorkToMake>
+      <WorkToMake>1500</WorkToMake>
       <Mass>0.6</Mass>
       <Bulk>0.5</Bulk>
-      <MaxHitPoints>100</MaxHitPoints>
+      <MaxHitPoints>50</MaxHitPoints>
     </statBases>
     <weaponTags>
       <li>Sickle</li>
@@ -380,7 +380,7 @@
         <li>ZF_SharpStoneShard</li>
       </thingDefs>
     </defaultIngredientFilter>
-    <workAmount>3000</workAmount>
+    <workAmount>1500</workAmount>
     <ingredients>
       <li>
         <filter>
@@ -421,10 +421,10 @@
     </graphicData>
     <equippedAngleOffset>40</equippedAngleOffset>
     <statBases>
-      <WorkToMake>1500</WorkToMake>
+      <WorkToMake>1000</WorkToMake>
       <Mass>0.4</Mass>
       <Bulk>0.5</Bulk>
-      <MaxHitPoints>100</MaxHitPoints>
+      <MaxHitPoints>50</MaxHitPoints>
     </statBases>
     <weaponTags>
       <li>Hoe</li>
@@ -516,7 +516,7 @@
         <li>Wooden</li>
       </categories>
     </defaultIngredientFilter>
-    <workAmount>1500</workAmount>
+    <workAmount>1000</workAmount>
     <ingredients>
       <li>
         <filter>
@@ -550,10 +550,10 @@
       <drawSize>0.5</drawSize>
     </graphicData>
     <statBases>
-      <WorkToMake>1500</WorkToMake>
+      <WorkToMake>1000</WorkToMake>
       <Mass>0.6</Mass>
       <Bulk>0.4</Bulk>
-      <MaxHitPoints>100</MaxHitPoints>
+      <MaxHitPoints>50</MaxHitPoints>
     </statBases>
     <weaponTags>
       <li>Hammer</li>
@@ -621,7 +621,7 @@
         <li>ZF_SharpStoneShard</li>
       </thingDefs>
     </defaultIngredientFilter>
-    <workAmount>1500</workAmount>
+    <workAmount>1000</workAmount>
     <ingredients>
       <li>
         <filter>
@@ -636,7 +636,7 @@
       <ZF_MeleeWeapon_NeolithicHammerStone>1</ZF_MeleeWeapon_NeolithicHammerStone>
     </products>
     <skillRequirements>
-      <Crafting>2</Crafting>
+      <Crafting>1</Crafting>
     </skillRequirements>
     <researchPrerequisite>ZF_NeolithicToolsI</researchPrerequisite>
   </RecipeDef>

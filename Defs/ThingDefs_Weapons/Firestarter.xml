@@ -94,7 +94,6 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>ZF_SharpStoneShard</li>
-        <li>Plastic</li>
       </thingDefs>
       <categories>
         <li>Wooden</li>
@@ -104,7 +103,6 @@
     <defaultIngredientFilter>
       <thingDefs>
         <li>ZF_SharpStoneShard</li>
-        <li>Plastic</li>
       </thingDefs>
       <categories>
         <li>Wooden</li>
@@ -112,7 +110,7 @@
       </categories>
     </defaultIngredientFilter>
     <workSkillLearnFactor>1</workSkillLearnFactor>
-    <workAmount>3000</workAmount>
+    <workAmount>2000</workAmount>
     <ingredients>
       <li>
         <filter>
@@ -128,9 +126,6 @@
             <li>Wooden</li>
             <li>Metallic</li>
           </categories>
-          <thingDefs>
-            <li>Plastic</li>
-          </thingDefs>
         </filter>
         <count>20</count>
       </li>
