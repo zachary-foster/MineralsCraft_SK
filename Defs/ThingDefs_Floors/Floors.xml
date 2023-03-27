@@ -106,6 +106,9 @@
       <WorkToBuild>1000</WorkToBuild>
       <Beauty>4</Beauty>
     </statBases>
+		<researchPrerequisites Inherit="False">
+			<li>Stone_floor_B4</li>
+		</researchPrerequisites>
 		<costList>
 			<BlocksAdamant>3</BlocksAdamant>
 		</costList>
