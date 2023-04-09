@@ -26,10 +26,10 @@
 							</value>
 						</li>
                         <li Class="PatchOperationRemove">
-                                <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalAxe"]/equippedStatOffsets/CookSpeed</xpath>
+                                <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalKnife"]/equippedStatOffsets/CookSpeed</xpath>
                         </li>
                         <li Class="PatchOperationRemove">
-                                <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalAxe"]/equippedStatOffsets/ButcheryFleshSpeed</xpath>
+                                <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalKnife"]/equippedStatOffsets/ButcheryFleshSpeed</xpath>
                         </li>
 						
 						<li Class="PatchOperationAddModExtension">
