@@ -11,6 +11,48 @@
                 <success>Normal</success>
                 <operations>
                   
+						<!-- SURVIVAL KNIFE -->
+
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="MeleeWeapon_TribalKnife"]</xpath>
+							<value>
+							  <thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
+							</value>
+						</li>
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="MeleeWeapon_TribalKnife"]/statBases</xpath>
+							<value>
+							  <ToolEffectivenessFactor>1</ToolEffectivenessFactor>
+							</value>
+						</li>
+                        <li Class="PatchOperationRemove">
+                                <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalKnife"]/equippedStatOffsets/CookSpeed</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                                <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalKnife"]/equippedStatOffsets/ButcheryFleshSpeed</xpath>
+                        </li>
+						
+						<li Class="PatchOperationAddModExtension">
+							<xpath>Defs/ThingDef[defName="MeleeWeapon_TribalKnife"]</xpath>
+							<value>
+								<li Class="SurvivalToolsLite.SurvivalToolProperties">
+									<baseWorkStatFactors>
+										<CookSpeed>0.2</CookSpeed>
+										<ButcheryFleshSpeed>0.2</ButcheryFleshSpeed>
+										<PlantHarvestingSpeed>0.2</PlantHarvestingSpeed>
+										<ConstructionSpeed>0.2</ConstructionSpeed>
+										<SmithingSpeed>0.2</SmithingSpeed>
+									</baseWorkStatFactors>
+									<defaultSurvivalToolAssignmentTags>
+										<li>Cook</li>
+										<li>PlantWorker</li>
+										<li>Constructor</li>
+										<li>Crafter</li>
+									</defaultSurvivalToolAssignmentTags>
+								</li>
+							</value>
+						</li>
+				  
                         <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalAxe"]</xpath>
                                 <value>
