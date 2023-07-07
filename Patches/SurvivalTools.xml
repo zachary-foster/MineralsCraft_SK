@@ -37,11 +37,10 @@
 							<value>
 								<li Class="SurvivalToolsLite.SurvivalToolProperties">
 									<baseWorkStatFactors>
-										<CookSpeed>0.2</CookSpeed>
-										<ButcheryFleshSpeed>0.2</ButcheryFleshSpeed>
-										<PlantHarvestingSpeed>0.2</PlantHarvestingSpeed>
-										<ConstructionSpeed>0.2</ConstructionSpeed>
-										<SmithingSpeed>0.2</SmithingSpeed>
+										<CookSpeed>1</CookSpeed>
+										<ButcheryFleshSpeed>1</ButcheryFleshSpeed>
+										<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+										<ConstructionSpeed>0.8</ConstructionSpeed>
 									</baseWorkStatFactors>
 									<defaultSurvivalToolAssignmentTags>
 										<li>Cook</li>
@@ -73,7 +72,7 @@
                                 <value>
                                         <li Class="SurvivalToolsLite.SurvivalToolProperties">
                                                 <baseWorkStatFactors>
-                                                        <TreeFellingSpeed>0.8</TreeFellingSpeed>
+                                                        <TreeFellingSpeed>1</TreeFellingSpeed>
                                                 </baseWorkStatFactors>
                                                 <defaultSurvivalToolAssignmentTags>
                                                         <li>PlantWorker</li>
@@ -103,7 +102,7 @@
                                 <value>
                                         <li Class="SurvivalToolsLite.SurvivalToolProperties">
                                                 <baseWorkStatFactors>
-                                                        <PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+                                                        <PlantHarvestingSpeed>1</PlantHarvestingSpeed>
                                                 </baseWorkStatFactors>
                                                 <defaultSurvivalToolAssignmentTags>
                                                         <li>PlantWorker</li>
@@ -132,9 +131,9 @@
                                 <value>
                                         <li Class="SurvivalToolsLite.SurvivalToolProperties">
                                                 <baseWorkStatFactors>
-                                                        <PlantSowingSpeed>0.8</PlantSowingSpeed>
-                                                        <MiningSpeed>0.7</MiningSpeed>
-                                                        <MiningYieldDigging>0.7</MiningYieldDigging>
+                                                        <PlantWorkSpeed>1.1</PlantWorkSpeed>
+                                                        <MiningSpeed>0.9</MiningSpeed>
+                                                        <MiningYieldDigging>0.9</MiningYieldDigging>
                                                 </baseWorkStatFactors>
                                                 <defaultSurvivalToolAssignmentTags>
                                                         <li>PlantWorker</li>
@@ -164,7 +163,7 @@
                                 <value>
                                         <li Class="SurvivalToolsLite.SurvivalToolProperties">
                                                 <baseWorkStatFactors>
-                                                        <ConstructionSpeed>0.8</ConstructionSpeed>
+                                                        <ConstructionSpeed>1</ConstructionSpeed>
                                                         <SmithingSpeed>1</SmithingSpeed>
                                                 </baseWorkStatFactors>
                                                 <defaultSurvivalToolAssignmentTags>
@@ -182,7 +181,7 @@
                           				<toolStatFactors>
                           					<TreeFellingSpeed>0.8</TreeFellingSpeed>
                           					<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
-                          					<PlantSowingSpeed>0.8</PlantSowingSpeed>
+                          					<PlantWorkSpeed>0.8</PlantWorkSpeed>
                           					<MiningSpeed>0.8</MiningSpeed>
                           					<MiningYieldDigging>0.9</MiningYieldDigging>
                           					<ConstructionSpeed>0.8</ConstructionSpeed>
