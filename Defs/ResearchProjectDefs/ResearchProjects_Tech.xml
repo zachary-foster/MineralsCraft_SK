@@ -31,7 +31,7 @@
     <label>Neolithic crafting III</label>
     <description>Make advanced weapons out of sharp stone like flint and obsidian and even harder stones like adamant.</description>
     <baseCost>400</baseCost>
-    <techLevel>Medieval</techLevel>
+    <techLevel>Neolithic</techLevel>
     <tab>Craft_SK</tab>
     <researchViewX>2.00</researchViewX>
     <researchViewY>28.00</researchViewY>
@@ -54,7 +54,7 @@
     </prerequisites>
   </ResearchProjectDef>
 
-  <ResearchProjectDef ParentName="ZF_NoResearchBase">
+  <ResearchProjectDef ParentName="IndustrialBase">
     <defName>ZF_HardStoneCuttingIII</defName>
     <label>Hard Stone Cutting III</label>
     <description>Cut the hardest stones and create gems from raw materials.</description>

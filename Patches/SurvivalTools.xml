@@ -37,17 +37,20 @@
 							<value>
 								<li Class="SurvivalToolsLite.SurvivalToolProperties">
 									<baseWorkStatFactors>
-										<CookSpeed>0.2</CookSpeed>
-										<ButcheryFleshSpeed>0.2</ButcheryFleshSpeed>
-										<PlantHarvestingSpeed>0.2</PlantHarvestingSpeed>
-										<ConstructionSpeed>0.2</ConstructionSpeed>
-										<SmithingSpeed>0.2</SmithingSpeed>
+										<CookSpeed>0.95</CookSpeed>
+										<ButcheryFleshSpeed>0.9</ButcheryFleshSpeed>
+										<ButcheryFleshEfficiency>0.9</ButcheryFleshEfficiency>
+										<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+										<ConstructionSpeed>0.85</ConstructionSpeed>
+										<MedicalOperationSpeed>0.7</MedicalOperationSpeed>
+										<MedicalSurgerySuccessChance>0.75</MedicalSurgerySuccessChance>
 									</baseWorkStatFactors>
 									<defaultSurvivalToolAssignmentTags>
 										<li>Cook</li>
 										<li>PlantWorker</li>
 										<li>Constructor</li>
 										<li>Crafter</li>
+										<li>Tend</li>
 									</defaultSurvivalToolAssignmentTags>
 								</li>
 							</value>
@@ -73,7 +76,7 @@
                                 <value>
                                         <li Class="SurvivalToolsLite.SurvivalToolProperties">
                                                 <baseWorkStatFactors>
-                                                        <TreeFellingSpeed>0.8</TreeFellingSpeed>
+                                                        <TreeFellingSpeed>1</TreeFellingSpeed>
                                                 </baseWorkStatFactors>
                                                 <defaultSurvivalToolAssignmentTags>
                                                         <li>PlantWorker</li>
@@ -103,7 +106,7 @@
                                 <value>
                                         <li Class="SurvivalToolsLite.SurvivalToolProperties">
                                                 <baseWorkStatFactors>
-                                                        <PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+                                                        <PlantHarvestingSpeed>1</PlantHarvestingSpeed>
                                                 </baseWorkStatFactors>
                                                 <defaultSurvivalToolAssignmentTags>
                                                         <li>PlantWorker</li>
@@ -132,9 +135,9 @@
                                 <value>
                                         <li Class="SurvivalToolsLite.SurvivalToolProperties">
                                                 <baseWorkStatFactors>
-                                                        <PlantSowingSpeed>0.8</PlantSowingSpeed>
-                                                        <MiningSpeed>0.7</MiningSpeed>
-                                                        <MiningYieldDigging>0.7</MiningYieldDigging>
+                                                        <PlantWorkSpeed>1.1</PlantWorkSpeed>
+                                                        <MiningSpeed>0.9</MiningSpeed>
+                                                        <MiningYieldDigging>0.9</MiningYieldDigging>
                                                 </baseWorkStatFactors>
                                                 <defaultSurvivalToolAssignmentTags>
                                                         <li>PlantWorker</li>
@@ -164,8 +167,8 @@
                                 <value>
                                         <li Class="SurvivalToolsLite.SurvivalToolProperties">
                                                 <baseWorkStatFactors>
-                                                        <ConstructionSpeed>0.8</ConstructionSpeed>
-                                                        <SmithingSpeed>1</SmithingSpeed>
+                                                        <ConstructionSpeed>0.9</ConstructionSpeed>
+                                                        <SmithingSpeed>0.9</SmithingSpeed>
                                                 </baseWorkStatFactors>
                                                 <defaultSurvivalToolAssignmentTags>
                                                         <li>Constructor</li>
@@ -182,10 +185,10 @@
                           				<toolStatFactors>
                           					<TreeFellingSpeed>0.8</TreeFellingSpeed>
                           					<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
-                          					<PlantSowingSpeed>0.8</PlantSowingSpeed>
+                          					<PlantWorkSpeed>0.8</PlantWorkSpeed>
                           					<MiningSpeed>0.8</MiningSpeed>
                           					<MiningYieldDigging>0.9</MiningYieldDigging>
-                          					<ConstructionSpeed>0.8</ConstructionSpeed>
+                          					<ConstructionSpeed>0.9</ConstructionSpeed>
                           				</toolStatFactors>
                           			</li>
                           		</value>
