@@ -37,16 +37,20 @@
 							<value>
 								<li Class="SurvivalToolsLite.SurvivalToolProperties">
 									<baseWorkStatFactors>
-										<CookSpeed>1</CookSpeed>
-										<ButcheryFleshSpeed>1</ButcheryFleshSpeed>
+										<CookSpeed>0.95</CookSpeed>
+										<ButcheryFleshSpeed>0.9</ButcheryFleshSpeed>
+										<ButcheryFleshEfficiency>0.9</ButcheryFleshEfficiency>
 										<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
-										<ConstructionSpeed>0.8</ConstructionSpeed>
+										<ConstructionSpeed>0.85</ConstructionSpeed>
+										<MedicalOperationSpeed>0.7</MedicalOperationSpeed>
+										<MedicalSurgerySuccessChance>0.75</MedicalSurgerySuccessChance>
 									</baseWorkStatFactors>
 									<defaultSurvivalToolAssignmentTags>
 										<li>Cook</li>
 										<li>PlantWorker</li>
 										<li>Constructor</li>
 										<li>Crafter</li>
+										<li>Tend</li>
 									</defaultSurvivalToolAssignmentTags>
 								</li>
 							</value>
@@ -163,8 +167,8 @@
                                 <value>
                                         <li Class="SurvivalToolsLite.SurvivalToolProperties">
                                                 <baseWorkStatFactors>
-                                                        <ConstructionSpeed>1</ConstructionSpeed>
-                                                        <SmithingSpeed>1</SmithingSpeed>
+                                                        <ConstructionSpeed>0.9</ConstructionSpeed>
+                                                        <SmithingSpeed>0.9</SmithingSpeed>
                                                 </baseWorkStatFactors>
                                                 <defaultSurvivalToolAssignmentTags>
                                                         <li>Constructor</li>
@@ -184,7 +188,7 @@
                           					<PlantWorkSpeed>0.8</PlantWorkSpeed>
                           					<MiningSpeed>0.8</MiningSpeed>
                           					<MiningYieldDigging>0.9</MiningYieldDigging>
-                          					<ConstructionSpeed>0.8</ConstructionSpeed>
+                          					<ConstructionSpeed>0.9</ConstructionSpeed>
                           				</toolStatFactors>
                           			</li>
                           		</value>
