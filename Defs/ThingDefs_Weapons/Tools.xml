@@ -14,6 +14,7 @@
     </weaponTags>
     <relicChance>0</relicChance>
     <smeltable>false</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
     <tradeability>Sellable</tradeability>
     <thingCategories>
       <li>SurvivalToolsNeolithic</li>
@@ -641,5 +642,4 @@
     <researchPrerequisite>ZF_NeolithicToolsI</researchPrerequisite>
   </RecipeDef>
 
-  
 </Defs>
