@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <ThingDef ParentName="SK_UnfinishedBase">
+    <defName>ZF_UnfinishedNeolithicWeapon</defName>
+    <label>Unfinished weapon</label>
+    <description>An unfinished weapon.</description>
+    <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedWeapon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
+  
+</Defs>

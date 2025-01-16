@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  
+  <RecipeDef>
+    <defName>MakeCutGems_Hand</defName>
+    <label>Cut gems by hand</label>
+    <description>Create cut gems from rough gems by hand. Very slow and difficult.</description>
+    <jobString>Cutting gems.</jobString>
+    <workAmount>3000</workAmount>
+    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <recipeUsers>
+      <li>TableStonecutterNeolithic</li>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RoughGem</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RoughGem</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>RoughGem</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <products>
+      <CutGem>1</CutGem>
+    </products>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.8</workSkillLearnFactor>
+    <researchPrerequisite>ZF_HardStoneCuttingI</researchPrerequisite>
+  </RecipeDef>
+  
+  
+  <RecipeDef>
+    <defName>MakeCutGems_Electric</defName>
+    <label>Cut gems with power tools</label>
+    <description>Create cut gems from rough gems using power tools. Quite slow and difficult.</description>
+    <jobString>Cutting gems.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RoughGem</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RoughGem</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>RoughGem</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <products>
+      <CutGem>1</CutGem>
+    </products>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.8</workSkillLearnFactor>
+    <researchPrerequisite>ZF_HardStoneCuttingI</researchPrerequisite>
+  </RecipeDef>
+  
+  
+  <RecipeDef>
+    <defName>MakeCutUltrahardGems_Electric</defName>
+    <label>Cut ultrahard gems with power tools</label>
+    <description>Create cut ultrahard gems from rough ultrahard gems using power tools. Very slow and difficult.</description>
+    <jobString>Cutting ultrahard gems.</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RoughUltrahardGem</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RoughUltrahardGem</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>RoughUltrahardGem</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <products>
+      <CutUltrahardGem>1</CutUltrahardGem>
+    </products>
+    <skillRequirements>
+      <Crafting>12</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.8</workSkillLearnFactor>
+    <researchPrerequisite>ZF_HardStoneCuttingII</researchPrerequisite>
+  </RecipeDef>
+  
+  
+  <RecipeDef>
+    <defName>MakeRoughGem</defName>
+    <label>Make Rough Gems</label>
+    <description>Make rough gems using extreme heat and pressures. This is a slow and tedious processs.</description>
+    <jobString>Making rough gems.</jobString>
+    <workAmount>6000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+      <li>Matterfab</li>
+      <li>EAF</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GlassBatch</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>HCM</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GlassBatch</li>
+      </thingDefs>
+      <categories>
+        <li>HCM</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>GlassBatch</li>
+      </thingDefs>
+      <categories>
+        <li>HCM</li>
+      </categories>
+    </defaultIngredientFilter>
+    <products>
+      <RoughGem>3</RoughGem>
+    </products>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.8</workSkillLearnFactor>
+    <researchPrerequisite>ZF_HardStoneCuttingIII</researchPrerequisite>
+  </RecipeDef>
+  
+  
+  <RecipeDef>
+    <defName>MakeRoughUltrahardGem</defName>
+    <label>Make Rough Ultrahard Gem</label>
+    <description>Make a rough ultrahard gem using extreme heat and pressures. This is a slow and tedious processs.</description>
+    <jobString>Making a rough ultrahard gem.</jobString>
+    <workAmount>10000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+      <li>Matterfab</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Carbon</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Carbon</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Carbon</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <products>
+      <RoughUltrahardGem>1</RoughUltrahardGem>
+    </products>
+    <skillRequirements>
+      <Crafting>15</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.8</workSkillLearnFactor>
+    <researchPrerequisite>ZF_HardStoneCuttingIII</researchPrerequisite>
+  </RecipeDef>
+  
+  
+</Defs>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+        
+  <ThingDef ParentName="WorkTable">
+    <defName>ZF_NeolithicCraftingSpot</defName>
+    <label>Neolithic crafting spot</label>
+    <description>A place to craft the simplest of tools and weapons.</description>
+    <graphicData>
+      <texPath>Things/Building/Production/CraftingSpot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>300</WorkToBuild>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Cleanliness>-4</Cleanliness>
+      <Beauty>-2</Beauty>
+      <WorkTableWorkSpeedFactor>0.3</WorkTableWorkSpeedFactor>
+      <Mass>500</Mass>
+    </statBases>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <useHitPoints>False</useHitPoints>
+    <costStuffCount>0</costStuffCount>
+    <size>(1,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>Standable</passability>
+    <comps>
+      <li>
+        <compClass>CompReportWorkSpeed</compClass>
+      </li>
+    </comps>
+    <building>
+      <uninstallWork>70</uninstallWork>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+    </building>
+    <designationHotKey>Misc1</designationHotKey>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <placeWorkers>
+      <li>PlaceWorker_ReportWorkSpeedPenalties</li>
+    </placeWorkers>
+  </ThingDef>
+
+  
+</Defs>

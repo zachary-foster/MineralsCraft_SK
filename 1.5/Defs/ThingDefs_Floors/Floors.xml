@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  
+  <TerrainDef ParentName="MediumBrickBase">
+    <defName>MBrickAdamant</defName>
+    <label>adamantine bricks</label>
+    <color>(49, 66, 60)</color>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <Beauty>4</Beauty>
+    </statBases>
+    <costList>
+       <BlocksAdamant>4</BlocksAdamant>
+    </costList>
+  </TerrainDef>
+  
+	<TerrainDef ParentName="SmallBrickBase">
+		<defName>SBrickAdamant</defName>
+		<label>adamantine small bricks</label>
+		<color>(49, 66, 60)</color>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <Beauty>4</Beauty>
+    </statBases>
+		<costList>
+			<BlocksAdamant>4</BlocksAdamant>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="MedBrickBase">
+		<defName>MedBrickAdamant</defName>
+		<label>adamantine Mediterranean bricks</label>
+		<color>(49, 66, 60)</color>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <Beauty>6</Beauty>
+    </statBases>
+		<researchPrerequisites Inherit="False">
+			<li>Stone_floor_B4</li>
+		</researchPrerequisites>
+		<costList>
+			<BlocksAdamant>4</BlocksAdamant>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="CobblestoneBase">
+		<defName>CobbleFloorAdamant</defName>
+		<label>adamantine cobble floor</label>
+		<color>(49, 66, 60)</color>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <Beauty>2</Beauty>
+    </statBases>
+		<costList>
+			<BlocksAdamant>1</BlocksAdamant>
+		</costList>
+	</TerrainDef>	
+
+	<TerrainDef ParentName="BrickUnevenBase">
+		<defName>UEBrickAdamant</defName>
+		<label>adamantine uneven bricks</label>
+		<color>(49, 66, 60)</color>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <Beauty>4</Beauty>
+    </statBases>
+		<costList>
+			<BlocksAdamant>4</BlocksAdamant>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="StoneTileBase">
+		<defName>EXF_TileAdamant</defName>
+		<label>adamantine tiles</label>
+		<color>(49, 66, 60)</color>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <Beauty>4</Beauty>
+    </statBases>
+		<costList>
+			<BlocksAdamant>4</BlocksAdamant>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="BrickHerringboneBase">
+		<defName>HerrBrickAdamant</defName>
+		<label>adamantine herringbone bricks</label>
+		<color>(49, 66, 60)</color>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <Beauty>6</Beauty>
+    </statBases>
+		<researchPrerequisites Inherit="False">
+			<li>Stone_floor_B4</li>
+		</researchPrerequisites>
+		<costList>
+			<BlocksAdamant>4</BlocksAdamant>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="SK_TileStoneBase">
+		<defName>TileAdamant</defName>
+		<label>adamantine Tile</label>
+		<color>(49, 66, 60)</color>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <Beauty>4</Beauty>
+    </statBases>
+		<researchPrerequisites Inherit="False">
+			<li>Stone_floor_B4</li>
+		</researchPrerequisites>
+		<costList>
+			<BlocksAdamant>3</BlocksAdamant>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="SK_FlagstoneBase">
+		<defName>FlagstoneAdamant</defName>
+		<label>adamantine flagstone</label>
+		<color>(49, 66, 60)</color>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <Beauty>4</Beauty>
+    </statBases>
+		<costList>
+			<BlocksAdamant>4</BlocksAdamant>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="SK_TileStoneBase">
+		<defName>FloorStoneHexAdamant</defName>
+		<label>adamantine hex paving</label>
+		<color>(49, 66, 60)</color>
+		<renderPrecedence>269</renderPrecedence>
+		<description>Adamantine paving with hexagonal tiles.
+Beauty: 8.</description>
+		<texturePath>Terrain/Surfaces/StoneHex</texturePath>
+		<researchPrerequisites>
+			<li>Stone_floor_B4</li>
+		</researchPrerequisites>
+		<statBases>
+      <WorkToBuild>2000</WorkToBuild>
+			<Beauty>8</Beauty>
+		</statBases>
+		<costList>
+			<BlocksAdamant>4</BlocksAdamant>
+		</costList>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+
+	<TerrainDef ParentName="SK_TileStoneBase">
+		<defName>FloorStoneMosaicAdamant</defName>
+		<label>adamantine mosaic paving</label>
+		<color>(49, 66, 60)</color>
+		<renderPrecedence>268</renderPrecedence>
+		<description>Adamantine paving with a light/dark mosaic. 
+Beauty: 8.</description>
+		<texturePath>Terrain/Surfaces/StoneMosaic</texturePath>
+		<researchPrerequisites>
+			<li>Stone_floor_B4</li>
+		</researchPrerequisites>
+		<statBases>
+      <WorkToBuild>2000</WorkToBuild>
+			<Beauty>8</Beauty>
+		</statBases>
+		<costList>
+			<BlocksAdamant>4</BlocksAdamant>
+		</costList>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+
+	<TerrainDef ParentName="SK_TileStoneBase">
+		<defName>FloorStoneRoughAdamant</defName>
+		<label>rough adamantine paving</label>
+		<color>(49, 66, 60)</color>
+		<renderPrecedence>267</renderPrecedence>
+		<description>Adamant stone paving. 
+Beauty: 6.</description>
+		<texturePath>Terrain/Surfaces/StoneRough</texturePath>
+		<researchPrerequisites>
+			<li>Stone_floor_B2</li>
+		</researchPrerequisites>
+		<statBases>
+      <WorkToBuild>2000</WorkToBuild>
+			<Beauty>6</Beauty>
+		</statBases>		
+		<costList>
+			<BlocksAdamant>4</BlocksAdamant>
+		</costList>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+
+	<TerrainDef ParentName="SK_TileStoneBase">
+		<defName>FloorStoneRandomAdamant</defName>
+		<label>random adamantine paving</label>
+		<color>(49, 66, 60)</color>
+		<renderPrecedence>266</renderPrecedence>
+		<description>Stone paving with random square and rectangular slabs.
+Beauty: 8.</description>
+		<texturePath>Terrain/Surfaces/StoneRandom</texturePath>
+		<researchPrerequisites>
+			<li>Stone_floor_B4</li>
+		</researchPrerequisites>
+		<statBases>
+      <WorkToBuild>2000</WorkToBuild>
+			<Beauty>8</Beauty>
+		</statBases>		
+		<costList>
+			<BlocksAdamant>4</BlocksAdamant>
+		</costList>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="SK_FloorBase">
+		<defName>RoughAdamantFloor</defName>
+		<label>Rough Adamant</label>
+		<renderPrecedence>190</renderPrecedence>
+		<description>Adamant eroded by the elements.
+Beauty: 4.</description>
+		<texturePath>Terrain/Surfaces/RoughStone</texturePath>
+		<edgeType>Fade</edgeType>
+		<pathCost>0</pathCost>
+		<scatterType>Rocky</scatterType>
+		<takeFootprints>True</takeFootprints>
+		<constructEffect>ConstructDirt</constructEffect>
+		<fertility>0</fertility>
+		<statBases>
+      <WorkToBuild>1000</WorkToBuild>
+			<Beauty>4</Beauty>
+		</statBases>
+		<researchPrerequisites>
+			<li>Stone_floor_B2</li>
+		</researchPrerequisites>
+		<costList>
+			<BlocksAdamant>3</BlocksAdamant>
+		</costList>
+		<affordances>
+			<li>Light</li>
+			<li>Heavy</li>
+			<li>SmoothableStone</li>
+		</affordances>
+		<color>(49, 66, 60)</color>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+
+
+	<TerrainDef ParentName="SK_TileStoneBase">
+		<defName>FloorStoneSlabsAdamant</defName>
+		<label>adamantine slabs</label>
+		<color>(49, 66, 60)</color>
+		<renderPrecedence>270</renderPrecedence>
+		<description>Adamantine flooring made with square slabs. 
+Beauty: 8.</description>
+		<texturePath>Terrain/Surfaces/StoneSlabs</texturePath>
+		<researchPrerequisites>
+			<li>Stone_floor_B4</li>
+		</researchPrerequisites>
+		<statBases>
+      <WorkToBuild>2000</WorkToBuild>
+			<Beauty>8</Beauty>
+		</statBases>
+		<costList>
+			<BlocksAdamant>4</BlocksAdamant>
+		</costList>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+	
+	
+	<!-- Fossil floors -->
+	
+	<TerrainDef Name="FossilFloorBase" ParentName="SK_TileStoneBase" Abstract="True" >
+		<renderPrecedence>270</renderPrecedence>
+		<description>Flooring made with square slabs of rough rock containing fossils of long dead sea creatures. It is very beautiful and can be smoothed. 
+Beauty: 8.</description>
+		<researchPrerequisites>
+			<li>Stone_floor_B3</li>
+		</researchPrerequisites>
+		<statBases>
+      <WorkToBuild>2000</WorkToBuild>
+			<Beauty>8</Beauty>
+		</statBases>
+		<costList>
+			<SmallFossil>1</SmallFossil>
+		</costList>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+
+	<TerrainDef Name="FossilFloorSmoothedBase" ParentName="FossilFloorBase" Abstract="True" >
+		<description>Flooring made with square slabs of smoothed rock constaining fossils of long dead sea creatures. It is very beautiful. 
+Beauty: 10.</description>
+		<researchPrerequisites Inherit="False">
+			<li>Stone_floor_B4</li>
+		</researchPrerequisites>
+		<statBases>
+      <WorkToBuild>4000</WorkToBuild>
+			<Beauty>12</Beauty>
+		</statBases>
+	</TerrainDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+    <defName>SubCategory_FossilSlabs</defName>
+    <label>fossil stone slabs</label>
+    <description>Stone flooring made with square slabs of rough rock with embedded fossils. Can be smoothed.</description>
+    <defNames>
+      <li>FossilFloorSandstone</li>
+      <li>FossilFloorLimestone</li>
+      <li>FossilFloorSlate</li>
+    </defNames>
+    <designationCategory>NaturalFloors</designationCategory>
+    <debug>false</debug>
+  </ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+    <defName>SubCategory_FossilSlabsSmoothed</defName>
+    <label>smoothed fossil stone slabs</label>
+    <description>Stone flooring made with smooth square slabs of rock with embedded fossils.</description>
+    <defNames>
+      <li>FossilFloorSandstoneSmoothed</li>
+      <li>FossilFloorLimestoneSmoothed</li>
+      <li>FossilFloorSlateSmoothed</li>
+    </defNames>
+    <designationCategory>NaturalFloors</designationCategory>
+    <debug>false</debug>
+  </ArchitectSense.DesignationSubCategoryDef>
+  
+	<TerrainDef ParentName="FossilFloorBase">
+		<defName>FossilFloorSandstone</defName>
+		<label>sandstone slabs with fossils</label>
+		<texturePath>Terrain/Surfaces/RoughFossilFlooring</texturePath>
+		<smoothedTerrain>FossilFloorSandstoneSmoothed</smoothedTerrain>
+		<color>(126,104,94)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FossilFloorBase">
+		<defName>FossilFloorLimestone</defName>
+		<label>limestone slabs with fossils</label>
+		<texturePath>Terrain/Surfaces/RoughFossilFlooring</texturePath>
+		<smoothedTerrain>FossilFloorLimestoneSmoothed</smoothedTerrain>
+		<color>(158,153,135)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FossilFloorBase">
+		<defName>FossilFloorSlate</defName>
+		<label>slate slabs with fossils</label>
+		<texturePath>Terrain/Surfaces/RoughFossilFlooring</texturePath>
+		<smoothedTerrain>FossilFloorSlateSmoothed</smoothedTerrain>
+		<color>(70,70,70)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FossilFloorSmoothedBase">
+		<defName>FossilFloorSandstoneSmoothed</defName>
+		<label>smoothed sandstone slabs with fossils</label>
+		<texturePath>Terrain/Surfaces/SmoothFossilFlooring</texturePath>
+		<color>(126,104,94)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FossilFloorSmoothedBase">
+		<defName>FossilFloorLimestoneSmoothed</defName>
+		<label>smoothed limestone slabs with fossils</label>
+		<texturePath>Terrain/Surfaces/SmoothFossilFlooring</texturePath>
+		<color>(158,153,135)</color>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FossilFloorSmoothedBase">
+		<defName>FossilFloorSlateSmoothed</defName>
+		<label>smoothed slate slabs with fossils</label>
+		<texturePath>Terrain/Surfaces/SmoothFossilFlooring</texturePath>
+		<color>(70,70,70)</color>
+	</TerrainDef>
+
+</Defs>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Chunks to sand -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="MakeSand_Hand_Chunk"]/ingredients/li/filter/categories</xpath>
+      <value>
+        <li>HardStoneChunks</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="MakeSand_Hand_Chunk"]/fixedIngredientFilter/categories</xpath>
+      <value>
+        <li>HardStoneChunks</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="MakeSand_Electric_Chunk"]/ingredients/li/filter/categories</xpath>
+      <value>
+        <li>HardStoneChunks</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="MakeSand_Electric_Chunk"]/fixedIngredientFilter/categories</xpath>
+      <value>
+        <li>HardStoneChunks</li>
+      </value>
+    </match>
+  </Operation>
+  
+  
+  
+  <!-- Chunks to rubble -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="MakeCrushedStone_Hand_Chunk"]/ingredients/li/filter/categories</xpath>
+      <value>
+        <li>HardStoneChunks</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="MakeCrushedStone_Hand_Chunk"]/fixedIngredientFilter/categories</xpath>
+      <value>
+        <li>HardStoneChunks</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="MakeCrushedStone_Electric_Chunk"]/ingredients/li/filter/categories</xpath>
+      <value>
+        <li>HardStoneChunks</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="MakeCrushedStone_Electric_Chunk"]/fixedIngredientFilter/categories</xpath>
+      <value>
+        <li>HardStoneChunks</li>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ScenarioDef[defName="LostTribe"]/scenario/parts/li[def="StartingThing_Defined"]</xpath>
+    </Operation>
+    
+
+   <!-- Lost Tribe -->
+   <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ScenarioDef[defName="LostTribe"]/scenario/parts</xpath>
+        <value>
+            <!-- Default starting things that are preserved -->
+            <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Pemmican</thingDef>
+                    <count>300</count>
+            </li>
+            <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <count>15</count>
+            </li>
+            <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_Club</thingDef>
+                    <stuff>WoodLog</stuff>
+                    <count>2</count>
+            </li>
+            <li Class="ScenPart_StartingAnimal">
+                    <def>StartingAnimal</def>
+                    <count>3</count>
+                    <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+            </li>
+            <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Bow_Short</thingDef>
+                    <stuff>WoodLog</stuff>
+                    <count>3</count>
+            </li>
+
+            
+            <!-- New starting things added by this mod -->
+            <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Ammo_Arrow_SharpStone</thingDef>
+                    <count>200</count>
+            </li>
+            <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                <thingDef>MeleeWeapon_TribalKnife</thingDef>
+                <count>2</count>
+            </li>
+            <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                <thingDef>MeleeWeapon_TribalAxe</thingDef>
+                <count>2</count>
+            </li>
+            <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                <thingDef>ZF_MeleeWeapon_NeolithicDiggingStick</thingDef>
+                <count>2</count>
+            </li>
+            <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                <thingDef>ZF_MeleeWeapon_NeolithicHammerStone</thingDef>
+                <count>2</count>
+            </li>
+            <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                <thingDef>ZF_MeleeWeapon_NeolithicSickle</thingDef>
+                <count>2</count>
+            </li>
+            <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                <thingDef>ZF_MeleeWeapon_NeolithicSpear</thingDef>
+                <count>2</count>
+            </li>
+            <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                <thingDef>ZF_SharpStoneShard</thingDef>
+                <count>10</count>
+            </li>
+        </value>
+    </Operation>
+    
+
+</Patch>

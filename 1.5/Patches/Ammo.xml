@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/CombatExtended.AmmoSetDef[defName = "AmmoSet_Arrow"]/ammoTypes</xpath>
+	  <value>
+		  <Ammo_Arrow_SharpStone>Projectile_Arrow_SharpStone</Ammo_Arrow_SharpStone>
+		  <Ammo_Arrow_Adamant>Projectile_Arrow_Adamant</Ammo_Arrow_Adamant>
+	  </value>
+	</Operation>
+
+</Patch>

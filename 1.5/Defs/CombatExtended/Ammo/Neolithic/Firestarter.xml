@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>FirestartingSupplies</defName>
+    <label>firestarting supplies</label>
+    <description>Supplies needed to start fires.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_Firestarter</defName>
+    <label>firestarting supplies</label>
+    <ammoTypes>
+      <Ammo_FirestartingSupplies>Projectile_FirestartingSpark</Ammo_FirestartingSupplies>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+  
+  <ThingDef ParentName="NeolithicAmmoBase" Class="CombatExtended.AmmoDef">
+    <defName>Ammo_FirestartingSupplies</defName>
+    <label>firestarting supplies</label>
+    <graphicData>
+      <texPath>Things/Ammo/Neolithic/FirestartingSupplies/FirestartingSupplies</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.03</Mass>
+      <Bulk>0.03</Bulk>
+      <Flammability>1</Flammability>
+      <MarketValue>0.02</MarketValue>
+    </statBases>
+    <stackLimit>80</stackLimit>
+    <ammoClass>IncendiaryFuel</ammoClass>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+    </tradeTags>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="SK_BaseBullet">
+    <defName>Projectile_FirestartingSpark</defName>
+    <label>spark</label>
+    <graphicData>
+      <texPath>Things/Projectile/Spark</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Flame</damageDef>
+      <speed>10</speed>
+      <damageAmountBase>1</damageAmountBase>
+      <explosionRadius>0.5</explosionRadius>
+      <explosionChanceToStartFire>0.7</explosionChanceToStartFire>
+      <preExplosionSpawnThingDef>Filth_Ember</preExplosionSpawnThingDef>
+      <armorPenetrationBase>0.5</armorPenetrationBase>
+      <soundExplode>FirestartingSpark_Explode</soundExplode>
+      <explosionEffect>LaserImpact</explosionEffect>
+		</projectile>
+  </ThingDef>
+  
+  <RecipeDef ParentName="AmmoRecipeNeolithicBase">
+    <defName>MakeAmmo_FirestartingSupplies</defName>
+    <label>make firestarting supplies x20</label>
+    <description>Craft enough supplies to start 20 fires.</description>
+    <jobString>Making firestarting supplies.</jobString>
+    <workAmount>1000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Wooden</li>
+          </categories>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZF_SharpStoneShard</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>BTextiles</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>BTextiles</li>
+        <li>Wooden</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_FirestartingSupplies>20</Ammo_FirestartingSupplies>
+    </products>
+    <recipeUsers>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+  </RecipeDef>
+
+</Defs>

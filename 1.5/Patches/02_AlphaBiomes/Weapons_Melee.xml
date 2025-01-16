@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+  <!-- Macuahuitl -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="ZF_MakeMacuahuitl"]/fixedIngredientFilter/thingDefs</xpath>
+      <value>
+        <li>GU_RedWood</li>
+        <li>AB_MushroomWoodLog</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="ZF_MakeMacuahuitl"]/defaultIngredientFilter/thingDefs</xpath>
+      <value>
+        <li>GU_RedWood</li>
+        <li>AB_MushroomWoodLog</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="ZF_MakeMacuahuitl"]/ingredients</xpath>
+      <value>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Wooden</li>
+              </categories>
+              <thingDefs>
+                <li>GU_RedWood</li>
+                <li>AB_MushroomWoodLog</li>
+              </thingDefs>
+            </filter>
+            <count>30</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>ZF_SharpStoneShard</li>
+              </thingDefs>
+            </filter>
+            <count>4</count>
+          </li>
+        </ingredients>
+      </value>
+    </match>
+  </Operation>
+
+
+  <!-- Neolithic axe -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="ZF_MakeNeolithicAxe"]/fixedIngredientFilter/thingDefs</xpath>
+      <value>
+        <li>GU_RedWood</li>
+        <li>AB_MushroomWoodLog</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="ZF_MakeNeolithicAxe"]/defaultIngredientFilter/thingDefs</xpath>
+      <value>
+        <li>GU_RedWood</li>
+        <li>AB_MushroomWoodLog</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="ZF_MakeNeolithicAxe"]/ingredients</xpath>
+      <value>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Wooden</li>
+              </categories>
+              <thingDefs>
+                <li>GU_RedWood</li>
+                <li>AB_MushroomWoodLog</li>
+              </thingDefs>
+            </filter>
+            <count>20</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>ZF_SharpStoneShard</li>
+              </thingDefs>
+            </filter>
+            <count>2</count>
+          </li>
+        </ingredients>
+      </value>
+    </match>
+  </Operation>
+  
+  <!-- Neolithic spear -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="ZF_MakeNeolithicSpear"]/fixedIngredientFilter/thingDefs</xpath>
+      <value>
+        <li>GU_RedWood</li>
+        <li>AB_MushroomWoodLog</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="ZF_MakeNeolithicSpear"]/defaultIngredientFilter/thingDefs</xpath>
+      <value>
+        <li>GU_RedWood</li>
+        <li>AB_MushroomWoodLog</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="ZF_MakeNeolithicSpear"]/ingredients</xpath>
+      <value>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Wooden</li>
+              </categories>
+              <thingDefs>
+                <li>GU_RedWood</li>
+                <li>AB_MushroomWoodLog</li>
+              </thingDefs>
+            </filter>
+            <count>30</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>ZF_SharpStoneShard</li>
+              </thingDefs>
+            </filter>
+            <count>2</count>
+          </li>
+        </ingredients>
+      </value>
+    </match>
+  </Operation>
+  
+</Patch>

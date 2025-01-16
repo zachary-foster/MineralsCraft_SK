@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TipSetDef>
+    <defName>ZF_MineralsCraftTips</defName>
+    <tips>
+      <li>Sharp stone shards can be used to make neolithic tools and weapons using the neolithic crafting spot.</li>
+      <li>Sharp stone shards can be obtained in abundance by mining flint or obsidian. Some can also be found in river rock, basalt, or sedimentary rocks.</li>
+    </tips>
+  </TipSetDef>
+  
+</Defs>

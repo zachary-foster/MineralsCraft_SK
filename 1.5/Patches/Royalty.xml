@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+      <value>
+        
+        <TerrainDef ParentName="FineTileStoneBase">
+          <defName>ZF_FineTileFlint</defName>
+          <label>fine flint tile</label>
+          <color>(100,100,100)</color>
+          <costList>
+            <ZF_BlocksFlint>20</ZF_BlocksFlint>
+          </costList>
+        </TerrainDef>
+
+        <TerrainDef ParentName="FineTileStoneBase">
+          <defName>ZF_FineTileObsidian</defName>
+          <label>fine obsidian tile</label>
+          <color>(25,25,25)</color>
+          <costList>
+            <ZF_BlocksObsidian>20</ZF_BlocksObsidian>
+          </costList>
+        </TerrainDef>
+
+        <TerrainDef ParentName="FineTileStoneBase">
+          <defName>ZF_FineTileAdamant</defName>
+          <label>fine adamant tile</label>
+          <color>(49,66,60)</color>
+          <costList>
+            <BlocksAdamant>20</BlocksAdamant>
+          </costList>
+        </TerrainDef>
+        
+      </value>
+    </match>
+  </Operation>
+  
+  
+</Patch>

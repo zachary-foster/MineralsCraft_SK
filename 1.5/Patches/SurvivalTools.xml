@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Survival Tools Lite</li>
+            <li>Survival Tools</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+                <success>Normal</success>
+                <operations>
+                  
+						<!-- SURVIVAL KNIFE -->
+
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="MeleeWeapon_TribalKnife"]</xpath>
+							<value>
+							  <thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
+							</value>
+						</li>
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="MeleeWeapon_TribalKnife"]/statBases</xpath>
+							<value>
+							  <ToolEffectivenessFactor>1</ToolEffectivenessFactor>
+							</value>
+						</li>
+                        <li Class="PatchOperationRemove">
+                                <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalKnife"]/equippedStatOffsets/CookSpeed</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                                <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalKnife"]/equippedStatOffsets/ButcheryFleshSpeed</xpath>
+                        </li>
+						
+						<li Class="PatchOperationAddModExtension">
+							<xpath>Defs/ThingDef[defName="MeleeWeapon_TribalKnife"]</xpath>
+							<value>
+								<li Class="SurvivalToolsLite.SurvivalToolProperties">
+									<baseWorkStatFactors>
+										<CookSpeed>0.95</CookSpeed>
+										<ButcheryFleshSpeed>0.9</ButcheryFleshSpeed>
+										<ButcheryFleshEfficiency>0.9</ButcheryFleshEfficiency>
+										<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+										<ConstructionSpeed>0.85</ConstructionSpeed>
+										<MedicalOperationSpeed>0.7</MedicalOperationSpeed>
+										<MedicalSurgerySuccessChance>0.75</MedicalSurgerySuccessChance>
+									</baseWorkStatFactors>
+									<defaultSurvivalToolAssignmentTags>
+										<li>Cook</li>
+										<li>PlantWorker</li>
+										<li>Constructor</li>
+										<li>Crafter</li>
+										<li>Tend</li>
+									</defaultSurvivalToolAssignmentTags>
+								</li>
+							</value>
+						</li>
+				  
+                        <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalAxe"]</xpath>
+                                <value>
+                                  <thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
+                                </value>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalAxe"]/statBases</xpath>
+                                <value>
+                                  <ToolEffectivenessFactor>1</ToolEffectivenessFactor>
+                                </value>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                                <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalAxe"]/equippedStatOffsets</xpath>
+                        </li>                   
+                        <li Class="PatchOperationAddModExtension">
+                                <xpath>Defs/ThingDef[defName="MeleeWeapon_TribalAxe"]</xpath>
+                                <value>
+                                        <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                                                <baseWorkStatFactors>
+                                                        <TreeFellingSpeed>1</TreeFellingSpeed>
+                                                </baseWorkStatFactors>
+                                                <defaultSurvivalToolAssignmentTags>
+                                                        <li>PlantWorker</li>
+                                                </defaultSurvivalToolAssignmentTags>
+                                        </li>
+                                </value>
+                        </li>
+                        
+                        
+                        <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="ZF_MeleeWeapon_NeolithicSickle"]</xpath>
+                                <value>
+                                  <thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
+                                </value>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="ZF_MeleeWeapon_NeolithicSickle"]/statBases</xpath>
+                                <value>
+                                  <ToolEffectivenessFactor>1</ToolEffectivenessFactor>
+                                </value>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                                <xpath>Defs/ThingDef[defName="ZF_MeleeWeapon_NeolithicSickle"]/equippedStatOffsets</xpath>
+                        </li>                   
+                        <li Class="PatchOperationAddModExtension">
+                                <xpath>Defs/ThingDef[defName="ZF_MeleeWeapon_NeolithicSickle"]</xpath>
+                                <value>
+                                        <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                                                <baseWorkStatFactors>
+                                                        <PlantHarvestingSpeed>1</PlantHarvestingSpeed>
+                                                </baseWorkStatFactors>
+                                                <defaultSurvivalToolAssignmentTags>
+                                                        <li>PlantWorker</li>
+                                                </defaultSurvivalToolAssignmentTags>
+                                        </li>
+                                </value>
+                        </li>
+                        
+                        <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="ZF_MeleeWeapon_NeolithicDiggingStick"]</xpath>
+                                <value>
+                                  <thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
+                                </value>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="ZF_MeleeWeapon_NeolithicDiggingStick"]/statBases</xpath>
+                                <value>
+                                  <ToolEffectivenessFactor>1</ToolEffectivenessFactor>
+                                </value>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                                <xpath>Defs/ThingDef[defName="ZF_MeleeWeapon_NeolithicDiggingStick"]/equippedStatOffsets</xpath>
+                        </li>                   
+                        <li Class="PatchOperationAddModExtension">
+                                <xpath>Defs/ThingDef[defName="ZF_MeleeWeapon_NeolithicDiggingStick"]</xpath>
+                                <value>
+                                        <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                                                <baseWorkStatFactors>
+                                                        <PlantWorkSpeed>1.1</PlantWorkSpeed>
+                                                        <MiningSpeed>0.9</MiningSpeed>
+                                                        <MiningYieldDigging>0.9</MiningYieldDigging>
+                                                </baseWorkStatFactors>
+                                                <defaultSurvivalToolAssignmentTags>
+                                                        <li>PlantWorker</li>
+                                                        <li>Miner</li>
+                                                </defaultSurvivalToolAssignmentTags>
+                                        </li>
+                                </value>
+                        </li>
+                        
+                        <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="ZF_MeleeWeapon_NeolithicHammerStone"]</xpath>
+                                <value>
+                                  <thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
+                                </value>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="ZF_MeleeWeapon_NeolithicHammerStone"]/statBases</xpath>
+                                <value>
+                                  <ToolEffectivenessFactor>1</ToolEffectivenessFactor>
+                                </value>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                                <xpath>Defs/ThingDef[defName="ZF_MeleeWeapon_NeolithicHammerStone"]/equippedStatOffsets</xpath>
+                        </li>                   
+                        <li Class="PatchOperationAddModExtension">
+                                <xpath>Defs/ThingDef[defName="ZF_MeleeWeapon_NeolithicHammerStone"]</xpath>
+                                <value>
+                                        <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                                                <baseWorkStatFactors>
+                                                        <ConstructionSpeed>0.9</ConstructionSpeed>
+                                                        <SmithingSpeed>0.9</SmithingSpeed>
+                                                </baseWorkStatFactors>
+                                                <defaultSurvivalToolAssignmentTags>
+                                                        <li>Constructor</li>
+                                                        <li>Crafter</li>
+                                                </defaultSurvivalToolAssignmentTags>
+                                        </li>
+                                </value>
+                        </li>
+                        
+                        	<li Class="PatchOperationAddModExtension">
+                          		<xpath>Defs/ThingDef[defName="ZF_SharpStoneShard"]</xpath>
+                          		<value>
+                          			<li Class="SurvivalToolsLite.StuffPropsTool">
+                          				<toolStatFactors>
+                          					<TreeFellingSpeed>0.8</TreeFellingSpeed>
+                          					<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+                          					<PlantWorkSpeed>0.8</PlantWorkSpeed>
+                          					<MiningSpeed>0.8</MiningSpeed>
+                          					<MiningYieldDigging>0.9</MiningYieldDigging>
+                          					<ConstructionSpeed>0.9</ConstructionSpeed>
+                          				</toolStatFactors>
+                          			</li>
+                          		</value>
+                          	</li>
+
+                </operations>
+        </match>
+    </Operation>
+	
+</Patch>
