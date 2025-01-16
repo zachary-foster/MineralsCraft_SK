@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+    <ThingDef ParentName="SK_BaseGun">
+        <defName>FireStartingKit</defName>
+        <label>Fire starting kit</label>
+        <description>A primitave firestarting kit. It is works well, given enough time.</description>
+        <graphicData>
+            <texPath>Things/Weapons/FireStartingKit/FireStartingKit</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Grenade</soundInteract>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <MarketValue>50</MarketValue>
+            <SightsEfficiency>1.0</SightsEfficiency>
+            <ShotSpread>0.05</ShotSpread>
+            <SwayFactor>1.0</SwayFactor>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+            <Mass>1</Mass>
+        </statBases>
+        <weaponTags>
+          <li>Utility</li>
+        </weaponTags>
+        <thingCategories>
+          <li>SpecialWeapons</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <circularError>0.1</circularError>
+                <defaultProjectile>Projectile_FirestartingSpark</defaultProjectile>
+                <ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+                <warmupTime>7.0</warmupTime>
+                <burstShotCount>1</burstShotCount>
+                <range>1.5</range>
+                <muzzleFlashScale>2</muzzleFlashScale>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <onlyManualCast>true</onlyManualCast>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>40</magazineSize>
+                <reloadTime>2</reloadTime>
+                <ammoSet>AmmoSet_Firestarter</ammoSet>
+            </li>
+        </comps>
+    </ThingDef>
+
+  <WeaponExtensionDef>
+    <defName>WeaponExtensionDef_FireStartingKit</defName>
+    <label>WeaponExtensionDef_FireStartingKit</label>
+    <weapon>FireStartingKit</weapon>
+    <attackAngleOffset IsNull="True"/>
+    <weaponPositionOffset>
+      <x>0.04402516</x>
+      <y>0</y>
+      <z>0</z>
+    </weaponPositionOffset>
+    <aimedWeaponPositionOffset>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </aimedWeaponPositionOffset>
+    <firstHandPosition>
+      <x>-0.1</x>
+      <y>0</y>
+      <z>0.02</z>
+    </firstHandPosition>
+    <secondHandPosition>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </secondHandPosition>
+  </WeaponExtensionDef>
+
+  <RecipeDef>
+    <defName>ZF_MakeFireStartingKit</defName>
+    <label>make fire starting kit</label>
+    <description>Make a basic fire starting kit.</description>
+    <jobString>Making fire starting kit</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZF_SharpStoneShard</li>
+      </thingDefs>
+      <categories>
+        <li>Wooden</li>
+        <li>Metallic</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>ZF_SharpStoneShard</li>
+      </thingDefs>
+      <categories>
+        <li>Wooden</li>
+        <li>Metallic</li>
+      </categories>
+    </defaultIngredientFilter>
+    <workSkillLearnFactor>1</workSkillLearnFactor>
+    <workAmount>2000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZF_SharpStoneShard</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Wooden</li>
+            <li>Metallic</li>
+          </categories>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <FireStartingKit>1</FireStartingKit>
+    </products>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>2</Crafting>
+    </skillRequirements>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>ZF_NeolithicCraftingSpot</li>
+    </recipeUsers>
+  </RecipeDef>
+
+</Defs>

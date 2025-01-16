@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef Name="ZF_BaseNeolithicWeapon" ParentName="SK_BaseMeleeWeapon" Abstract="True">
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>Neolithic</li>
+      <li>NeolithicMeleeBasic</li>
+      <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <tradeability>Sellable</tradeability>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="WeaponMedievalBase">
+    <defName>MeleeWeapon_RoyalKnife</defName>
+    <label>Royal Knife</label>
+    <description>A lordly knife adorned with precious jewels and gold.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/RoyalKnife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractMelee</soundInteract>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <costList>
+      <CutGem>2</CutGem>
+      <GoldBar>5</GoldBar>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>ZF_RoyalWeapons</researchPrerequisite>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Bulk>0.7</Bulk>
+      <Mass>1.0</Mass>
+      <MeleeCounterParryBonus>1.6</MeleeCounterParryBonus>
+      <MaxHitPoints>120</MaxHitPoints>
+    </statBases>
+    <equippedAngleOffset>-45</equippedAngleOffset>
+    <equippedStatOffsets>
+      <CookSpeed>0.2</CookSpeed>
+      <ButcheryFleshSpeed>0.2</ButcheryFleshSpeed>
+      <MeleeCritChance>0.8</MeleeCritChance>
+      <MeleeDodgeChance>0.8</MeleeDodgeChance>
+      <MeleeParryChance>0.2</MeleeParryChance>
+      <SocialImpact>0.05</SocialImpact>
+      <MentalBreakThreshold>-0.01</MentalBreakThreshold>
+    </equippedStatOffsets>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>NorbalHeroMelee</li>
+      <li>MedievalMelee</li>
+      <li>CE_Sidearm_Melee</li>
+      <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.1</cooldownTime>
+        <chanceFactor>0.1</chanceFactor>
+        <armorPenetrationBlunt>6</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>1.0</cooldownTime>
+        <chanceFactor>0.4</chanceFactor>
+        <armorPenetrationBlunt>6</armorPenetrationBlunt>
+        <armorPenetrationSharp>4</armorPenetrationSharp>
+        <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>1.0</cooldownTime>
+        <chanceFactor>1.33</chanceFactor>
+        <armorPenetrationBlunt>6</armorPenetrationBlunt>
+        <armorPenetrationSharp>6</armorPenetrationSharp>
+        <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <thingCategories>
+      <li>AgileMelee</li>
+      <li>SharpMelee</li>
+      <li>SurvivalToolsIndustrial</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <WeaponExtensionDef>
+    <defName>WeaponExtensionDef_MeleeWeapon_RoyalKnife</defName>
+    <label>WeaponExtensionDef_MeleeWeapon_RoyalKnife</label>
+    <weapon>MeleeWeapon_RoyalKnife</weapon>
+    <attackAngleOffset IsNull="True"/>
+    <weaponPositionOffset>
+      <x>0.04402516</x>
+      <y>0</y>
+      <z>0</z>
+    </weaponPositionOffset>
+    <aimedWeaponPositionOffset>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </aimedWeaponPositionOffset>
+    <firstHandPosition>
+      <x>-0.2704403</x>
+      <y>0.005</y>
+      <z>0.02515723</z>
+    </firstHandPosition>
+    <secondHandPosition>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </secondHandPosition>
+  </WeaponExtensionDef>
+  
+  <ThingDef ParentName="WeaponMedievalBase">
+    <defName>MeleeWeapon_RoyalLongSword</defName>
+    <label>Royal Longsword</label>
+    <description>The ancient weapon of kings, the longsword can be used for slashing or stabbing and is deadly in the right hands. This particular sword is adorned with precious jewels and gold.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/RoyalLongsword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractMelee</soundInteract>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+    <costList>
+      <CutGem>3</CutGem>
+      <GoldBar>10</GoldBar>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>ZF_RoyalWeapons</researchPrerequisite>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Bulk>7.0</Bulk>
+      <Mass>3.0</Mass>
+      <MeleeCounterParryBonus>1.0</MeleeCounterParryBonus>
+      <MaxHitPoints>150</MaxHitPoints>
+    </statBases>
+    <equippedAngleOffset>-45</equippedAngleOffset>
+    <equippedStatOffsets>
+      <MeleeCritChance>0.6</MeleeCritChance>
+      <MeleeParryChance>0.6</MeleeParryChance>
+      <MeleeDodgeChance>0.4</MeleeDodgeChance>
+      <SocialImpact>0.06</SocialImpact>
+      <MentalBreakThreshold>-0.03</MentalBreakThreshold>
+    </equippedStatOffsets>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>NorbalHeroMelee</li>
+      <li>MedievalMelee</li>
+      <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.2</cooldownTime>
+        <chanceFactor>0.1</chanceFactor>
+        <armorPenetrationBlunt>8</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>19</power>
+        <cooldownTime>1.3</cooldownTime>
+        <chanceFactor>0.33</chanceFactor>
+        <armorPenetrationBlunt>8</armorPenetrationBlunt>
+        <armorPenetrationSharp>6</armorPenetrationSharp>
+        <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>1.4</cooldownTime>
+        <chanceFactor>1.33</chanceFactor>
+        <armorPenetrationBlunt>8</armorPenetrationBlunt>
+        <armorPenetrationSharp>5</armorPenetrationSharp>
+        <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <thingCategories>
+      <li>SharpMelee</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <WeaponExtensionDef>
+    <defName>WeaponExtensionDef_MeleeWeapon_RoyalLongSword</defName>
+    <label>WeaponExtensionDef_MeleeWeapon_RoyalLongSword</label>
+    <weapon>MeleeWeapon_RoyalLongSword</weapon>
+    <attackAngleOffset IsNull="True"/>
+    <weaponPositionOffset>
+      <x>0.1949686</x>
+      <y>0</y>
+      <z>-0.01886792</z>
+    </weaponPositionOffset>
+    <aimedWeaponPositionOffset>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </aimedWeaponPositionOffset>
+    <firstHandPosition>
+      <x>-0.36</x>
+      <y>0.005</y>
+      <z>0.07</z>
+    </firstHandPosition>
+    <secondHandPosition>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </secondHandPosition>
+  </WeaponExtensionDef>
+  
+  <ThingDef ParentName="WeaponMedievalBase">
+    <defName>MeleeWeapon_RoyalBattleAxe</defName>
+    <label>Royal Battle Axe</label>
+    <description>A large two-bit axe decorated with gold and gems.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/RoyalBattleAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractMelee</soundInteract>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>90</costStuffCount>
+    <costList>
+      <CutGem>5</CutGem>
+      <GoldBar>20</GoldBar>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>ZF_RoyalWeapons</researchPrerequisite>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Bulk>10.0</Bulk>
+      <Mass>6.0</Mass>
+      <MeleeCounterParryBonus>1.2</MeleeCounterParryBonus>
+      <MaxHitPoints>160</MaxHitPoints>
+    </statBases>
+    <equippedAngleOffset>-45</equippedAngleOffset>
+    <equippedStatOffsets>
+      <MeleeCritChance>0.8</MeleeCritChance>
+      <MeleeParryChance>0.6</MeleeParryChance>
+      <SocialImpact>0.07</SocialImpact>
+      <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+      <PlantWorkSpeed>0.2</PlantWorkSpeed>
+    </equippedStatOffsets>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>NorbalHeroMelee</li>
+      <li>MedievalMelee</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.0</cooldownTime>
+        <chanceFactor>0.10</chanceFactor>
+        <armorPenetrationBlunt>12</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>1.8</cooldownTime>
+        <chanceFactor>1.3</chanceFactor>
+        <armorPenetrationBlunt>14</armorPenetrationBlunt>
+        <armorPenetrationSharp>6</armorPenetrationSharp>
+        <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <thingCategories>
+      <li>SharpMelee</li>
+      <li>HeavyMelee</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <WeaponExtensionDef>
+    <defName>WeaponExtensionDef_MeleeWeapon_RoyalBattleAxe</defName>
+    <label>WeaponExtensionDef_MeleeWeapon_RoyalBattleAxe</label>
+    <weapon>MeleeWeapon_RoyalBattleAxe</weapon>
+    <attackAngleOffset IsNull="True"/>
+    <weaponPositionOffset>
+      <x>0.07</x>
+      <y>0</y>
+      <z>0.12</z>
+    </weaponPositionOffset>
+    <aimedWeaponPositionOffset>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </aimedWeaponPositionOffset>
+    <firstHandPosition>
+      <x>-0.13</x>
+      <y>0.005</y>
+      <z>-0.1</z>
+    </firstHandPosition>
+    <secondHandPosition>
+      <x>-0.36</x>
+      <y>0.005</y>
+      <z>-0.3</z>
+    </secondHandPosition>
+  </WeaponExtensionDef>
+  
+  
+
+ <!-- Neolithic Spear --> 
+
+  <ThingDef ParentName="ZF_BaseNeolithicWeapon">
+    <defName>ZF_MeleeWeapon_NeolithicSpear</defName>
+    <label>Neolithic Spear</label>
+    <description>A one-handed spear made of a wooden shaft with a sharp stone tip. Good for stabbing things.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/NeolithicSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <Mass>2</Mass>
+      <Bulk>6</Bulk>
+      <MaxHitPoints>100</MaxHitPoints>
+    </statBases>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.3</cooldownTime>
+        <chanceFactor>0.1</chanceFactor>
+        <armorPenetrationBlunt>4</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>head</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.3</cooldownTime>
+        <chanceFactor>1</chanceFactor>
+        <armorPenetrationBlunt>6</armorPenetrationBlunt>
+        <armorPenetrationSharp>5</armorPenetrationSharp>
+        <linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <equippedStatOffsets>
+      <MeleeCritChance>0.2</MeleeCritChance>
+      <MeleeParryChance>0.1</MeleeParryChance>
+      <MeleeDodgeChance>0.4</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>SharpMelee</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <WeaponExtensionDef>
+    <defName>WeaponExtensionDef_ZF_MeleeWeapon_NeolithicSpear</defName>
+    <label>WeaponExtensionDef_ZF_MeleeWeapon_NeolithicSpear</label>
+    <weapon>ZF_MeleeWeapon_NeolithicSpear</weapon>
+    <attackAngleOffset IsNull="True" />
+    <weaponPositionOffset>
+      <x>0.3633333</x>
+      <y>0</y>
+      <z>0.1474214</z>
+    </weaponPositionOffset>
+    <aimedWeaponPositionOffset>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </aimedWeaponPositionOffset>
+    <firstHandPosition>
+      <x>-0.1110063</x>
+      <y>0.005</y>
+      <z>-0.07245277</z>
+    </firstHandPosition>
+    <secondHandPosition>
+      <x>-0.3659744</x>
+      <y>0.005</y>
+      <z>-0.3279874</z>
+    </secondHandPosition>
+  </WeaponExtensionDef>
+
+  <RecipeDef ParentName="ZF_NeolithicWeaponRecipeBase">
+    <defName>ZF_MakeNeolithicSpear</defName>
+    <label>make neolithic spear</label>
+    <description>Make neolithic spear from sharp stone and wood.</description>
+    <jobString>Making neolithic spear</jobString>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Wooden</li>
+      </categories>
+      <thingDefs>
+        <li>ZF_SharpStoneShard</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Wooden</li>
+      </categories>
+      <thingDefs>
+        <li>ZF_SharpStoneShard</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <workAmount>3000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Wooden</li>
+          </categories>
+        </filter>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZF_SharpStoneShard</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ZF_MeleeWeapon_NeolithicSpear>1</ZF_MeleeWeapon_NeolithicSpear>
+    </products>
+    <skillRequirements>
+      <Crafting>3</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>ZF_NeolithicToolsI</researchPrerequisite>
+  </RecipeDef>
+ 
+ 
+ 
+  <!-- Neolithic Macuahuitl --> 
+ 
+  <ThingDef ParentName="ZF_BaseNeolithicWeapon">
+    <defName>MeleeWeapon_Macuahuitl</defName>
+    <label>Macuahuitl</label>
+    <description>A weapon made from a flattened wooden club with many blades of sharp stone skillfully attached along each edge. Deadly in skilled hands, but delicate and cumbersome compared with metal weapons.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/Macuahuitl</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>3</Mass>
+      <Bulk>6</Bulk>
+      <MaxHitPoints>150</MaxHitPoints>
+    </statBases>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>1.4</cooldownTime>
+        <chanceFactor>0.1</chanceFactor>
+        <armorPenetrationBlunt>4</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1.7</cooldownTime>
+        <chanceFactor>1.4</chanceFactor>
+        <armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+        <armorPenetrationSharp>5</armorPenetrationSharp>
+        <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <equippedStatOffsets>
+      <MeleeCritChance>0.8</MeleeCritChance>
+      <MeleeParryChance>0.2</MeleeParryChance>
+      <MeleeDodgeChance>0.4</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>SharpMelee</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <WeaponExtensionDef>
+    <defName>WeaponExtensionDef_MeleeWeapon_Macuahuitl</defName>
+    <label>WeaponExtensionDef_MeleeWeapon_Macuahuitl</label>
+    <weapon>MeleeWeapon_Macuahuitl</weapon>
+    <attackAngleOffset IsNull="True"/>
+    <weaponPositionOffset>
+      <x>0.1949686</x>
+      <y>0</y>
+      <z>-0.01886792</z>
+    </weaponPositionOffset>
+    <aimedWeaponPositionOffset>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </aimedWeaponPositionOffset>
+    <firstHandPosition>
+      <x>0</x>
+      <y>0.005</y>
+      <z>0</z>
+    </firstHandPosition>
+    <secondHandPosition>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </secondHandPosition>
+  </WeaponExtensionDef>
+  
+  <RecipeDef ParentName="ZF_NeolithicWeaponRecipeBase">
+    <defName>ZF_MakeMacuahuitl</defName>
+    <label>make macuahuitl</label>
+    <description>Make Macuahuitl from sharp stone and wood.</description>
+    <jobString>Making Macuahuitl</jobString>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Wooden</li>
+      </categories>
+      <thingDefs>
+        <li>ZF_SharpStoneShard</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Wooden</li>
+      </categories>
+      <thingDefs>
+        <li>ZF_SharpStoneShard</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <workAmount>8000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Wooden</li>
+          </categories>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZF_SharpStoneShard</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <MeleeWeapon_Macuahuitl>1</MeleeWeapon_Macuahuitl>
+    </products>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>ZF_NeolithicToolsIII</researchPrerequisite>
+  </RecipeDef>
+
+  
+</Defs>

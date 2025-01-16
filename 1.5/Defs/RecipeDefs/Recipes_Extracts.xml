@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  
+  <RecipeDef>
+    <defName>Make_SharpStoneShards</defName>
+    <label>Break sharp stone chunks into shards</label>
+    <description>Breaks sharp stone chunks into shards.</description>
+    <jobString>Breaking sharp stone into shards</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <recipeUsers>
+      <li>TableStonecutterNeolithic</li>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+    <workAmount>1000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZF_ChunkFlint</li>
+            <li>ZF_ChunkObsidian</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZF_ChunkFlint</li>
+        <li>ZF_ChunkObsidian</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ZF_SharpStoneShard>12</ZF_SharpStoneShard>
+    </products>
+  </RecipeDef>
+
+
+</Defs>

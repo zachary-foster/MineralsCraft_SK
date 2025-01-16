@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  
+  <!-- Firestarting Supplies -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RecipeDef[defName="MakeAmmo_FirestartingSupplies"]/fixedIngredientFilter</xpath>
+      <value>
+        <thingDefs>
+          <li>GU_RedWood</li>
+          <li>AB_MushroomWoodLog</li>
+        </thingDefs>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/RecipeDef[defName="MakeAmmo_FirestartingSupplies"]/ingredients</xpath>
+      <value>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>Wooden</li>
+              </categories>
+              <thingDefs>
+                <li>GU_RedWood</li>
+                <li>AB_MushroomWoodLog</li>
+              </thingDefs>
+            </filter>
+            <count>20</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>ZF_SharpStoneShard</li>
+              </thingDefs>
+            </filter>
+            <count>2</count>
+          </li>
+          <li>
+            <filter>
+              <categories>
+                <li>BTextiles</li>
+              </categories>
+            </filter>
+            <count>10</count>
+          </li>
+        </ingredients>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

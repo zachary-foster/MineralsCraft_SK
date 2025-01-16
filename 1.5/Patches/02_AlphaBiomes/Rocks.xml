@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ZF_WeatheredObsidianstone"]/building/mineableThing</xpath>
+      <value>
+        <mineableThing>ZF_ChunkObsidian</mineableThing>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ZF_SolidObsidianstone"]/building/mineableThing</xpath>
+      <value>
+        <mineableThing>ZF_ChunkObsidian</mineableThing>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ZF_HewnObsidianstone"]/building/mineableThing</xpath>
+      <value>
+        <mineableThing>ZF_ChunkBasalt</mineableThing>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ZF_SmoothedHewnObsidianstone"]/building/mineableThing</xpath>
+      <value>
+        <mineableThing>ZF_ChunkBasalt</mineableThing>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ZF_BoulderObsidianstone"]/building/mineableThing</xpath>
+      <value>
+        <mineableThing>ZF_ChunkObsidian</mineableThing>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Biomes</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ZF_PassableObsidianstone"]/building/mineableThing</xpath>
+      <value>
+        <mineableThing>ZF_ChunkObsidian</mineableThing>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

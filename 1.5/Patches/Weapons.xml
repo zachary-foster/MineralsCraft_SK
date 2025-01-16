@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/RecipeDef[defName = "MakeLaser_Component"]/ingredients</xpath>
+	  <value>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CutUltrahardGem</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  </value>
+	</Operation>
+
+</Patch>

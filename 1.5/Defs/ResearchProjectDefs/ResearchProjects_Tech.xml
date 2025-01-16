@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <ResearchProjectDef ParentName="ZF_TribalResearchBase">
+    <defName>ZF_NeolithicToolsI</defName>
+    <label>Neolithic crafting I</label>
+    <description>Make tools and simple weapons out of sharp stone like flint and obsidian.</description>
+    <baseCost>150</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Craft_SK</tab>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>28.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="ZF_NoResearchBase">
+    <defName>ZF_NeolithicToolsII</defName>
+    <label>Neolithic crafting II</label>
+    <description>Make weapons out of sharp stone like flint and obsidian.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Craft_SK</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>28.00</researchViewY>
+    <prerequisites>
+      <li>ZF_NeolithicToolsI</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="ZF_NoResearchBase">
+    <defName>ZF_NeolithicToolsIII</defName>
+    <label>Neolithic crafting III</label>
+    <description>Make advanced weapons out of sharp stone like flint and obsidian and even harder stones like adamant.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Craft_SK</tab>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>28.00</researchViewY>
+    <prerequisites>
+      <li>ZF_NeolithicToolsII</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalBase">
+    <defName>ZF_RoyalWeapons</defName>
+    <label>Royal weapon crafting</label>
+    <description>Craft high quality royal weapon adorned with gems.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Craft_SK</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>29.00</researchViewY>
+    <prerequisites>
+      <li>LongBlades</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialBase">
+    <defName>ZF_HardStoneCuttingIII</defName>
+    <label>Hard Stone Cutting III</label>
+    <description>Cut the hardest stones and create gems from raw materials.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Craft_SK</tab>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>25.00</researchViewY>
+    <prerequisites>
+      <li>ZF_HardStoneCuttingII</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+</Defs>

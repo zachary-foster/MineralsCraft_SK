@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ZF_SharpStoneShard</defName>
+    <label>Sharp stone shard</label>
+    <description>A shard of sharp stone like obsidian or flint. Valued by the neolithic inhabitants of this rimworld for making things like knifes, handaxes, and arrowheads.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/FlintShard</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Flammability>0</Flammability>
+      <Mass>1</Mass>
+      <Beauty>1</Beauty>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <techLevel>Neolithic</techLevel>
+    <stuffProps>
+      <stuffAdjective>sharp stone</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>0.5</MaxHitPoints>
+        <MarketValue>1</MarketValue>
+        <Flammability>0</Flammability>
+        <Beauty>2</Beauty>
+        <WorkToMake>1.5</WorkToMake>
+        <WorkToBuild>2</WorkToBuild>
+        <DoorOpenSpeed>0.5</DoorOpenSpeed>
+        <BedRestEffectiveness>0.7</BedRestEffectiveness>
+        <MeleeWeapon_CooldownMultiplier>1.0</MeleeWeapon_CooldownMultiplier>
+        <MeleePenetrationFactor>1.2</MeleePenetrationFactor>
+        <Mass>1.0</Mass>
+      </statFactors>
+      <commonality>0.07</commonality>
+    </stuffProps>
+    <thingCategories>
+      <li>Extracted</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

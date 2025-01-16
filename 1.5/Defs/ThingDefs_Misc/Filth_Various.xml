@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Ember</defName>
+    <label>ember</label>
+    <description>A glowing ember hot enough to start a fire.</description>
+    <thingClass>LiquidFuel</thingClass>
+    <useHitPoints>true</useHitPoints>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <Beauty>-5</Beauty>
+      <Cleanliness>-10</Cleanliness>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Flammability>1.5</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Ember</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>20</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <maxThickness>1</maxThickness>
+    </filth>
+  </ThingDef>
+
+</Defs>
